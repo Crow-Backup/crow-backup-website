@@ -13,6 +13,8 @@ The workflow follows the [official Hugo GitHub Pages guide](https://gohugo.io/ho
 
 The publishing build uses `actions/configure-pages`'s base URL, so the initial project URL and the custom domain both work. Generated `public/` output is not committed.
 
+HTTPS is the approved production scheme. The workflow upgrades the Pages base URL to HTTPS even when GitHub reports an HTTP URL, so canonical links, language alternates, social metadata and sitemap URLs use HTTPS. Enable **Enforce HTTPS** in Pages settings to redirect visitors arriving over HTTP as well.
+
 Source links and assets use the `site-url.html` partial to remove the leading slash before Hugo's `relURL` adds the deployment base path. Do not pass `.RelPermalink` through this helper: it already includes that path. Keep `HUGO_RELATIVEURLS` disabled: Hugo's relative-URL rewrite duplicates the base path in project builds. The publishing build normalizes the Pages base URL to one trailing slash. CI checks both root-domain and project-path builds and validates the final publishing artifact.
 
 After Hugo builds, `scripts/portable-urls.mjs` converts local HTML links and assets to paths relative to each output page. This lets the same artifact work at the GitHub project URL and the configured custom domain without changing canonical metadata. Markdown exports are generated after that conversion.

@@ -21,6 +21,10 @@ for(const url of manifest.sitemapPaths){
 }
 for(const page of manifest.pages){
  const $=await html(page.url);
+ for(const element of $('link[rel="canonical"],link[rel="alternate"][hreflang]').toArray()){
+  const value=$(element).attr('href');
+  if(!value?.startsWith('https://'))failures.push(`${page.url}: production metadata must use HTTPS: ${value}`);
+ }
  const markdownPath=path.join(buildDir,decodeURIComponent(page.url),'index.md');
  try{
   const markdown=await fs.readFile(markdownPath,'utf8');

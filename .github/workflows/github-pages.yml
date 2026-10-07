@@ -80,7 +80,8 @@ jobs:
           HUGO_RELATIVEURLS: 'false'
           PAGES_BASE_URL: ${{ steps.pages.outputs.base_url }}
         run: |
-          hugo --gc --minify --baseURL "${PAGES_BASE_URL%/}/"
+          PUBLISH_BASE_URL="https://${PAGES_BASE_URL#*://}"
+          hugo --gc --minify --baseURL "${PUBLISH_BASE_URL%/}/"
           node scripts/portable-urls.mjs public
           node scripts/llms.mjs public
           node scripts/check.mjs public

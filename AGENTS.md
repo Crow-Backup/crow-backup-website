@@ -8,6 +8,7 @@ Read this file and `README.md` before changing the project. This is a **custom H
 - All 55 original sitemap URLs are migrated: 21 pages, 14 posts, 20 category/tag/author archives. Preserve existing URLs unless explicitly asked to change them.
 - Accessibility improvements are authorized. Audit every page after shared-template changes. Do not claim complete WCAG conformance from automated checks alone.
 - **Ask before applying SEO changes**, including search titles, descriptions, robots/noindex policies, canonical/hreflang changes, structured data or search-facing URL changes. Prepare specific, reviewable proposals first. See `reports/seo-proposals.md` for recommendations awaiting approval.
+- HTTPS is approved as the preferred production scheme. Keep the publishing base URL on HTTPS; other SEO proposals still require approval.
 - Hide the blog author `admin`; keep named contributors. The importer omits admin author fields and renames the legacy admin archive heading to Crow Backup while preserving its URL.
 - Homepage onboarding steps use **large SVG line icons**, not emoji: computer, connection and folder. Use the established dark-green strokes, pale-green tiles and consistent sizes.
 - The homepage app preview is a **monitor**, with a bezel, chin and stand. Do not add a browser/title-bar frame around the app screenshot.
