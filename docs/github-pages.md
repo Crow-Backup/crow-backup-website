@@ -13,6 +13,8 @@ The workflow follows the [official Hugo GitHub Pages guide](https://gohugo.io/ho
 
 The publishing build uses `actions/configure-pages`'s base URL, so the initial project URL and the custom domain both work. Generated `public/` output is not committed.
 
+On pushes and manual runs, a separate job fetches the current release from `https://downloads.crowbackup.ch/v1/current-version.json`, validates all four HTTPS installer URLs and updates `data/downloads.json`. It commits only changed data using `GITHUB_TOKEN`, then passes that exact commit to the build job. Token-authenticated pushes do not trigger another push workflow. Pull-request runs skip this write job and validate their original commit. A failed refresh stops publishing and leaves the previous fallback intact. Only the refresh job has repository write permission; the build job stays read-only.
+
 HTTPS is the approved production scheme. The workflow upgrades the Pages base URL to HTTPS even when GitHub reports an HTTP URL, so canonical links, language alternates, social metadata and sitemap URLs use HTTPS. Enable **Enforce HTTPS** in Pages settings to redirect visitors arriving over HTTP as well.
 
 Source links and assets use the `site-url.html` partial to remove the leading slash before Hugo's `relURL` adds the deployment base path. Do not pass `.RelPermalink` through this helper: it already includes that path. Keep `HUGO_RELATIVEURLS` disabled: Hugo's relative-URL rewrite duplicates the base path in project builds. The publishing build normalizes the Pages base URL to one trailing slash. CI checks both root-domain and project-path builds and validates the final publishing artifact.

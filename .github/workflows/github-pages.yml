@@ -19,7 +19,48 @@ env:
   TZ: Europe/Zurich
 
 jobs:
+  refresh-downloads:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      commit: ${{ steps.commit.outputs.sha }}
+    steps:
+      - name: Check out publishing branch
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+
+      - name: Validate release updater
+        run: node --test scripts/update-downloads.test.mjs
+
+      - name: Refresh download fallback
+        run: node scripts/update-downloads.mjs
+
+      - name: Commit changed fallback
+        id: commit
+        env:
+          PUBLISH_BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          if ! git diff --quiet -- data/downloads.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -- data/downloads.json
+            git commit -m "Refresh download fallback from release service"
+            git push origin "HEAD:${PUBLISH_BRANCH}"
+          fi
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
   build:
+    needs: refresh-downloads
+    if: ${{ !cancelled() && (needs.refresh-downloads.result == 'success' || needs.refresh-downloads.result == 'skipped') }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -27,6 +68,8 @@ jobs:
     steps:
       - name: Check out source
         uses: actions/checkout@v7
+        with:
+          ref: ${{ needs.refresh-downloads.outputs.commit || github.sha }}
 
       - name: Set up Node.js
         uses: actions/setup-node@v7
@@ -36,6 +79,9 @@ jobs:
 
       - name: Install validation dependencies
         run: npm ci
+
+      - name: Validate release updater
+        run: node --test scripts/update-downloads.test.mjs
 
       - name: Install pinned Hugo
         shell: bash

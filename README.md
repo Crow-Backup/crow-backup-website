@@ -25,7 +25,7 @@ Open `http://localhost:1414/`. Review the visual style guide at `/style-guide/` 
 - `static/css/site.css`: design tokens, layout and responsive styles.
 - `static/css/fonts.css`: self-hosted font definitions. Hugo combines these with `site.css` into one minified stylesheet with a content hash; the heading and body Latin WOFF2 fonts are preloaded.
 - `data/navigation.json`: language-specific navigation and existing URLs.
-- `data/downloads.json`: working installer links; the browser refreshes them from the existing release service.
+- `data/downloads.json`: fallback installer links. Before each publishing build, GitHub Actions refreshes this file from the release service and commits it only when the data changes. The browser also refreshes download links when the download page opens.
 - `static/wp-content/uploads/`: migrated media at their original paths.
 - Articles and blog/archive cards retain the original featured images. Featured images are imported from WordPress media records, separately from article body content.
 

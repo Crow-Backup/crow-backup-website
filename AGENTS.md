@@ -35,6 +35,7 @@ Spacing follows 8 px increments. Container maximum: 1280 px. Desktop gutters: 48
 - `content/*/posts/`: articles. `type: posts` drives blog listings. `translationKey` pairs translations.
 - `content/*/archives/`: source taxonomy and author URLs with explicit article references.
 - `data/navigation.json`: translated navigation routes. `data/downloads.json`: build-time installer links.
+- `scripts/update-downloads.mjs`: refresh and validate download fallbacks before publishing. The pipeline commits only changed release data and builds that exact commit; PR validation never writes to the repository.
 - `layouts/baseof.html`: HTML head, global landmarks. `layouts/home.html`, `page.html`, `blog.html`, `archive.html`: page layouts.
 - `layouts/_partials/`: header, footer, post cards and step icons.
 - `layouts/_shortcodes/`: cards, grids, FAQs, profiles, buttons, downloads, contact form, media and guide specimens.
