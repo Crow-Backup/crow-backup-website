@@ -1,0 +1,48 @@
+[download]
+other = 'Herunterladen'
+[free]
+other = 'Kostenlos. Verschlüsselt. Gemeinsam.'
+[together]
+other = 'So startet ihr gemeinsam'
+[made]
+other = 'In Luzern entwickelt. Für Menschen, die einander vertrauen.'
+[footerLine]
+other = 'Deine Dateien. Euer Speicherplatz.'
+[contact]
+other = 'Kontakt'
+[privacy]
+other = 'Datenschutz'
+[read]
+other = 'Beitrag lesen'
+[allPosts]
+other = 'Alle Beiträge'
+[menu]
+other = 'Menü'
+[contents]
+other = 'Auf dieser Seite'
+[latest]
+other = 'Neuste Version'
+[downloadFor]
+other = 'Für'
+[getStarted]
+other = 'Gemeinsam besser gesichert.'
+[backHome]
+other = 'Zur Startseite'
+[notFound]
+other = 'Diese Seite wurde nicht gefunden.'
+[name]
+other = 'Dein Name'
+[email]
+other = 'Deine E-Mail-Adresse'
+[subject]
+other = 'Betreff'
+[message]
+other = 'Deine Nachricht'
+[send]
+other = 'Nachricht senden'
+[contactSetup]
+other = 'Das Kontaktformular wird vor dem Start mit dem Nachrichtendienst verbunden.'
+[openAll]
+other = 'Alle öffnen'
+[closeAll]
+other = 'Alle schliessen'

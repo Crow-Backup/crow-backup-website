@@ -1,0 +1,8 @@
+{{ $endpoint := site.Params.contactEndpoint }}
+<form class="contact-form" {{ with $endpoint }}action="{{ . }}" method="post"{{ end }}>
+ <div class="form-row"><label>{{ i18n "name" }}<input name="name" autocomplete="name" required maxlength="200"></label><label>{{ i18n "email" }}<input name="email" type="email" autocomplete="email" required maxlength="200"></label></div>
+ <label>{{ i18n "subject" }}<input name="subject" required maxlength="200"></label>
+ <label>{{ i18n "message" }}<textarea name="message" rows="7" required maxlength="5000"></textarea></label>
+ <button class="button" type="submit" {{ if not $endpoint }}disabled{{ end }}>{{ i18n "send" }} ↗</button>
+ {{ if not $endpoint }}<p class="form-notice" role="status">{{ i18n "contactSetup" }}</p>{{ end }}
+</form>

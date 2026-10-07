@@ -1,0 +1,1 @@
+<section class="profile"><img src="{{ .Get "image" | relURL }}" width="320" height="320" alt="{{ .Get "name" }}" loading="lazy"><div><h2>{{ .Get "name" }}</h2>{{ .Inner | markdownify }}</div></section>

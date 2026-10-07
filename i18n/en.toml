@@ -1,0 +1,48 @@
+[download]
+other = 'Download'
+[free]
+other = 'Free. Encrypted. Together.'
+[together]
+other = 'Start together'
+[made]
+other = 'Made in Lucerne. For people who trust each other.'
+[footerLine]
+other = 'Your files. Shared space.'
+[contact]
+other = 'Contact'
+[privacy]
+other = 'Privacy'
+[read]
+other = 'Read article'
+[allPosts]
+other = 'All articles'
+[menu]
+other = 'Menu'
+[contents]
+other = 'On this page'
+[latest]
+other = 'Latest version'
+[downloadFor]
+other = 'For'
+[getStarted]
+other = 'Better backed up, together.'
+[backHome]
+other = 'Back to home'
+[notFound]
+other = 'This page could not be found.'
+[name]
+other = 'Your name'
+[email]
+other = 'Your email address'
+[subject]
+other = 'Subject'
+[message]
+other = 'Your message'
+[send]
+other = 'Send message'
+[contactSetup]
+other = 'The contact form will be connected to its message service before launch.'
+[openAll]
+other = 'Open all'
+[closeAll]
+other = 'Close all'

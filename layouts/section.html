@@ -1,0 +1,1 @@
+{{ define "main" }}<div class="container page-heading"><h1>{{ .Title }}</h1></div><div class="container prose page-content">{{ .Content }}{{ range .Pages }}<p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}</div>{{ end }}

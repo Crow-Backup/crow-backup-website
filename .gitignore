@@ -1,0 +1,13 @@
+.idea/
+node_modules/
+public/
+resources/
+.hugo_build.lock
+.tools/
+.migration-source/
+current-home.html
+pages-api.json
+posts-api.json
+sitemap-source.xml
+hugo-release.json
+validation-public/

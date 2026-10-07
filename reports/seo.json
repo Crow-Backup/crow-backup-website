@@ -1,0 +1,1131 @@
+{
+  "date": "2026-10-07T17:48:51.219Z",
+  "pages": [
+    {
+      "url": "/en/release-notes/",
+      "type": "page",
+      "title": "Release Notes | Crow Backup",
+      "titleLength": 27,
+      "description": "Update database migration for older files",
+      "descriptionLength": 41,
+      "canonical": "https://crowbackup.ch/en/release-notes/",
+      "h1": "Release Notes",
+      "hreflang": [
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/release-notes/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/en/start-using-crow-backup-and-profit/",
+      "type": "page",
+      "title": "Start using Crow Backup and profit | Crow Backup",
+      "titleLength": 48,
+      "description": "The simplest and most secure backup solution for everyone.Simple and trustworthy – Crow Backup makes your data backup easy and secure. No complicated processes, no technical know-h",
+      "descriptionLength": 180,
+      "canonical": "https://crowbackup.ch/en/start-using-crow-backup-and-profit/",
+      "h1": "Start using Crow Backup and profit",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/profitieren/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/start-using-crow-backup-and-profit/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/profitieren/",
+      "type": "page",
+      "title": "Bei Crow Backup mitmachen und profitieren | Crow Backup",
+      "titleLength": 55,
+      "description": "Die einfachste und sicherste Backup-Lösung für alle.Simpel und vertrauensvoll – Crow Backup macht deine Datensicherung einfach und sicher. Keine komplizierten Prozesse, kein techni",
+      "descriptionLength": 180,
+      "canonical": "https://crowbackup.ch/profitieren/",
+      "h1": "Bei Crow Backup mitmachen und profitieren",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/profitieren/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/start-using-crow-backup-and-profit/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/en/download/",
+      "type": "page",
+      "title": "Download | Crow Backup",
+      "titleLength": 22,
+      "description": "Crow Backup for Windows, macOS and Linux. Download for free and back up together.",
+      "descriptionLength": 81,
+      "canonical": "https://crowbackup.ch/en/download/",
+      "h1": "Download",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/herunterladen/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/download/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/herunterladen/",
+      "type": "page",
+      "title": "Herunterladen | Crow Backup",
+      "titleLength": 27,
+      "description": "Crow Backup für Windows, macOS und Linux. Kostenlos herunterladen und gemeinsam sichern.",
+      "descriptionLength": 88,
+      "canonical": "https://crowbackup.ch/herunterladen/",
+      "h1": "Herunterladen",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/herunterladen/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/download/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/en/contact/",
+      "type": "page",
+      "title": "Contact | Crow Backup",
+      "titleLength": 21,
+      "description": "We look forward to hearing from you and are eager to receive your enquiries, comments or suggestions. Your feedback is priceless to us and helps us to constantly improve.",
+      "descriptionLength": 170,
+      "canonical": "https://crowbackup.ch/en/contact/",
+      "h1": "Contact",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/kontakt/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/contact/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/kontakt/",
+      "type": "page",
+      "title": "Kontakt | Crow Backup",
+      "titleLength": 21,
+      "description": "Wir freuen uns, von Dir zu hören und sind gespannt auf Deine Anfragen, Kommentare oder Anregungen. Dein Feedback ist für uns von unschätzbarem Wert und hilft uns, unseren Service s",
+      "descriptionLength": 180,
+      "canonical": "https://crowbackup.ch/kontakt/",
+      "h1": "Kontakt",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/kontakt/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/contact/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/en/support-the-development-of-crow-backup/",
+      "type": "page",
+      "title": "Support the development of Crow Backup | Crow Backup",
+      "titleLength": 52,
+      "description": "The development of Crow Backup is not easy, but very time and resource intensive. We therefore appreciate any support.Thank you a lot! 🙂",
+      "descriptionLength": 137,
+      "canonical": "https://crowbackup.ch/en/support-the-development-of-crow-backup/",
+      "h1": "Support the development of Crow Backup",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/unterstuetze-die-entwicklung-von-crow-backup/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/support-the-development-of-crow-backup/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/unterstuetze-die-entwicklung-von-crow-backup/",
+      "type": "page",
+      "title": "Unterstütze die Entwicklung von Crow Backup | Crow Backup",
+      "titleLength": 57,
+      "description": "Die Entwicklung von Crow Backup ist nicht ganz einfach, sondern Zeit- und Ressourcenintensiv. Wir freuen uns deshalb um jede Unterstützung.Herzlichen Dank! 🙂",
+      "descriptionLength": 158,
+      "canonical": "https://crowbackup.ch/unterstuetze-die-entwicklung-von-crow-backup/",
+      "h1": "Unterstütze die Entwicklung von Crow Backup",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/unterstuetze-die-entwicklung-von-crow-backup/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/support-the-development-of-crow-backup/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/en/en-faq/",
+      "type": "page",
+      "title": "FAQ | Crow Backup",
+      "titleLength": 17,
+      "description": "If your friend is online, you can start a new backup at any time. To do this, click on \"Start backup\" under the corresponding backup in the programme. A new backup will also be cre",
+      "descriptionLength": 180,
+      "canonical": "https://crowbackup.ch/en/en-faq/",
+      "h1": "FAQ",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/faq/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/en-faq/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/faq/",
+      "type": "page",
+      "title": "FAQ | Crow Backup",
+      "titleLength": 17,
+      "description": "Sofern dein*e Freund*in online ist, kannst du jederzeit ein neues Backup starten. Dazu klickst du im Programm unter dem entsprechenden Backup auf «Backup starten». Ausserdem wird n",
+      "descriptionLength": 180,
+      "canonical": "https://crowbackup.ch/faq/",
+      "h1": "FAQ",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/faq/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/en-faq/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/en/en-blog/",
+      "type": "page",
+      "title": "Blog | Crow Backup",
+      "titleLength": 18,
+      "description": "Ideas, guides and news about safer backups.",
+      "descriptionLength": 43,
+      "canonical": "https://crowbackup.ch/en/en-blog/",
+      "h1": "Blog.",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/blog/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/en-blog/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/blog/",
+      "type": "page",
+      "title": "Blog | Crow Backup",
+      "titleLength": 18,
+      "description": "Gedanken, Anleitungen und Neuigkeiten rund um sichere Backups.",
+      "descriptionLength": 62,
+      "canonical": "https://crowbackup.ch/blog/",
+      "h1": "Blog.",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/blog/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/en-blog/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/en/",
+      "type": "page",
+      "title": "Crow Backup — Back up your files with a friend. Free and encrypted.",
+      "titleLength": 67,
+      "description": "Keep a backup of your photos and documents on a friend’s computer, and offer space for theirs on yours. Crow Backup encrypts your files before they leave your computer, so your friend cannot read them.",
+      "descriptionLength": 201,
+      "canonical": "https://crowbackup.ch/en/",
+      "h1": "Your files.With a friend.Free and encrypted.",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/"
+        }
+      ],
+      "issues": [
+        "Long meta description; review for concision"
+      ]
+    },
+    {
+      "url": "/",
+      "type": "page",
+      "title": "Crow Backup — Sichere deine Dateien bei Freund*innen. Kostenlos und verschlüsselt.",
+      "titleLength": 82,
+      "description": "Sichere deine Fotos und Dokumente auf dem Computer von Freund*innen und stelle ihnen Platz für ihre Backups auf deinem Computer zur Verfügung. Crow Backup verschlüsselt deine Dateien, bevor sie deinen Computer verlassen. Deine Freund*innen können sie nicht lesen.",
+      "descriptionLength": 263,
+      "canonical": "https://crowbackup.ch/",
+      "h1": "Deine Dateien.Bei Freund*innen.Kostenlos und verschlüsselt.",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/"
+        }
+      ],
+      "issues": [
+        "Long meta description; review for concision",
+        "Long title; review for clarity"
+      ]
+    },
+    {
+      "url": "/en/en-team/",
+      "type": "page",
+      "title": "Team | Crow Backup",
+      "titleLength": 18,
+      "description": "Crow Backup is currently being developed in Lucerne (Switzerland) by Laurin, Roman, Raphael and Lina. Laurin and Roman have a bachelor’s degree in software development, Lina in gra",
+      "descriptionLength": 180,
+      "canonical": "https://crowbackup.ch/en/en-team/",
+      "h1": "Team",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/team/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/en-team/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/team/",
+      "type": "page",
+      "title": "Team | Crow Backup",
+      "titleLength": 18,
+      "description": "Crow Backup wird derzeit in Luzern (Schweiz) entwickelt von Laurin, Roman, Raphael und Lina. Laurin und Roman haben einen Bachelor-Abschluss als Softwareentwickler, Lina einen als ",
+      "descriptionLength": 180,
+      "canonical": "https://crowbackup.ch/team/",
+      "h1": "Team",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/team/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/en-team/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/en/privacy-policy/",
+      "type": "page",
+      "title": "Privacy policy | Crow Backup",
+      "titleLength": 28,
+      "description": "We attach great importance to the transparent handling of personal data. This privacy policy provides information on what personal data we collect, for what purpose and to whom we ",
+      "descriptionLength": 180,
+      "canonical": "https://crowbackup.ch/en/privacy-policy/",
+      "h1": "Privacy policy",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/datenschutzerklaerung/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/privacy-policy/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/datenschutzerklaerung/",
+      "type": "page",
+      "title": "Datenschutzerklärung | Crow Backup",
+      "titleLength": 34,
+      "description": "Wir legen grossen Wert darauf, dass der Umgang mit Personendaten transparent ist. Diese Datenschutzerklärung gibt Auskunft darüber, welche personenbezogenen Daten wir sammeln, zu w",
+      "descriptionLength": 180,
+      "canonical": "https://crowbackup.ch/datenschutzerklaerung/",
+      "h1": "Datenschutzerklärung",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/datenschutzerklaerung/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/privacy-policy/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/en/en-whitepaper/",
+      "type": "page",
+      "title": "White Paper | Crow Backup",
+      "titleLength": 25,
+      "description": "Crow Backup is software that enables simple and secure backup creation on friends' computers.",
+      "descriptionLength": 93,
+      "canonical": "https://crowbackup.ch/en/en-whitepaper/",
+      "h1": "White Paper",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/whitepaper/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/en-whitepaper/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/whitepaper/",
+      "type": "page",
+      "title": "White Paper | Crow Backup",
+      "titleLength": 25,
+      "description": "Crow Backup ist eine Software, mit welcher auf eine einfache und sichere Weise Backups auf den Computer von Freund*innen erstellt werden kann.",
+      "descriptionLength": 142,
+      "canonical": "https://crowbackup.ch/whitepaper/",
+      "h1": "White Paper",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/whitepaper/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/en-whitepaper/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/en/hackcrow-use-a-custom-encryption-key/",
+      "type": "post",
+      "title": "#HackCrow: Use a Custom Encryption Key | Crow Backup",
+      "titleLength": 52,
+      "description": "This article is the first in a new series “Hack Crow”, in which we want to present ways to use Crow Backup in special ways. However, these are not intended as “normal” usage, so th",
+      "descriptionLength": 180,
+      "canonical": "https://crowbackup.ch/en/hackcrow-use-a-custom-encryption-key/",
+      "h1": "#HackCrow: Use a Custom Encryption Key",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/hackcrow-nutzen-eines-eigenen-encryption-keys/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/hackcrow-use-a-custom-encryption-key/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/hackcrow-nutzen-eines-eigenen-encryption-keys/",
+      "type": "post",
+      "title": "#HackCrow: Nutzen eines eigenen Encryption Keys | Crow Backup",
+      "titleLength": 61,
+      "description": "Dieser Artikel ist der erste Artikel einer neuen Serie «Hack Crow», mit welcher wir Möglichkeiten vorstellen wollen, wie man Crow Backup auf eine spezielle Art und Weise nutzen kan",
+      "descriptionLength": 180,
+      "canonical": "https://crowbackup.ch/hackcrow-nutzen-eines-eigenen-encryption-keys/",
+      "h1": "#HackCrow: Nutzen eines eigenen Encryption Keys",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/hackcrow-nutzen-eines-eigenen-encryption-keys/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/hackcrow-use-a-custom-encryption-key/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/wie-ich-als-entwickler-meine-daten-mit-crow-backup-sichere/",
+      "type": "post",
+      "title": "Wie ich als Entwickler meine Daten mit Crow Backup sichere | Crow Backup",
+      "titleLength": 72,
+      "description": "Für mich als Entwickler ist die Sicherheit meiner Daten nicht nur wichtig, sondern entscheidend. Deshalb habe ich eine solide Strategie entwickelt, die Einfachheit, Sicherheit und ",
+      "descriptionLength": 180,
+      "canonical": "https://crowbackup.ch/wie-ich-als-entwickler-meine-daten-mit-crow-backup-sichere/",
+      "h1": "Wie ich als Entwickler meine Daten mit Crow Backup sichere",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/wie-ich-als-entwickler-meine-daten-mit-crow-backup-sichere/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/how-i-as-a-developer-secure-my-data-with-crow-backup/"
+        }
+      ],
+      "issues": [
+        "Long title; review for clarity"
+      ]
+    },
+    {
+      "url": "/en/how-i-as-a-developer-secure-my-data-with-crow-backup/",
+      "type": "post",
+      "title": "How I back up my data as a Crow Backup developer | Crow Backup",
+      "titleLength": 62,
+      "description": "For me as a developer, the security of my data is not just important, it’s crucial. That’s why I’ve developed a solid strategy that combines simplicity, security and efficiency. Le",
+      "descriptionLength": 180,
+      "canonical": "https://crowbackup.ch/en/how-i-as-a-developer-secure-my-data-with-crow-backup/",
+      "h1": "How I back up my data as a Crow Backup developer",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/wie-ich-als-entwickler-meine-daten-mit-crow-backup-sichere/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/how-i-as-a-developer-secure-my-data-with-crow-backup/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/en/the-most-common-backup-errors/",
+      "type": "post",
+      "title": "The most common backup errors | Crow Backup",
+      "titleLength": 43,
+      "description": "Common backup mistakes are often the result of convenience and carelessness. Many people neglect regular data backups, either because they find the topic boring or because they thi",
+      "descriptionLength": 180,
+      "canonical": "https://crowbackup.ch/en/the-most-common-backup-errors/",
+      "h1": "The most common backup errors",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/die-haeufigsten-backup-fehler/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/the-most-common-backup-errors/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/die-haeufigsten-backup-fehler/",
+      "type": "post",
+      "title": "Die häufigsten Backup-Fehler | Crow Backup",
+      "titleLength": 42,
+      "description": "Häufige Fehler bei Backups sind oft das Resultat von Bequemlichkeit und Nachlässigkeit. Viele Menschen vernachlässigen regelmässige Datensicherungen, entweder weil sie das Thema al",
+      "descriptionLength": 180,
+      "canonical": "https://crowbackup.ch/die-haeufigsten-backup-fehler/",
+      "h1": "Die häufigsten Backup-Fehler",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/die-haeufigsten-backup-fehler/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/the-most-common-backup-errors/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/en/crow-backup-your-secure-and-freely-accessible-solution-for-data-backup/",
+      "type": "post",
+      "title": "Crow Backup – Your secure and freely accessible solution for data backup | Crow Backup",
+      "titleLength": 86,
+      "description": "At a time when more and more data is being generated and the need for reliable backups is growing, it is crucial to find a solution that is both secure and accessible. Crow Backup ",
+      "descriptionLength": 180,
+      "canonical": "https://crowbackup.ch/en/crow-backup-your-secure-and-freely-accessible-solution-for-data-backup/",
+      "h1": "Crow Backup – Your secure and freely accessible solution for data backup",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/crow-backup-deine-sichere-und-frei-zugaengliche-loesung-fuer-datensicherung/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/crow-backup-your-secure-and-freely-accessible-solution-for-data-backup/"
+        }
+      ],
+      "issues": [
+        "Long title; review for clarity"
+      ]
+    },
+    {
+      "url": "/crow-backup-deine-sichere-und-frei-zugaengliche-loesung-fuer-datensicherung/",
+      "type": "post",
+      "title": "Crow Backup – Deine sichere und frei zugängliche Lösung für Datensicherung | Crow Backup",
+      "titleLength": 88,
+      "description": "In einer Zeit, in der immer mehr Daten generiert werden und die Notwendigkeit von zuverlässigen Backups immer grösser wird, ist es entscheidend, eine Lösung zu finden, die sowohl s",
+      "descriptionLength": 180,
+      "canonical": "https://crowbackup.ch/crow-backup-deine-sichere-und-frei-zugaengliche-loesung-fuer-datensicherung/",
+      "h1": "Crow Backup – Deine sichere und frei zugängliche Lösung für Datensicherung",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/crow-backup-deine-sichere-und-frei-zugaengliche-loesung-fuer-datensicherung/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/crow-backup-your-secure-and-freely-accessible-solution-for-data-backup/"
+        }
+      ],
+      "issues": [
+        "Long title; review for clarity"
+      ]
+    },
+    {
+      "url": "/en/crow-backup-the-ultimate-backup-solution-for-home-computers/",
+      "type": "post",
+      "title": "Crow Backup: The ultimate backup solution for home computers | Crow Backup",
+      "titleLength": 74,
+      "description": "In the world of ever-increasing data volumes and the growing need for data security, a reliable backup solution for home computers is becoming increasingly important. This is where",
+      "descriptionLength": 180,
+      "canonical": "https://crowbackup.ch/en/crow-backup-the-ultimate-backup-solution-for-home-computers/",
+      "h1": "Crow Backup: The ultimate backup solution for home computers",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/crow-backup-die-ultimative-backup-loesung-fuer-heimcomputer/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/crow-backup-the-ultimate-backup-solution-for-home-computers/"
+        }
+      ],
+      "issues": [
+        "Long title; review for clarity"
+      ]
+    },
+    {
+      "url": "/crow-backup-die-ultimative-backup-loesung-fuer-heimcomputer/",
+      "type": "post",
+      "title": "Crow Backup: Die ultimative Backup-Lösung für Heimcomputer | Crow Backup",
+      "titleLength": 72,
+      "description": "In der Welt der ständig wachsenden Datenmengen und der wachsenden Notwendigkeit von Datensicherheit wird eine zuverlässige Backup-Lösung für Heimcomputer immer wichtiger. Hier komm",
+      "descriptionLength": 180,
+      "canonical": "https://crowbackup.ch/crow-backup-die-ultimative-backup-loesung-fuer-heimcomputer/",
+      "h1": "Crow Backup: Die ultimative Backup-Lösung für Heimcomputer",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/crow-backup-die-ultimative-backup-loesung-fuer-heimcomputer/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/crow-backup-the-ultimate-backup-solution-for-home-computers/"
+        }
+      ],
+      "issues": [
+        "Long title; review for clarity"
+      ]
+    },
+    {
+      "url": "/en/why-crow-backup/",
+      "type": "post",
+      "title": "Why Crow Backup | Crow Backup",
+      "titleLength": 29,
+      "description": "In our modern world, where digital data is becoming increasingly important, it is essential to ensure that your valuable information is kept safe and secure. While many people util",
+      "descriptionLength": 180,
+      "canonical": "https://crowbackup.ch/en/why-crow-backup/",
+      "h1": "Why Crow Backup",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/wieso-crow-backup/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/why-crow-backup/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/wieso-crow-backup/",
+      "type": "post",
+      "title": "Wieso Crow Backup | Crow Backup",
+      "titleLength": 31,
+      "description": "In unserer modernen Welt, in der digitale Daten immer wichtiger werden, ist es unerlässlich, dafür zu sorgen, dass Ihre wertvollen Informationen sicher und geschützt aufbewahrt wer",
+      "descriptionLength": 180,
+      "canonical": "https://crowbackup.ch/wieso-crow-backup/",
+      "h1": "Wieso Crow Backup",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/wieso-crow-backup/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/why-crow-backup/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/en/3-2-1-backup-strategy/",
+      "type": "post",
+      "title": "3-2-1 Backup strategy | Crow Backup",
+      "titleLength": 35,
+      "description": "Secure, simple and collaborative with Crow Backup In today’s era, where the amount of digital data is constantly growing, the importance of a reliable backup strategy is becoming i",
+      "descriptionLength": 180,
+      "canonical": "https://crowbackup.ch/en/3-2-1-backup-strategy/",
+      "h1": "3-2-1 Backup strategy",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/3-2-1-backup-strategie/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/3-2-1-backup-strategy/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/3-2-1-backup-strategie/",
+      "type": "post",
+      "title": "3-2-1 Backup-Strategie | Crow Backup",
+      "titleLength": 36,
+      "description": "Sicher, einfach und gemeinschaftlich mit Crow Backup In der heutigen Ära, in der die Menge an digitalen Daten stetig wächst, wird die Bedeutung einer zuverlässigen Backup-Strategie",
+      "descriptionLength": 180,
+      "canonical": "https://crowbackup.ch/3-2-1-backup-strategie/",
+      "h1": "3-2-1 Backup-Strategie",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/3-2-1-backup-strategie/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/3-2-1-backup-strategy/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/en/category/uncategorized/",
+      "type": "archive",
+      "title": "Uncategorized | Crow Backup",
+      "titleLength": 27,
+      "description": "Articles from the Crow Backup blog.",
+      "descriptionLength": 35,
+      "canonical": "https://crowbackup.ch/en/category/uncategorized/",
+      "h1": "Uncategorized",
+      "hreflang": [
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/category/uncategorized/"
+        }
+      ],
+      "issues": [
+        "Thin/duplicate archive: review indexing policy"
+      ]
+    },
+    {
+      "url": "/category/nicht-kategorisiert-de/",
+      "type": "archive",
+      "title": "Nicht kategorisiert | Crow Backup",
+      "titleLength": 33,
+      "description": "Beiträge aus dem Crow Backup Blog.",
+      "descriptionLength": 34,
+      "canonical": "https://crowbackup.ch/category/nicht-kategorisiert-de/",
+      "h1": "Nicht kategorisiert",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/category/nicht-kategorisiert-de/"
+        }
+      ],
+      "issues": [
+        "Thin/duplicate archive: review indexing policy"
+      ]
+    },
+    {
+      "url": "/en/tag/crow-backup/",
+      "type": "archive",
+      "title": "Crow Backup | Crow Backup",
+      "titleLength": 25,
+      "description": "Articles from the Crow Backup blog.",
+      "descriptionLength": 35,
+      "canonical": "https://crowbackup.ch/en/tag/crow-backup/",
+      "h1": "Crow Backup",
+      "hreflang": [
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/tag/crow-backup/"
+        }
+      ],
+      "issues": [
+        "Thin/duplicate archive: review indexing policy"
+      ]
+    },
+    {
+      "url": "/en/tag/data-backup-strategy/",
+      "type": "archive",
+      "title": "Data Backup Strategy | Crow Backup",
+      "titleLength": 34,
+      "description": "Articles from the Crow Backup blog.",
+      "descriptionLength": 35,
+      "canonical": "https://crowbackup.ch/en/tag/data-backup-strategy/",
+      "h1": "Data Backup Strategy",
+      "hreflang": [
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/tag/data-backup-strategy/"
+        }
+      ],
+      "issues": [
+        "Thin/duplicate archive: review indexing policy"
+      ]
+    },
+    {
+      "url": "/en/tag/developer-backup-strategy/",
+      "type": "archive",
+      "title": "Developer Backup Strategy | Crow Backup",
+      "titleLength": 39,
+      "description": "Articles from the Crow Backup blog.",
+      "descriptionLength": 35,
+      "canonical": "https://crowbackup.ch/en/tag/developer-backup-strategy/",
+      "h1": "Developer Backup Strategy",
+      "hreflang": [
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/tag/developer-backup-strategy/"
+        }
+      ],
+      "issues": [
+        "Thin/duplicate archive: review indexing policy"
+      ]
+    },
+    {
+      "url": "/en/tag/cloud-backup-solution/",
+      "type": "archive",
+      "title": "Cloud Backup Solution | Crow Backup",
+      "titleLength": 35,
+      "description": "Articles from the Crow Backup blog.",
+      "descriptionLength": 35,
+      "canonical": "https://crowbackup.ch/en/tag/cloud-backup-solution/",
+      "h1": "Cloud Backup Solution",
+      "hreflang": [
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/tag/cloud-backup-solution/"
+        }
+      ],
+      "issues": [
+        "Thin/duplicate archive: review indexing policy"
+      ]
+    },
+    {
+      "url": "/en/tag/offsite-backup-strategy/",
+      "type": "archive",
+      "title": "Offsite Backup Strategy | Crow Backup",
+      "titleLength": 37,
+      "description": "Articles from the Crow Backup blog.",
+      "descriptionLength": 35,
+      "canonical": "https://crowbackup.ch/en/tag/offsite-backup-strategy/",
+      "h1": "Offsite Backup Strategy",
+      "hreflang": [
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/tag/offsite-backup-strategy/"
+        }
+      ],
+      "issues": [
+        "Thin/duplicate archive: review indexing policy"
+      ]
+    },
+    {
+      "url": "/en/tag/secure-data-backup/",
+      "type": "archive",
+      "title": "Secure Data Backup | Crow Backup",
+      "titleLength": 32,
+      "description": "Articles from the Crow Backup blog.",
+      "descriptionLength": 35,
+      "canonical": "https://crowbackup.ch/en/tag/secure-data-backup/",
+      "h1": "Secure Data Backup",
+      "hreflang": [
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/tag/secure-data-backup/"
+        }
+      ],
+      "issues": [
+        "Thin/duplicate archive: review indexing policy"
+      ]
+    },
+    {
+      "url": "/en/tag/time-machine-backup/",
+      "type": "archive",
+      "title": "Time Machine Backup | Crow Backup",
+      "titleLength": 33,
+      "description": "Articles from the Crow Backup blog.",
+      "descriptionLength": 35,
+      "canonical": "https://crowbackup.ch/en/tag/time-machine-backup/",
+      "h1": "Time Machine Backup",
+      "hreflang": [
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/tag/time-machine-backup/"
+        }
+      ],
+      "issues": [
+        "Thin/duplicate archive: review indexing policy"
+      ]
+    },
+    {
+      "url": "/en/tag/3-2-1-backup-strategy/",
+      "type": "archive",
+      "title": "3-2-1 Backup Strategy | Crow Backup",
+      "titleLength": 35,
+      "description": "Articles from the Crow Backup blog.",
+      "descriptionLength": 35,
+      "canonical": "https://crowbackup.ch/en/tag/3-2-1-backup-strategy/",
+      "h1": "3-2-1 Backup Strategy",
+      "hreflang": [
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/tag/3-2-1-backup-strategy/"
+        }
+      ],
+      "issues": [
+        "Thin/duplicate archive: review indexing policy"
+      ]
+    },
+    {
+      "url": "/en/tag/backup-best-practices/",
+      "type": "archive",
+      "title": "Backup Best Practices | Crow Backup",
+      "titleLength": 35,
+      "description": "Articles from the Crow Backup blog.",
+      "descriptionLength": 35,
+      "canonical": "https://crowbackup.ch/en/tag/backup-best-practices/",
+      "h1": "Backup Best Practices",
+      "hreflang": [
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/tag/backup-best-practices/"
+        }
+      ],
+      "issues": [
+        "Thin/duplicate archive: review indexing policy"
+      ]
+    },
+    {
+      "url": "/tag/datenbackupstrategie/",
+      "type": "archive",
+      "title": "Datenbackupstrategie | Crow Backup",
+      "titleLength": 34,
+      "description": "Beiträge aus dem Crow Backup Blog.",
+      "descriptionLength": 34,
+      "canonical": "https://crowbackup.ch/tag/datenbackupstrategie/",
+      "h1": "Datenbackupstrategie",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/tag/datenbackupstrategie/"
+        }
+      ],
+      "issues": [
+        "Thin/duplicate archive: review indexing policy"
+      ]
+    },
+    {
+      "url": "/tag/entwickler-backupstrategie/",
+      "type": "archive",
+      "title": "Entwickler Backupstrategie | Crow Backup",
+      "titleLength": 40,
+      "description": "Beiträge aus dem Crow Backup Blog.",
+      "descriptionLength": 34,
+      "canonical": "https://crowbackup.ch/tag/entwickler-backupstrategie/",
+      "h1": "Entwickler Backupstrategie",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/tag/entwickler-backupstrategie/"
+        }
+      ],
+      "issues": [
+        "Thin/duplicate archive: review indexing policy"
+      ]
+    },
+    {
+      "url": "/tag/clout-backup-solution/",
+      "type": "archive",
+      "title": "Clout Backup Solution | Crow Backup",
+      "titleLength": 35,
+      "description": "Beiträge aus dem Crow Backup Blog.",
+      "descriptionLength": 34,
+      "canonical": "https://crowbackup.ch/tag/clout-backup-solution/",
+      "h1": "Clout Backup Solution",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/tag/clout-backup-solution/"
+        }
+      ],
+      "issues": [
+        "Thin/duplicate archive: review indexing policy"
+      ]
+    },
+    {
+      "url": "/tag/3-2-1-backup-strategie/",
+      "type": "archive",
+      "title": "3-2-1 Backup Strategie | Crow Backup",
+      "titleLength": 36,
+      "description": "Beiträge aus dem Crow Backup Blog.",
+      "descriptionLength": 34,
+      "canonical": "https://crowbackup.ch/tag/3-2-1-backup-strategie/",
+      "h1": "3-2-1 Backup Strategie",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/tag/3-2-1-backup-strategie/"
+        }
+      ],
+      "issues": [
+        "Thin/duplicate archive: review indexing policy"
+      ]
+    },
+    {
+      "url": "/tag/backup-best-practices-de/",
+      "type": "archive",
+      "title": "Backup Best Practices | Crow Backup",
+      "titleLength": 35,
+      "description": "Beiträge aus dem Crow Backup Blog.",
+      "descriptionLength": 34,
+      "canonical": "https://crowbackup.ch/tag/backup-best-practices-de/",
+      "h1": "Backup Best Practices",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/tag/backup-best-practices-de/"
+        }
+      ],
+      "issues": [
+        "Thin/duplicate archive: review indexing policy"
+      ]
+    },
+    {
+      "url": "/en/author/ggebbwg1/",
+      "type": "archive",
+      "title": "Crow Backup | Crow Backup",
+      "titleLength": 25,
+      "description": "Articles from the Crow Backup blog.",
+      "descriptionLength": 35,
+      "canonical": "https://crowbackup.ch/en/author/ggebbwg1/",
+      "h1": "Crow Backup",
+      "hreflang": [
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/author/ggebbwg1/"
+        }
+      ],
+      "issues": [
+        "Thin/duplicate archive: review indexing policy"
+      ]
+    },
+    {
+      "url": "/en/author/roman/",
+      "type": "archive",
+      "title": "roman | Crow Backup",
+      "titleLength": 19,
+      "description": "Articles from the Crow Backup blog.",
+      "descriptionLength": 35,
+      "canonical": "https://crowbackup.ch/en/author/roman/",
+      "h1": "roman",
+      "hreflang": [
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/author/roman/"
+        }
+      ],
+      "issues": [
+        "Thin/duplicate archive: review indexing policy"
+      ]
+    },
+    {
+      "url": "/author/ggebbwg1/",
+      "type": "archive",
+      "title": "Crow Backup | Crow Backup",
+      "titleLength": 25,
+      "description": "Beiträge aus dem Crow Backup Blog.",
+      "descriptionLength": 34,
+      "canonical": "https://crowbackup.ch/author/ggebbwg1/",
+      "h1": "Crow Backup",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/author/ggebbwg1/"
+        }
+      ],
+      "issues": [
+        "Thin/duplicate archive: review indexing policy"
+      ]
+    },
+    {
+      "url": "/author/roman/",
+      "type": "archive",
+      "title": "roman | Crow Backup",
+      "titleLength": 19,
+      "description": "Beiträge aus dem Crow Backup Blog.",
+      "descriptionLength": 34,
+      "canonical": "https://crowbackup.ch/author/roman/",
+      "h1": "roman",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/author/roman/"
+        }
+      ],
+      "issues": [
+        "Thin/duplicate archive: review indexing policy"
+      ]
+    }
+  ]
+}

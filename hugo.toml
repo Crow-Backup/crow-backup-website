@@ -1,0 +1,37 @@
+baseURL = 'https://crowbackup.ch/'
+title = 'Crow Backup'
+defaultContentLanguage = 'de'
+defaultContentLanguageInSubdir = false
+disableKinds = ['taxonomy', 'term']
+enableRobotsTXT = true
+timeZone = 'Europe/Zurich'
+
+[languages.de]
+locale = 'de-CH'
+label = 'Deutsch'
+contentDir = 'content/de'
+weight = 1
+
+[languages.en]
+locale = 'en'
+label = 'English'
+contentDir = 'content/en'
+weight = 2
+
+[params]
+description = 'Encrypted backups with friends. Free software, shared storage.'
+contactEndpoint = ''
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.goldmark.parser.attribute]
+block = true
+title = true
+
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 3
+
+[sitemap]
+changeFreq = 'monthly'

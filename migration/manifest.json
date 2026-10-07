@@ -1,0 +1,456 @@
+{
+  "migratedAt": "2026-10-07T17:46:26.373Z",
+  "source": "https://crowbackup.ch",
+  "sitemapPaths": [
+    "/en/3-2-1-backup-strategy/",
+    "/en/why-crow-backup/",
+    "/en/crow-backup-the-ultimate-backup-solution-for-home-computers/",
+    "/en/crow-backup-your-secure-and-freely-accessible-solution-for-data-backup/",
+    "/en/the-most-common-backup-errors/",
+    "/en/how-i-as-a-developer-secure-my-data-with-crow-backup/",
+    "/en/hackcrow-use-a-custom-encryption-key/",
+    "/3-2-1-backup-strategie/",
+    "/wieso-crow-backup/",
+    "/crow-backup-die-ultimative-backup-loesung-fuer-heimcomputer/",
+    "/crow-backup-deine-sichere-und-frei-zugaengliche-loesung-fuer-datensicherung/",
+    "/die-haeufigsten-backup-fehler/",
+    "/wie-ich-als-entwickler-meine-daten-mit-crow-backup-sichere/",
+    "/hackcrow-nutzen-eines-eigenen-encryption-keys/",
+    "/en/",
+    "/en/en-blog/",
+    "/en/en-faq/",
+    "/en/support-the-development-of-crow-backup/",
+    "/en/en-whitepaper/",
+    "/en/contact/",
+    "/en/en-team/",
+    "/en/privacy-policy/",
+    "/en/download/",
+    "/en/start-using-crow-backup-and-profit/",
+    "/en/release-notes/",
+    "/whitepaper/",
+    "/",
+    "/team/",
+    "/datenschutzerklaerung/",
+    "/blog/",
+    "/faq/",
+    "/unterstuetze-die-entwicklung-von-crow-backup/",
+    "/kontakt/",
+    "/herunterladen/",
+    "/profitieren/",
+    "/en/category/uncategorized/",
+    "/category/nicht-kategorisiert-de/",
+    "/en/tag/crow-backup/",
+    "/en/tag/data-backup-strategy/",
+    "/en/tag/developer-backup-strategy/",
+    "/en/tag/cloud-backup-solution/",
+    "/en/tag/offsite-backup-strategy/",
+    "/en/tag/secure-data-backup/",
+    "/en/tag/time-machine-backup/",
+    "/en/tag/3-2-1-backup-strategy/",
+    "/en/tag/backup-best-practices/",
+    "/tag/datenbackupstrategie/",
+    "/tag/entwickler-backupstrategie/",
+    "/tag/clout-backup-solution/",
+    "/tag/3-2-1-backup-strategie/",
+    "/tag/backup-best-practices-de/",
+    "/en/author/ggebbwg1/",
+    "/en/author/roman/",
+    "/author/ggebbwg1/",
+    "/author/roman/"
+  ],
+  "pages": [
+    {
+      "url": "/en/release-notes/",
+      "file": "content/en/release-notes.md",
+      "type": "page",
+      "language": "en",
+      "sourceId": 579
+    },
+    {
+      "url": "/en/start-using-crow-backup-and-profit/",
+      "file": "content/en/start-using-crow-backup-and-profit.md",
+      "type": "page",
+      "language": "en",
+      "sourceId": 520
+    },
+    {
+      "url": "/profitieren/",
+      "file": "content/de/profitieren.md",
+      "type": "page",
+      "language": "de",
+      "sourceId": 486
+    },
+    {
+      "url": "/en/download/",
+      "file": "content/en/download.md",
+      "type": "page",
+      "language": "en",
+      "sourceId": 233
+    },
+    {
+      "url": "/herunterladen/",
+      "file": "content/de/herunterladen.md",
+      "type": "page",
+      "language": "de",
+      "sourceId": 226
+    },
+    {
+      "url": "/en/contact/",
+      "file": "content/en/contact.md",
+      "type": "page",
+      "language": "en",
+      "sourceId": 188
+    },
+    {
+      "url": "/kontakt/",
+      "file": "content/de/kontakt.md",
+      "type": "page",
+      "language": "de",
+      "sourceId": 53
+    },
+    {
+      "url": "/en/support-the-development-of-crow-backup/",
+      "file": "content/en/support-the-development-of-crow-backup.md",
+      "type": "page",
+      "language": "en",
+      "sourceId": 175
+    },
+    {
+      "url": "/unterstuetze-die-entwicklung-von-crow-backup/",
+      "file": "content/de/unterstuetze-die-entwicklung-von-crow-backup.md",
+      "type": "page",
+      "language": "de",
+      "sourceId": 41
+    },
+    {
+      "url": "/en/en-faq/",
+      "file": "content/en/en-faq.md",
+      "type": "page",
+      "language": "en",
+      "sourceId": 170
+    },
+    {
+      "url": "/faq/",
+      "file": "content/de/faq.md",
+      "type": "page",
+      "language": "de",
+      "sourceId": 38
+    },
+    {
+      "url": "/en/en-blog/",
+      "file": "content/en/en-blog.md",
+      "type": "page",
+      "language": "en",
+      "sourceId": 35
+    },
+    {
+      "url": "/blog/",
+      "file": "content/de/blog.md",
+      "type": "page",
+      "language": "de",
+      "sourceId": 32
+    },
+    {
+      "url": "/en/",
+      "file": "content/en/_index.md",
+      "type": "page",
+      "language": "en",
+      "sourceId": 29
+    },
+    {
+      "url": "/",
+      "file": "content/de/_index.md",
+      "type": "page",
+      "language": "de",
+      "sourceId": 8
+    },
+    {
+      "url": "/en/en-team/",
+      "file": "content/en/en-team.md",
+      "type": "page",
+      "language": "en",
+      "sourceId": 194
+    },
+    {
+      "url": "/team/",
+      "file": "content/de/team.md",
+      "type": "page",
+      "language": "de",
+      "sourceId": 9
+    },
+    {
+      "url": "/en/privacy-policy/",
+      "file": "content/en/privacy-policy.md",
+      "type": "page",
+      "language": "en",
+      "sourceId": 210
+    },
+    {
+      "url": "/datenschutzerklaerung/",
+      "file": "content/de/datenschutzerklaerung.md",
+      "type": "page",
+      "language": "de",
+      "sourceId": 13
+    },
+    {
+      "url": "/en/en-whitepaper/",
+      "file": "content/en/en-whitepaper.md",
+      "type": "page",
+      "language": "en",
+      "sourceId": 184
+    },
+    {
+      "url": "/whitepaper/",
+      "file": "content/de/whitepaper.md",
+      "type": "page",
+      "language": "de",
+      "sourceId": 2
+    },
+    {
+      "url": "/en/hackcrow-use-a-custom-encryption-key/",
+      "file": "content/en/posts/hackcrow-use-a-custom-encryption-key.md",
+      "type": "post",
+      "language": "en",
+      "sourceId": 561
+    },
+    {
+      "url": "/hackcrow-nutzen-eines-eigenen-encryption-keys/",
+      "file": "content/de/posts/hackcrow-nutzen-eines-eigenen-encryption-keys.md",
+      "type": "post",
+      "language": "de",
+      "sourceId": 558
+    },
+    {
+      "url": "/wie-ich-als-entwickler-meine-daten-mit-crow-backup-sichere/",
+      "file": "content/de/posts/wie-ich-als-entwickler-meine-daten-mit-crow-backup-sichere.md",
+      "type": "post",
+      "language": "de",
+      "sourceId": 478
+    },
+    {
+      "url": "/en/how-i-as-a-developer-secure-my-data-with-crow-backup/",
+      "file": "content/en/posts/how-i-as-a-developer-secure-my-data-with-crow-backup.md",
+      "type": "post",
+      "language": "en",
+      "sourceId": 474
+    },
+    {
+      "url": "/en/the-most-common-backup-errors/",
+      "file": "content/en/posts/the-most-common-backup-errors.md",
+      "type": "post",
+      "language": "en",
+      "sourceId": 389
+    },
+    {
+      "url": "/die-haeufigsten-backup-fehler/",
+      "file": "content/de/posts/die-haeufigsten-backup-fehler.md",
+      "type": "post",
+      "language": "de",
+      "sourceId": 385
+    },
+    {
+      "url": "/en/crow-backup-your-secure-and-freely-accessible-solution-for-data-backup/",
+      "file": "content/en/posts/crow-backup-your-secure-and-freely-accessible-solution-for-data-backup.md",
+      "type": "post",
+      "language": "en",
+      "sourceId": 158
+    },
+    {
+      "url": "/crow-backup-deine-sichere-und-frei-zugaengliche-loesung-fuer-datensicherung/",
+      "file": "content/de/posts/crow-backup-deine-sichere-und-frei-zugaengliche-loesung-fuer-datensicherung.md",
+      "type": "post",
+      "language": "de",
+      "sourceId": 141
+    },
+    {
+      "url": "/en/crow-backup-the-ultimate-backup-solution-for-home-computers/",
+      "file": "content/en/posts/crow-backup-the-ultimate-backup-solution-for-home-computers.md",
+      "type": "post",
+      "language": "en",
+      "sourceId": 155
+    },
+    {
+      "url": "/crow-backup-die-ultimative-backup-loesung-fuer-heimcomputer/",
+      "file": "content/de/posts/crow-backup-die-ultimative-backup-loesung-fuer-heimcomputer.md",
+      "type": "post",
+      "language": "de",
+      "sourceId": 66
+    },
+    {
+      "url": "/en/why-crow-backup/",
+      "file": "content/en/posts/why-crow-backup.md",
+      "type": "post",
+      "language": "en",
+      "sourceId": 152
+    },
+    {
+      "url": "/wieso-crow-backup/",
+      "file": "content/de/posts/wieso-crow-backup.md",
+      "type": "post",
+      "language": "de",
+      "sourceId": 62
+    },
+    {
+      "url": "/en/3-2-1-backup-strategy/",
+      "file": "content/en/posts/3-2-1-backup-strategy.md",
+      "type": "post",
+      "language": "en",
+      "sourceId": 150
+    },
+    {
+      "url": "/3-2-1-backup-strategie/",
+      "file": "content/de/posts/3-2-1-backup-strategie.md",
+      "type": "post",
+      "language": "de",
+      "sourceId": 59
+    },
+    {
+      "url": "/en/category/uncategorized/",
+      "file": "content/en/archives/category_uncategorized_.md",
+      "type": "archive",
+      "language": "en"
+    },
+    {
+      "url": "/category/nicht-kategorisiert-de/",
+      "file": "content/de/archives/_category_nicht-kategorisiert-de_.md",
+      "type": "archive",
+      "language": "de"
+    },
+    {
+      "url": "/en/tag/crow-backup/",
+      "file": "content/en/archives/tag_crow-backup_.md",
+      "type": "archive",
+      "language": "en"
+    },
+    {
+      "url": "/en/tag/data-backup-strategy/",
+      "file": "content/en/archives/tag_data-backup-strategy_.md",
+      "type": "archive",
+      "language": "en"
+    },
+    {
+      "url": "/en/tag/developer-backup-strategy/",
+      "file": "content/en/archives/tag_developer-backup-strategy_.md",
+      "type": "archive",
+      "language": "en"
+    },
+    {
+      "url": "/en/tag/cloud-backup-solution/",
+      "file": "content/en/archives/tag_cloud-backup-solution_.md",
+      "type": "archive",
+      "language": "en"
+    },
+    {
+      "url": "/en/tag/offsite-backup-strategy/",
+      "file": "content/en/archives/tag_offsite-backup-strategy_.md",
+      "type": "archive",
+      "language": "en"
+    },
+    {
+      "url": "/en/tag/secure-data-backup/",
+      "file": "content/en/archives/tag_secure-data-backup_.md",
+      "type": "archive",
+      "language": "en"
+    },
+    {
+      "url": "/en/tag/time-machine-backup/",
+      "file": "content/en/archives/tag_time-machine-backup_.md",
+      "type": "archive",
+      "language": "en"
+    },
+    {
+      "url": "/en/tag/3-2-1-backup-strategy/",
+      "file": "content/en/archives/tag_3-2-1-backup-strategy_.md",
+      "type": "archive",
+      "language": "en"
+    },
+    {
+      "url": "/en/tag/backup-best-practices/",
+      "file": "content/en/archives/tag_backup-best-practices_.md",
+      "type": "archive",
+      "language": "en"
+    },
+    {
+      "url": "/tag/datenbackupstrategie/",
+      "file": "content/de/archives/_tag_datenbackupstrategie_.md",
+      "type": "archive",
+      "language": "de"
+    },
+    {
+      "url": "/tag/entwickler-backupstrategie/",
+      "file": "content/de/archives/_tag_entwickler-backupstrategie_.md",
+      "type": "archive",
+      "language": "de"
+    },
+    {
+      "url": "/tag/clout-backup-solution/",
+      "file": "content/de/archives/_tag_clout-backup-solution_.md",
+      "type": "archive",
+      "language": "de"
+    },
+    {
+      "url": "/tag/3-2-1-backup-strategie/",
+      "file": "content/de/archives/_tag_3-2-1-backup-strategie_.md",
+      "type": "archive",
+      "language": "de"
+    },
+    {
+      "url": "/tag/backup-best-practices-de/",
+      "file": "content/de/archives/_tag_backup-best-practices-de_.md",
+      "type": "archive",
+      "language": "de"
+    },
+    {
+      "url": "/en/author/ggebbwg1/",
+      "file": "content/en/archives/author_ggebbwg1_.md",
+      "type": "archive",
+      "language": "en"
+    },
+    {
+      "url": "/en/author/roman/",
+      "file": "content/en/archives/author_roman_.md",
+      "type": "archive",
+      "language": "en"
+    },
+    {
+      "url": "/author/ggebbwg1/",
+      "file": "content/de/archives/_author_ggebbwg1_.md",
+      "type": "archive",
+      "language": "de"
+    },
+    {
+      "url": "/author/roman/",
+      "file": "content/de/archives/_author_roman_.md",
+      "type": "archive",
+      "language": "de"
+    }
+  ],
+  "assets": [
+    "/wp-content/uploads/2024/03/Crow-Logo_4K.png",
+    "/wp-content/uploads/2024/03/Was-ist-Crow-Backup-snapshot.png",
+    "/wp-content/uploads/2024/03/Crow-Backup-Backup-Overview-1024x668.png",
+    "/wp-content/uploads/2024/03/Crow-Backup-Backup-Uebersicht.png",
+    "/wp-content/uploads/2024/03/Crow-Backup-Backup-Overview.png",
+    "/wp-content/uploads/2024/03/Crow-Backup-Buesi-Problem-snapshot.gif",
+    "/wp-content/uploads/2024/03/Crow-Backup-Encrypted-snapshot.gif",
+    "/wp-content/uploads/2024/03/Crow-Backup-Cashless-Cloud-snapshot.gif",
+    "/wp-content/uploads/2024/03/Crow-Backup-Login.png",
+    "/wp-content/uploads/2024/03/Crow-Backup-Friendship-Overview.png",
+    "/wp-content/uploads/2024/03/Crow-Backup-Einloggen.png",
+    "/wp-content/uploads/2024/03/Crow-Backup-Freundschafts-Uebersicht.png",
+    "/wp-content/uploads/2024/03/Was-ist-Crow-Backup.mp4",
+    "/wp-content/uploads/2024/03/crowbackup-team.jpg",
+    "/wp-content/uploads/2024/03/Laurin-Murer-1024x1024.jpeg",
+    "/wp-content/uploads/2024/03/Roman-Immoos-1024x1024.jpeg",
+    "/wp-content/uploads/2024/03/Lina-Voney-1024x1024.jpeg",
+    "/wp-content/uploads/2024/03/Raphael-Zumstein-1024x1024.jpeg",
+    "/wp-content/uploads/2025/08/Nutzen-einen-eigenen-Verschluesselungsschluessel.jpeg",
+    "/wp-content/uploads/2024/07/b12ffba6-1679-42fd-8fc9-e97b1ddcf782.jpeg",
+    "/wp-content/uploads/2024/03/Die-haeufigsten-Backup-Fehler.jpg",
+    "/wp-content/uploads/2024/03/Crow-Backup-Deine-sichere-und-frei-zugaengliche-Loesung-fuer-Datensicherung.jpg",
+    "/wp-content/uploads/2024/03/Crow-Backup-Die-ultimative-Backup-Loesung-fuer-Heimcomputer.jpg",
+    "/wp-content/uploads/2024/03/Wieso-Crow-Backup.png",
+    "/wp-content/uploads/2024/03/3-2-1-Backup-Strategie.jpeg"
+  ],
+  "assetFailures": []
+}

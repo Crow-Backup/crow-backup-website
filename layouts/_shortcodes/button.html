@@ -1,0 +1,1 @@
+{{ $destination := .Get "href" }}{{ if hasPrefix $destination "/" }}{{ $destination = $destination | relURL }}{{ end }}<a class="button content-button" href="{{ $destination }}">{{ .Get "label" }} <span aria-hidden="true">↗</span></a>

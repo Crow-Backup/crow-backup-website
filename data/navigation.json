@@ -1,0 +1,22 @@
+{
+  "de": {
+    "home": "/", "download": "/herunterladen/", "contact": "/kontakt/", "privacy": "/datenschutzerklaerung/", "team": "/team/", "support": "/unterstuetze-die-entwicklung-von-crow-backup/", "blog": "/blog/",
+    "links": [
+      {"label": "FAQ", "url": "/faq/"},
+      {"label": "Blog", "url": "/blog/"},
+      {"label": "Whitepaper", "url": "/whitepaper/"},
+      {"label": "Team", "url": "/team/"},
+      {"label": "Unterstützen", "url": "/unterstuetze-die-entwicklung-von-crow-backup/"}
+    ]
+  },
+  "en": {
+    "home": "/en/", "download": "/en/download/", "contact": "/en/contact/", "privacy": "/en/privacy-policy/", "team": "/en/en-team/", "support": "/en/support-the-development-of-crow-backup/", "blog": "/en/en-blog/",
+    "links": [
+      {"label": "FAQ", "url": "/en/en-faq/"},
+      {"label": "Blog", "url": "/en/en-blog/"},
+      {"label": "Whitepaper", "url": "/en/en-whitepaper/"},
+      {"label": "Team", "url": "/en/en-team/"},
+      {"label": "Support us", "url": "/en/support-the-development-of-crow-backup/"}
+    ]
+  }
+}

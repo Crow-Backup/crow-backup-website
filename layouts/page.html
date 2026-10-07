@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{ $nav := index hugo.Data.navigation .Language.Lang }}
+<header class="page-heading container"><p class="eyebrow">{{ if eq .Type "posts" }}Crow Backup Blog{{ else }}{{ i18n "free" }}{{ end }}</p><h1>{{ .Title }}</h1>{{ if eq .Type "posts" }}<p class="article-meta">{{ .Date | time.Format "02.01.2006" }}{{ with .Params.author }}{{ if ne (lower .) "admin" }} <span>·</span> {{ . }}{{ end }}{{ end }}</p>{{ end }}</header>
+<div class="container article-layout {{ if or (in .RelPermalink "whitepaper") (in .RelPermalink "privacy") (in .RelPermalink "datenschutz") (in .RelPermalink "release-notes") }}with-toc{{ end }}">
+ {{ if or (in .RelPermalink "whitepaper") (in .RelPermalink "privacy") (in .RelPermalink "datenschutz") (in .RelPermalink "release-notes") }}<aside class="toc"><p class="eyebrow">{{ i18n "contents" }}</p>{{ .TableOfContents }}</aside>{{ end }}
+ <article class="prose page-content">
+ {{ with .Params.cover }}<figure class="article-cover"><img src="{{ . | relURL }}" alt="{{ $.Params.coverAlt }}" width="{{ $.Params.coverWidth }}" height="{{ $.Params.coverHeight }}" fetchpriority="high"></figure>{{ end }}
+ {{ if or (eq .Params.sourceId 38) (eq .Params.sourceId 170) }}<div class="faq-controls"><button data-details="open">{{ i18n "openAll" }}</button><button data-details="close">{{ i18n "closeAll" }}</button></div>{{ end }}
+ {{ .Content }}
+ {{ if eq .Type "posts" }}<a class="text-link article-back" href="{{ $nav.blog | relURL }}">← {{ i18n "allPosts" }}</a>{{ end }}
+ </article>
+</div>
+{{ end }}
+

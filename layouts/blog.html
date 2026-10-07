@@ -1,0 +1,4 @@
+{{ define "main" }}
+<header class="page-heading container"><p class="eyebrow">Crow Backup Journal</p><h1>{{ .Title }}<span class="brand-dot">.</span></h1><p class="page-description">{{ .Description }}</p></header>
+<section class="container blog-grid" aria-label="Blog">{{ range (where site.RegularPages "Type" "posts").ByDate.Reverse }}{{ partial "post-card.html" . }}{{ end }}</section>
+{{ end }}
