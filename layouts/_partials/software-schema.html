@@ -1,0 +1,19 @@
+{{- if .IsHome -}}
+{{- $nav := index hugo.Data.navigation .Language.Lang -}}
+{{- $software := dict
+  "@context" "https://schema.org"
+  "@type" "SoftwareApplication"
+  "@id" (printf "%s#software" site.BaseURL)
+  "name" "Crow Backup"
+  "url" .Permalink
+  "description" .Params.hero
+  "inLanguage" .Language.Locale
+  "applicationCategory" "UtilitiesApplication"
+  "operatingSystem" "Windows, macOS, Linux"
+  "isAccessibleForFree" true
+  "image" ("wp-content/uploads/2024/03/Crow-Logo_4K.png" | absURL)
+  "screenshot" (.Params.heroImage | strings.TrimPrefix "/" | absURL)
+  "offers" (dict "@type" "Offer" "price" 0 "url" ($nav.download | strings.TrimPrefix "/" | absURL))
+-}}
+<script type="application/ld+json">{{ $software | jsonify | safeJS }}</script>
+{{- end -}}

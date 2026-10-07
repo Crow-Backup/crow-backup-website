@@ -8,7 +8,8 @@ const failures=[];let links=0,paragraphs=0;
 const documents=new Map();
 const buildDir=process.argv[2]||'.tools/build';
 const root=load(await fs.readFile(path.join(buildDir,'index.html'),'utf8'));
-const basePath=new URL(root('link[rel="canonical"]').attr('href')).pathname;
+const baseURL=new URL(root('link[rel="canonical"]').attr('href'));
+const basePath=baseURL.pathname;
 const llms=await fs.readFile(path.join(buildDir,'llms.txt'),'utf8');
 function stripBase(url){return basePath!=='/'&&url.startsWith(basePath)?'/'+url.slice(basePath.length):url;}
 async function html(url){
@@ -66,6 +67,23 @@ for(const page of manifest.pages){
  }
 }
 for(const asset of manifest.assets){try{await fs.access(path.join(buildDir,decodeURIComponent(asset)));}catch{failures.push(`Missing migrated media: ${asset}`);}}
+for(const [url,language,download] of [['/','de-CH','herunterladen/'],['/en/','en','en/download/']]){
+ const $=await html(url);
+ try{
+  const blocks=$('script[type="application/ld+json"]');
+  if(blocks.length!==1)throw Error('expected one software description');
+  const software=JSON.parse(blocks.text());
+  if(software['@context']!=='https://schema.org'||software['@type']!=='SoftwareApplication'||software.name!=='Crow Backup')throw Error('incorrect software identity');
+  if(software['@id']!==baseURL.href+'#software'||software.url!==baseURL.href+url.slice(1)||software.inLanguage!==language)throw Error('incorrect software URLs or language');
+  if(!$('.hero-description').text().includes(software.description)||software.operatingSystem!=='Windows, macOS, Linux'||software.applicationCategory!=='UtilitiesApplication')throw Error('software facts differ from visible content');
+  if(software.isAccessibleForFree!==true||software.offers?.['@type']!=='Offer'||software.offers.price!==0||software.offers.url!==baseURL.href+download)throw Error('incorrect free offer');
+  if(software.aggregateRating||software.review)throw Error('ratings/reviews have not been verified');
+  for(const value of [software.image,software.screenshot]){
+   const asset=new URL(value);if(asset.origin!==baseURL.origin||!asset.pathname.startsWith(basePath))throw Error('image outside deployment base');
+   await fs.access(path.join(buildDir,decodeURIComponent(stripBase(asset.pathname))));
+  }
+ }catch(error){failures.push(`${url}: invalid software structured data: ${error.message}`);}
+}
 for(const url of ['/herunterladen/','/en/download/']){const $=await html(url);if($('[data-installer]').length!==4)failures.push(`${url}: installer links missing`);}
 for(const url of ['/team/','/en/en-team/']){const $=await html(url);if($('.profile').length!==4)failures.push(`${url}: team profiles missing`);}
 for(const url of ['/faq/','/en/en-faq/']){const $=await html(url);if($('details').length<10)failures.push(`${url}: FAQs missing`);}

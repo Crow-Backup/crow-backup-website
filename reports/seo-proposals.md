@@ -1,6 +1,6 @@
 # SEO changes for review
 
-No recommendations in this document have been applied. This review covers all 55 migrated source URLs. The per-page inventory is in [seo.json](seo.json).
+Title, description and archive-indexing recommendations below remain pending approval. HTTPS metadata and product structured data were subsequently approved separately. This review covers all 55 migrated source URLs. The per-page inventory is in [seo.json](seo.json).
 
 Canonical URLs, a single H1 per page, existing routes, language declarations and paired translations are present. All 55 source sitemap routes and internal links have been verified. Length checks below are editorial prompts, not hard Google limits. Google can rewrite titles and snippets.
 
@@ -35,7 +35,7 @@ Alternatively, keep them indexable and write distinct introductions, metadata an
 ## Other findings to retain for later review
 
 - Several imported descriptions end mid-sentence because they were generated from excerpts. A later editorial pass could write complete descriptions for all content pages.
-- Structured data could describe the software and articles, but should only include verified facts. No ratings or review claims should be invented.
+- Product structured data was subsequently requested and approved: the German and English homepages now describe the free Crow Backup desktop software with `SoftwareApplication` JSON-LD. Ratings/reviews are omitted. Article structured data remains a possible future proposal.
 - At cutover, verify the actual public canonical domain, HTTPS, sitemap availability and indexing in Search Console. The current audit examines the local production build, not search rankings or the future deployed server.
 
 References: [Google SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide), [localized versions](https://developers.google.com/search/docs/specialty/international/localized-versions).

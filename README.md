@@ -59,6 +59,10 @@ The workflow in [.github/workflows/github-pages.yml](.github/workflows/github-pa
 
 The German and English contact forms submit directly to the configured Formspree endpoint, `https://formspree.io/f/maeqeovg`, using an HTML POST with the `name`, `email`, `subject` and `message` fields. Recipient settings and submission handling are managed in Formspree. The endpoint is set in `params.contactEndpoint` in `hugo.toml`; clearing it disables the submit button and displays a setup notice. End-to-end delivery must be verified with a real submission after deployment.
 
+## Product structured data
+
+The German and English homepages include JSON-LD `SoftwareApplication` data for Crow Backup, with the visible description, supported desktop operating systems, screenshots and a free offer linked to the corresponding download page. Both translations share one software identifier. Ratings and reviews are omitted because none have been verified; Google's software rich results require a rating or review, so this markup alone does not make the site eligible for that display.
+
 ## Markdown and contributions
 
 `node scripts/llms.mjs [outputDirectory]` generates `llms.txt` and an `index.md` alongside every content-backed HTML page, including articles, archives and the style guide. It converts the rendered page to Markdown so FAQs, tables, shortcodes and article listings remain readable. Run it after Hugo and before the content checker; GitHub Actions does this automatically. Node is required for these exports, while Hugo alone still builds the HTML site.
