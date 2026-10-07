@@ -20,10 +20,12 @@ for(const url of manifest.sitemapPaths){
 }
 for(const page of manifest.pages){
  const $=await html(page.url);
- for(const element of $('a[href],img[src],video[src],link[rel="stylesheet"],script[src]').toArray()){
+ for(const element of $('a[href],img[src],video[src],video[poster],track[src],link[rel="stylesheet"],link[rel="icon"],script[src]').toArray()){
   const value=$(element).attr('href')||$(element).attr('src');
   if(!value||/^(mailto:|tel:|https?:\/\/|data:)/.test(value))continue;
-  const target=new URL(value,'https://crowbackup.ch'+page.url);links++;
+  const target=new URL(value,'https://crowbackup.ch'+basePath+page.url.slice(1));links++;
+  if(basePath!=='/'&&!target.pathname.startsWith(basePath))failures.push(`${page.url}: URL escapes deployment base path ${value}`);
+  if(basePath!=='/'&&target.pathname.startsWith(basePath+basePath.slice(1)))failures.push(`${page.url}: duplicated deployment base path ${value}`);
   if(target.pathname.includes('.')&&!target.pathname.endsWith('/')){
    try{await fs.access(path.join(buildDir,decodeURIComponent(stripBase(target.pathname))));}catch{failures.push(`${page.url}: missing asset ${value}`);}
   }else{
@@ -31,6 +33,12 @@ for(const page of manifest.pages){
     const targetDoc=await html(target.pathname);
     if(target.hash&&!targetDoc('[id]').toArray().some(e=>targetDoc(e).attr('id')===decodeURIComponent(target.hash.slice(1))))failures.push(`${page.url}: missing anchor ${value}`);
    }catch{failures.push(`${page.url}: broken link ${value}`);}
+  }
+  const poster=$(element).attr('poster');
+  if(poster){
+   const target=new URL(poster,'https://crowbackup.ch'+basePath+page.url.slice(1));
+   if(basePath!=='/'&&!target.pathname.startsWith(basePath))failures.push(`${page.url}: poster escapes deployment base path ${poster}`);
+   try{await fs.access(path.join(buildDir,decodeURIComponent(stripBase(target.pathname))));}catch{failures.push(`${page.url}: missing poster ${poster}`);}
   }
  }
  if($('main').text().includes('{{')||$.html().includes('raw HTML omitted'))failures.push(`${page.url}: unrendered content`);

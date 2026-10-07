@@ -48,4 +48,4 @@ Keep graphics quiet: circular paths represent exchange; the logo is the primary 
 
 ## Interaction
 
-Primary action: green button with dark text. Secondary action: underlined text link. Provide visible keyboard focus, a skip link and touch-friendly targets. Native details/summary controls work without JavaScript. Respect reduced-motion preferences. Download links have build-time fallbacks; JavaScript refreshes the latest release when available. Self-host fonts and migrated media.
+Primary action: green button with dark text and a Forest border to clarify its boundary on light backgrounds. Text contrast is 6.87:1 normally and 8.35:1 on hover; the Forest border contrasts 6.82:1 against Paper. Secondary action: underlined text link. Provide visible keyboard focus, a skip link and touch-friendly targets. Native details/summary controls work without JavaScript. Respect reduced-motion preferences. Download links have build-time fallbacks; JavaScript refreshes the latest release when available. Self-host fonts and migrated media.

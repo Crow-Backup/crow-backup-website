@@ -1,16 +1,16 @@
 {{ $nav := index hugo.Data.navigation .Language.Lang }}
 <header class="site-header">
  <div class="container header-inner">
-  <a class="brand" href="{{ $nav.home | relURL }}" aria-label="Crow Backup — {{ i18n "backHome" }}"><img src="{{ "/wp-content/uploads/2024/03/Crow-Logo_4K.png" | relURL }}" width="42" height="42" alt=""><span>crow<span class="brand-light">backup</span><span class="brand-dot">.</span></span></a>
+  <a class="brand" href="{{ $nav.home | partial "site-url.html" }}" aria-label="Crow Backup — {{ i18n "backHome" }}"><img src="{{ "/wp-content/uploads/2024/03/Crow-Logo_4K.png" | partial "site-url.html" }}" width="42" height="42" alt=""><span>crow<span class="brand-light">backup</span><span class="brand-dot">.</span></span></a>
   <button class="menu-toggle" aria-controls="navigation" aria-expanded="false">{{ i18n "menu" }} <span aria-hidden="true">☰</span></button>
   <nav id="navigation" class="navigation" aria-label="{{ i18n "menu" }}">
-   {{ range $nav.links }}<a href="{{ .url | relURL }}" {{ if eq $.RelPermalink (.url | relURL) }}aria-current="page"{{ end }}>{{ .label }}</a>{{ end }}
+   {{ range $nav.links }}<a href="{{ .url | partial "site-url.html" }}" {{ if eq $.RelPermalink (.url | partial "site-url.html") }}aria-current="page"{{ end }}>{{ .label }}</a>{{ end }}
    <div class="languages" aria-label="Language">
     {{ $current := . }}{{ range hugo.Sites }}{{ $destination := .Home.RelPermalink }}
     {{ $language := .Language.Lang }}{{ range $current.AllTranslations }}{{ if eq .Language.Lang $language }}{{ $destination = .RelPermalink }}{{ end }}{{ end }}
     <a href="{{ $destination }}" lang="{{ $language }}" aria-label="{{ if eq $language "de" }}Deutsch{{ else }}English{{ end }}" {{ if eq $current.Language.Lang $language }}aria-current="true"{{ end }}>{{ upper $language }}</a>{{ end }}
    </div>
-   <a class="button button-small" href="{{ $nav.download | relURL }}">{{ i18n "download" }} <span aria-hidden="true">↗</span></a>
+   <a class="button button-small" href="{{ $nav.download | partial "site-url.html" }}">{{ i18n "download" }} <span aria-hidden="true">↗</span></a>
   </nav>
  </div>
 </header>

@@ -5,14 +5,14 @@
   <p class="eyebrow"><span class="status-dot"></span>{{ i18n "free" }}</p>
   <h1>{{ if eq .Language.Lang "de" }}Deine Dateien.<br>Bei <span class="green-underline">Freund*innen.</span><span class="hero-subtitle">Kostenlos und verschlüsselt.</span>{{ else }}Your files.<br>With <span class="green-underline">a friend.</span><span class="hero-subtitle">Free and encrypted.</span>{{ end }}</h1>
   <p class="hero-description">{{ .Params.hero }}</p>
-  <div class="hero-actions"><a class="button" href="{{ $nav.download | relURL }}">Crow Backup {{ i18n "download" | lower }} <span aria-hidden="true">↗</span></a><a class="text-link" href="{{ if eq .Language.Lang "de" }}#Mehr{{ else }}#More{{ end }}">{{ i18n "together" }} <span aria-hidden="true">↓</span></a></div>
+  <div class="hero-actions"><a class="button" href="{{ $nav.download | partial "site-url.html" }}">Crow Backup {{ i18n "download" | lower }} <span aria-hidden="true">↗</span></a><a class="text-link" href="{{ if eq .Language.Lang "de" }}#Mehr{{ else }}#More{{ end }}">{{ i18n "together" }} <span aria-hidden="true">↓</span></a></div>
   <p class="platform-note">{{ .Params.platforms }}</p>
  </div>
  <div class="hero-art">
   <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
   <div class="friend-label friend-you"><span class="avatar avatar-one">{{ if eq .Language.Lang "de" }}Du{{ else }}You{{ end }}</span><span>{{ if eq .Language.Lang "de" }}Dein Computer{{ else }}Your computer{{ end }}</span></div>
   <div class="friend-label friend-them"><span class="avatar avatar-two">♡</span><span>{{ if eq .Language.Lang "de" }}Deine Freund*innen{{ else }}Your friend{{ end }}</span></div>
-  <figure class="app-preview monitor-preview"><div class="monitor-screen"><img src="{{ .Params.heroImage | relURL }}" alt="{{ if eq .Language.Lang "de" }}Die Backup-Übersicht von Crow Backup{{ else }}The Crow Backup overview{{ end }}" width="3104" height="2024" fetchpriority="high"></div><div class="monitor-chin" aria-hidden="true"><span>crowbackup</span><span class="monitor-power"></span></div></figure>
+  <figure class="app-preview monitor-preview"><div class="monitor-screen"><img src="{{ .Params.heroImage | partial "site-url.html" }}" alt="{{ if eq .Language.Lang "de" }}Die Backup-Übersicht von Crow Backup{{ else }}The Crow Backup overview{{ end }}" width="3104" height="2024" fetchpriority="high"></div><div class="monitor-chin" aria-hidden="true"><span>crowbackup</span><span class="monitor-power"></span></div></figure>
   <div class="encrypted-note"><span class="lock-icon" aria-hidden="true">⌑</span><div><strong>{{ if eq .Language.Lang "de" }}Nur du kannst sie lesen.{{ else }}Only you can read them.{{ end }}</strong><span>{{ if eq .Language.Lang "de" }}Ende-zu-Ende verschlüsselt{{ else }}End-to-end encrypted{{ end }}</span></div><span class="check-mark" aria-hidden="true">✓</span></div>
  </div>
 </section>

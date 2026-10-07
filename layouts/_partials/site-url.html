@@ -1,0 +1,6 @@
+{{- /* Root-relative source paths must include the deployment base path. */ -}}
+{{- $url := . -}}
+{{- if and (hasPrefix $url "/") (not (hasPrefix $url "//")) -}}
+  {{- $url = strings.TrimPrefix "/" $url | relURL -}}
+{{- end -}}
+{{- return $url -}}

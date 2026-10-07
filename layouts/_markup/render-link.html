@@ -1,1 +1,1 @@
-{{ $destination := .Destination }}{{ if hasPrefix $destination "/" }}{{ $destination = $destination | relURL }}{{ end }}<a href="{{ $destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
+{{ $destination := .Destination }}{{ if hasPrefix $destination "/" }}{{ $destination = $destination | partial "site-url.html" }}{{ end }}<a href="{{ $destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>

@@ -13,9 +13,10 @@
   <meta property="og:type" content="{{ if eq .Type "posts" }}article{{ else }}website{{ end }}">
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:image" content="{{ "/wp-content/uploads/2024/03/Crow-Logo_4K.png" | absURL }}">
-  <link rel="icon" href="{{ "/wp-content/uploads/2024/03/Crow-Logo_4K.png" | relURL }}">
-  <link rel="stylesheet" href="{{ "/css/site.css" | relURL }}">
-  <script src="{{ "/js/site.js" | relURL }}" defer></script>
+  <link rel="icon" href="{{ "/wp-content/uploads/2024/03/Crow-Logo_4K.png" | partial "site-url.html" }}">
+  <link rel="stylesheet" href="{{ "/css/fonts.css" | partial "site-url.html" }}">
+  <link rel="stylesheet" href="{{ "/css/site.css" | partial "site-url.html" }}">
+  <script src="{{ "/js/site.js" | partial "site-url.html" }}" defer></script>
 </head>
 <body class="{{ if .IsHome }}is-home{{ else }}is-page{{ end }} {{ .Layout }}">
   <a class="skip-link" href="#main">{{ if eq .Language.Lang "de" }}Zum Inhalt{{ else }}Skip to content{{ end }}</a>

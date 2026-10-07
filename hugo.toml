@@ -20,7 +20,7 @@ weight = 2
 
 [params]
 description = 'Encrypted backups with friends. Free software, shared storage.'
-contactEndpoint = ''
+contactEndpoint = 'https://formspree.io/f/maeqeovg'
 
 [markup.goldmark.renderer]
 unsafe = true

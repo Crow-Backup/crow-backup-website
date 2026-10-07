@@ -56,7 +56,7 @@ The workflow in [.github/workflows/github-pages.yml](.github/workflows/github-pa
 
 ## Contact form
 
-The migrated contact pages have a new form. Set `params.contactEndpoint` in `hugo.toml` to your form service's HTTPS POST endpoint to enable delivery. Until configured, the submit button is disabled and the page explains that delivery is pending. No messages are sent to an unconfigured destination. [Formspree's HTML forms](https://formspree.io/html/) are one compatible option; a custom service accepting the `name`, `email`, `subject` and `message` fields also works.
+The German and English contact forms submit directly to the configured Formspree endpoint, `https://formspree.io/f/maeqeovg`, using an HTML POST with the `name`, `email`, `subject` and `message` fields. Recipient settings and submission handling are managed in Formspree. The endpoint is set in `params.contactEndpoint` in `hugo.toml`; clearing it disables the submit button and displays a setup notice. End-to-end delivery must be verified with a real submission after deployment.
 
 ## Migration
 

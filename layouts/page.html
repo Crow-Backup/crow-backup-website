@@ -4,10 +4,10 @@
 <div class="container article-layout {{ if or (in .RelPermalink "whitepaper") (in .RelPermalink "privacy") (in .RelPermalink "datenschutz") (in .RelPermalink "release-notes") }}with-toc{{ end }}">
  {{ if or (in .RelPermalink "whitepaper") (in .RelPermalink "privacy") (in .RelPermalink "datenschutz") (in .RelPermalink "release-notes") }}<aside class="toc"><p class="eyebrow">{{ i18n "contents" }}</p>{{ .TableOfContents }}</aside>{{ end }}
  <article class="prose page-content">
- {{ with .Params.cover }}<figure class="article-cover"><img src="{{ . | relURL }}" alt="{{ $.Params.coverAlt }}" width="{{ $.Params.coverWidth }}" height="{{ $.Params.coverHeight }}" fetchpriority="high"></figure>{{ end }}
+ {{ with .Params.cover }}<figure class="article-cover"><img src="{{ . | partial "site-url.html" }}" alt="{{ $.Params.coverAlt }}" width="{{ $.Params.coverWidth }}" height="{{ $.Params.coverHeight }}" fetchpriority="high"></figure>{{ end }}
  {{ if or (eq .Params.sourceId 38) (eq .Params.sourceId 170) }}<div class="faq-controls"><button data-details="open">{{ i18n "openAll" }}</button><button data-details="close">{{ i18n "closeAll" }}</button></div>{{ end }}
  {{ .Content }}
- {{ if eq .Type "posts" }}<a class="text-link article-back" href="{{ $nav.blog | relURL }}">← {{ i18n "allPosts" }}</a>{{ end }}
+ {{ if eq .Type "posts" }}<a class="text-link article-back" href="{{ $nav.blog | partial "site-url.html" }}">← {{ i18n "allPosts" }}</a>{{ end }}
  </article>
 </div>
 {{ end }}

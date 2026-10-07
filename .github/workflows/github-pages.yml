@@ -56,6 +56,11 @@ jobs:
           hugo --gc --minify --destination validation-public --printPathWarnings --printI18nWarnings
           node scripts/check.mjs validation-public
 
+      - name: Verify GitHub project paths
+        run: |
+          hugo --gc --minify --baseURL "https://crow-backup.github.io/crow-backup-website/" --destination subpath-public
+          node scripts/check.mjs subpath-public
+
       - name: Set up Pages
         if: github.event_name != 'pull_request'
         id: pages
@@ -63,7 +68,11 @@ jobs:
 
       - name: Build publishing artifact
         if: github.event_name != 'pull_request'
-        run: hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+        env:
+          HUGO_RELATIVEURLS: 'true'
+        run: |
+          hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+          node scripts/check.mjs public
 
       - name: Upload Pages artifact
         if: github.event_name != 'pull_request'

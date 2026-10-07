@@ -89,6 +89,6 @@ Repository remote: `git@github.com:Crow-Backup/crow-backup-website.git`. Local b
 
 The workflow file alone does not enable repository Pages settings or change DNS. Report actual deployed status accurately. Do not claim a live deployment without a successful workflow/deployment check.
 
-Contact delivery is not configured: `params.contactEndpoint` is empty. The form is deliberately disabled until a real HTTPS POST endpoint is supplied. Ask for the service/endpoint if contact delivery is required. Do not fake success or silently transmit messages to the old WordPress backend.
+Contact forms are configured to POST to the user-supplied Formspree endpoint `https://formspree.io/f/maeqeovg` through `params.contactEndpoint`. Recipient settings are managed in Formspree. Clearing the endpoint disables the form. Do not claim end-to-end delivery without a successful submission check or silently transmit messages to the old WordPress backend.
 
 SEO recommendations in `reports/seo-proposals.md` are pending approval. They include shorter titles/descriptions and an archive indexing decision. Retain current indexing/metadata until the user approves specific changes.

@@ -1,8 +1,8 @@
 {{ $nav := index hugo.Data.navigation .Language.Lang }}
 <footer class="site-footer">
  <div class="container footer-top">
-  <div><a class="brand" href="{{ $nav.home | relURL }}"><img src="{{ "/wp-content/uploads/2024/03/Crow-Logo_4K.png" | relURL }}" width="42" height="42" alt=""><span>crow<span class="brand-light">backup</span><span class="brand-dot">.</span></span></a><p>{{ i18n "footerLine" }}<br>{{ i18n "made" }}</p></div>
-  <div class="footer-links">{{ range $nav.links }}<a href="{{ .url | relURL }}">{{ .label }}</a>{{ end }}<a href="{{ $nav.contact | relURL }}">{{ i18n "contact" }}</a><a href="{{ "/en/release-notes/" | relURL }}">Release Notes</a><a href="{{ $nav.privacy | relURL }}">{{ i18n "privacy" }}</a></div>
+  <div><a class="brand" href="{{ $nav.home | partial "site-url.html" }}"><img src="{{ "/wp-content/uploads/2024/03/Crow-Logo_4K.png" | partial "site-url.html" }}" width="42" height="42" alt=""><span>crow<span class="brand-light">backup</span><span class="brand-dot">.</span></span></a><p>{{ i18n "footerLine" }}<br>{{ i18n "made" }}</p></div>
+  <div class="footer-links">{{ range $nav.links }}<a href="{{ .url | partial "site-url.html" }}">{{ .label }}</a>{{ end }}<a href="{{ $nav.contact | partial "site-url.html" }}">{{ i18n "contact" }}</a><a href="{{ "/en/release-notes/" | partial "site-url.html" }}">Release Notes</a><a href="{{ $nav.privacy | partial "site-url.html" }}">{{ i18n "privacy" }}</a></div>
  </div>
  <div class="container footer-bottom"><span>© {{ now.Year }} Crow Backup</span><div><a href="https://twitter.com/crow_backup">X ↗</a><a href="https://www.facebook.com/crowbackup">Facebook ↗</a><a href="https://www.linkedin.com/company/crow-backup/">LinkedIn ↗</a></div><span>Lucerne, Switzerland <span class="swiss-mark" aria-hidden="true">+</span></span></div>
 </footer>
