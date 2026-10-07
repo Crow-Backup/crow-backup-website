@@ -23,6 +23,7 @@ Open `http://localhost:1414/`. Review the visual style guide at `/style-guide/` 
 - `content/de/` and `content/en/`: pages and articles. JSON front matter is followed by Markdown.
 - `layouts/`: Hugo templates and shortcodes.
 - `static/css/site.css`: design tokens, layout and responsive styles.
+- `static/css/fonts.css`: self-hosted font definitions. Hugo combines these with `site.css` into one minified stylesheet with a content hash; the heading and body Latin WOFF2 fonts are preloaded.
 - `data/navigation.json`: language-specific navigation and existing URLs.
 - `data/downloads.json`: working installer links; the browser refreshes them from the existing release service.
 - `static/wp-content/uploads/`: migrated media at their original paths.

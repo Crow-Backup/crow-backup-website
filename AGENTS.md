@@ -40,6 +40,7 @@ Spacing follows 8 px increments. Container maximum: 1280 px. Desktop gutters: 48
 - `layouts/_shortcodes/`: cards, grids, FAQs, profiles, buttons, downloads, contact form, media and guide specimens.
 - `layouts/_markup/`: accessible Markdown render hooks, including keyboard-scrollable tables.
 - `static/css/`, `static/js/`, `static/fonts/`: self-contained assets. Keep fonts local.
+- `layouts/_partials/styles.html`: combine font definitions and site styles into one minified, fingerprinted stylesheet. Preload only the critical Latin Manrope 700 and IBM Plex Sans 400 WOFF2 files, with font MIME type and anonymous CORS metadata.
 - `static/wp-content/uploads/`: migrated original images/video at preserved paths. WordPress featured images are separate from body content: all 14 posts have covers, and blog/archive cards use those original images. Keep the importer and checker aware of featured media.
 - `static/captions/`: German machine-generated video captions and English translations. These are drafts; review wording and timing against the source video before claiming media conformance.
 

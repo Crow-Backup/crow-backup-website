@@ -15,8 +15,7 @@
   <meta property="og:image" content="{{ "/wp-content/uploads/2024/03/Crow-Logo_4K.png" | absURL }}">
   {{ partial "software-schema.html" . }}
   <link rel="icon" href="{{ "/wp-content/uploads/2024/03/Crow-Logo_4K.png" | partial "site-url.html" }}">
-  <link rel="stylesheet" href="{{ "/css/fonts.css" | partial "site-url.html" }}">
-  <link rel="stylesheet" href="{{ "/css/site.css" | partial "site-url.html" }}">
+  {{ partial "styles.html" . }}
   <script src="{{ "/js/site.js" | partial "site-url.html" }}" defer></script>
 </head>
 <body class="{{ if .IsHome }}is-home{{ else }}is-page{{ end }} {{ .Layout }}">

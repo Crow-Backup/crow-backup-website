@@ -22,6 +22,11 @@ for(const url of manifest.sitemapPaths){
 }
 for(const page of manifest.pages){
  const $=await html(page.url);
+ if($('link[rel="stylesheet"]').length!==1)failures.push(`${page.url}: expected one bundled stylesheet`);
+ for(const element of $('link[rel="preload"][as="font"]').toArray()){
+  if($(element).attr('type')!=='font/woff2'||$(element).attr('crossorigin')!=='anonymous')failures.push(`${page.url}: incorrect font preload metadata`);
+ }
+ if($('link[rel="preload"][as="font"]').length!==2)failures.push(`${page.url}: expected two critical font preloads`);
  for(const element of $('link[rel="canonical"],link[rel="alternate"][hreflang]').toArray()){
   const value=$(element).attr('href');
   if(!value?.startsWith('https://'))failures.push(`${page.url}: production metadata must use HTTPS: ${value}`);
@@ -33,7 +38,7 @@ for(const page of manifest.pages){
   if(!llms.includes(`](./${page.url.slice(1)}index.md)`))failures.push(`${page.url}: missing llms.txt entry`);
   if(!$('[data-markdown]').length||!$('[data-edit-page]').attr('href')?.startsWith('https://github.com/Crow-Backup/crow-backup-website/edit/master/content/'))failures.push(`${page.url}: missing Markdown or GitHub edit link`);
  }catch{failures.push(`${page.url}: missing Markdown export`);}
- for(const element of $('a[href],img[src],video[src],video[poster],track[src],link[rel="stylesheet"],link[rel="icon"],script[src]').toArray()){
+ for(const element of $('a[href],img[src],video[src],video[poster],track[src],link[rel="stylesheet"],link[rel="preload"],link[rel="icon"],script[src]').toArray()){
   const value=$(element).attr('href')||$(element).attr('src');
   if(!value||/^(mailto:|tel:|https?:\/\/|data:)/.test(value))continue;
   const target=new URL(value,'https://crowbackup.ch'+basePath+page.url.slice(1));links++;

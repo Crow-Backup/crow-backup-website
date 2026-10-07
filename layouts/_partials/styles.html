@@ -1,0 +1,6 @@
+{{- /* Keep editable CSS sources separate; publish one cached stylesheet. */ -}}
+{{- $source := printf "%s\n%s" (readFile "static/css/fonts.css") (readFile "static/css/site.css") -}}
+{{- $styles := resources.FromString "css/site-bundle.css" $source | resources.Minify | resources.Fingerprint "sha256" -}}
+<link rel="preload" href="{{ "/fonts/manrope-latin-700.woff2" | partial "site-url.html" }}" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="{{ "/fonts/ibm-plex-sans-latin-400.woff2" | partial "site-url.html" }}" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous">
