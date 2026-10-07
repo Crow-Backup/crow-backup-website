@@ -63,7 +63,7 @@ The German and English contact forms submit directly to the configured Formspree
 
 `node scripts/llms.mjs [outputDirectory]` generates `llms.txt` and an `index.md` alongside every content-backed HTML page, including articles, archives and the style guide. It converts the rendered page to Markdown so FAQs, tables, shortcodes and article listings remain readable. Run it after Hugo and before the content checker; GitHub Actions does this automatically. Node is required for these exports, while Hugo alone still builds the HTML site.
 
-Each page links to its Markdown version and has an “Improve this page” button opening its matching German or English source file in GitHub's editor on `master`. Contributors without write access can propose changes through GitHub's fork and pull-request flow.
+Each page has matching understated text links to its Markdown version and to “Improve this page”, which opens its German or English source file in GitHub's editor on `master`. Contributors without write access can propose changes through GitHub's fork and pull-request flow.
 
 ## Migration
 

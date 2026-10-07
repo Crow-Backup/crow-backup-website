@@ -2,6 +2,6 @@
 {{- $sourcePath := replace .Path "\\" "/" -}}
 <div class="container page-tools">
   <a class="text-link" data-markdown href="{{ $.RelPermalink }}index.md">{{ if eq $.Language.Lang "de" }}Als Markdown lesen{{ else }}Read as Markdown{{ end }}</a>
-  <a class="button button-small" data-edit-page href="https://github.com/Crow-Backup/crow-backup-website/edit/master/content/{{ $.Language.Lang }}/{{ $sourcePath }}">{{ if eq $.Language.Lang "de" }}Diese Seite verbessern{{ else }}Improve this page{{ end }} <span aria-hidden="true">↗</span></a>
+  <a class="text-link" data-edit-page href="https://github.com/Crow-Backup/crow-backup-website/edit/master/content/{{ $.Language.Lang }}/{{ $sourcePath }}">{{ if eq $.Language.Lang "de" }}Diese Seite verbessern{{ else }}Improve this page{{ end }} <span aria-hidden="true">↗</span></a>
 </div>
 {{- end -}}
