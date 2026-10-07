@@ -13,7 +13,7 @@ The workflow follows the [official Hugo GitHub Pages guide](https://gohugo.io/ho
 
 The publishing build uses `actions/configure-pages`'s base URL, so the initial project URL and the custom domain both work. Generated `public/` output is not committed.
 
-Source links and assets use the `site-url.html` partial to remove the leading slash before Hugo's `relURL` adds the deployment base path. Do not pass `.RelPermalink` through this helper: it already includes that path. The publishing build enables `HUGO_RELATIVEURLS` so page links and assets also work at the project URL while a custom domain is configured in Pages settings. CI checks both root-domain and project-path builds and validates the final publishing artifact.
+Source links and assets use the `site-url.html` partial to remove the leading slash before Hugo's `relURL` adds the deployment base path. Do not pass `.RelPermalink` through this helper: it already includes that path. Keep `HUGO_RELATIVEURLS` disabled: Hugo's relative-URL rewrite duplicates the base path in project builds. The publishing build normalizes the Pages base URL to one trailing slash. CI checks both root-domain and project-path builds and validates the final publishing artifact.
 
 ## Connect crowbackup.ch
 

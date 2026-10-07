@@ -54,11 +54,13 @@ jobs:
       - name: Build and verify migrated content
         run: |
           hugo --gc --minify --destination validation-public --printPathWarnings --printI18nWarnings
+          node scripts/llms.mjs validation-public
           node scripts/check.mjs validation-public
 
       - name: Verify GitHub project paths
         run: |
           hugo --gc --minify --baseURL "https://crow-backup.github.io/crow-backup-website/" --destination subpath-public
+          node scripts/llms.mjs subpath-public
           node scripts/check.mjs subpath-public
 
       - name: Set up Pages
@@ -69,9 +71,11 @@ jobs:
       - name: Build publishing artifact
         if: github.event_name != 'pull_request'
         env:
-          HUGO_RELATIVEURLS: 'true'
+          HUGO_RELATIVEURLS: 'false'
+          PAGES_BASE_URL: ${{ steps.pages.outputs.base_url }}
         run: |
-          hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+          hugo --gc --minify --baseURL "${PAGES_BASE_URL%/}/"
+          node scripts/llms.mjs public
           node scripts/check.mjs public
 
       - name: Upload Pages artifact

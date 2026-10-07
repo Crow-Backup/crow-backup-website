@@ -53,6 +53,7 @@ Hugo **0.167.0** is pinned in `.github/workflows/github-pages.yml`. The site its
 npm ci
 hugo server --port 1414 --disableFastRender
 hugo --destination .tools/build --minify --printPathWarnings --printI18nWarnings
+node scripts/llms.mjs .tools/build
 node scripts/check.mjs
 node scripts/visual-check.mjs
 node scripts/audit.mjs
@@ -72,6 +73,7 @@ For GitHub project-path verification:
 
 ```powershell
 hugo --baseURL https://crow-backup.github.io/crow-backup-website/ --destination .tools/subpath-build
+node scripts/llms.mjs .tools/subpath-build
 node scripts/check.mjs .tools/subpath-build
 ```
 

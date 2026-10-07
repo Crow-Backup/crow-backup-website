@@ -9,6 +9,7 @@ const documents=new Map();
 const buildDir=process.argv[2]||'.tools/build';
 const root=load(await fs.readFile(path.join(buildDir,'index.html'),'utf8'));
 const basePath=new URL(root('link[rel="canonical"]').attr('href')).pathname;
+const llms=await fs.readFile(path.join(buildDir,'llms.txt'),'utf8');
 function stripBase(url){return basePath!=='/'&&url.startsWith(basePath)?'/'+url.slice(basePath.length):url;}
 async function html(url){
  if(documents.has(url))return documents.get(url);
@@ -20,6 +21,13 @@ for(const url of manifest.sitemapPaths){
 }
 for(const page of manifest.pages){
  const $=await html(page.url);
+ const markdownPath=path.join(buildDir,decodeURIComponent(page.url),'index.md');
+ try{
+  const markdown=await fs.readFile(markdownPath,'utf8');
+  if(!markdown.trim()||markdown.includes('{{<')||markdown.includes('{{%'))failures.push(`${page.url}: invalid Markdown export`);
+  if(!llms.includes(`](./${page.url.slice(1)}index.md)`))failures.push(`${page.url}: missing llms.txt entry`);
+  if(!$('[data-markdown]').length||!$('[data-edit-page]').attr('href')?.startsWith('https://github.com/Crow-Backup/crow-backup-website/edit/master/content/'))failures.push(`${page.url}: missing Markdown or GitHub edit link`);
+ }catch{failures.push(`${page.url}: missing Markdown export`);}
  for(const element of $('a[href],img[src],video[src],video[poster],track[src],link[rel="stylesheet"],link[rel="icon"],script[src]').toArray()){
   const value=$(element).attr('href')||$(element).attr('src');
   if(!value||/^(mailto:|tel:|https?:\/\/|data:)/.test(value))continue;

@@ -1,4 +1,4 @@
 {{ define "main" }}
 <header class="page-heading container"><p class="eyebrow">Crow Backup Blog</p><h1>{{ .Title }}</h1></header>
-<section class="container blog-grid">{{ $articles := .Params.articles }}{{ range (where site.RegularPages "Type" "posts").ByDate.Reverse }}{{ if in $articles .RelPermalink }}{{ partial "post-card.html" . }}{{ end }}{{ end }}</section>
+<section class="container blog-grid">{{ $articles := .Params.articles }}{{ $basePath := (urls.Parse site.BaseURL).Path }}{{ range (where site.RegularPages "Type" "posts").ByDate.Reverse }}{{ $sourcePath := printf "/%s" (strings.TrimPrefix $basePath .RelPermalink) }}{{ if in $articles $sourcePath }}{{ partial "post-card.html" . }}{{ end }}{{ end }}</section>
 {{ end }}

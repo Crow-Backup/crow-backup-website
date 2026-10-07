@@ -35,6 +35,7 @@ Onboarding cards support `icon="computer"`, `icon="connect"` and `icon="folder"`
 ```powershell
 npm ci
 hugo --destination .tools/build --minify --printPathWarnings --printI18nWarnings
+node scripts/llms.mjs .tools/build
 npm run check
 ```
 
@@ -57,6 +58,12 @@ The workflow in [.github/workflows/github-pages.yml](.github/workflows/github-pa
 ## Contact form
 
 The German and English contact forms submit directly to the configured Formspree endpoint, `https://formspree.io/f/maeqeovg`, using an HTML POST with the `name`, `email`, `subject` and `message` fields. Recipient settings and submission handling are managed in Formspree. The endpoint is set in `params.contactEndpoint` in `hugo.toml`; clearing it disables the submit button and displays a setup notice. End-to-end delivery must be verified with a real submission after deployment.
+
+## Markdown and contributions
+
+`node scripts/llms.mjs [outputDirectory]` generates `llms.txt` and an `index.md` alongside every content-backed HTML page, including articles, archives and the style guide. It converts the rendered page to Markdown so FAQs, tables, shortcodes and article listings remain readable. Run it after Hugo and before the content checker; GitHub Actions does this automatically. Node is required for these exports, while Hugo alone still builds the HTML site.
+
+Each page links to its Markdown version and has an “Improve this page” button opening its matching German or English source file in GitHub's editor on `master`. Contributors without write access can propose changes through GitHub's fork and pull-request flow.
 
 ## Migration
 

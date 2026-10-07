@@ -35,3 +35,5 @@ h1,h2,h3,h4,h5,h6{font-family:var(--heading);font-weight:700;line-height:1.2;let
 .page-heading h1{overflow-wrap:anywhere;hyphens:auto}
 @media(max-width:700px){.hero-art .orbit{width:70%;height:80%;left:15%;top:10%}.step-icon{width:64px;height:64px;margin-bottom:22px}.step-icon svg{width:34px;height:34px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+.page-tools{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:24px;padding-block:24px 48px}.page-tools .text-link{font-size:12px}
