@@ -15,6 +15,8 @@ The publishing build uses `actions/configure-pages`'s base URL, so the initial p
 
 Source links and assets use the `site-url.html` partial to remove the leading slash before Hugo's `relURL` adds the deployment base path. Do not pass `.RelPermalink` through this helper: it already includes that path. Keep `HUGO_RELATIVEURLS` disabled: Hugo's relative-URL rewrite duplicates the base path in project builds. The publishing build normalizes the Pages base URL to one trailing slash. CI checks both root-domain and project-path builds and validates the final publishing artifact.
 
+After Hugo builds, `scripts/portable-urls.mjs` converts local HTML links and assets to paths relative to each output page. This lets the same artifact work at the GitHub project URL and the configured custom domain without changing canonical metadata. Markdown exports are generated after that conversion.
+
 ## Connect crowbackup.ch
 
 Configure the domain in GitHub Pages settings before changing the website's DNS. See [GitHub's official custom-domain instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).
