@@ -21,6 +21,28 @@ Source links and assets use the `site-url.html` partial to remove the leading sl
 
 After Hugo builds, `scripts/portable-urls.mjs` converts local HTML links and assets to paths relative to each output page. This lets the same artifact work at the GitHub project URL and the configured custom domain without changing canonical metadata. Markdown exports are generated after that conversion.
 
+## Trigger publishing remotely
+
+The workflow already accepts `workflow_dispatch`. With GitHub CLI authenticated to an account that can run this repository's workflows:
+
+```powershell
+gh workflow run github-pages.yml --repo Crow-Backup/crow-backup-website --ref master
+gh run list --repo Crow-Backup/crow-backup-website --workflow github-pages.yml --limit 5
+```
+
+From a release workflow in the code repository, run the same command after the generated documentation has been committed and pushed (or its release artifact has been published):
+
+```yaml
+- name: Rebuild website after release
+  env:
+    GH_TOKEN: ${{ secrets.WEBSITE_ACTIONS_TOKEN }}
+  run: gh workflow run github-pages.yml --repo Crow-Backup/crow-backup-website --ref master
+```
+
+Set `WEBSITE_ACTIONS_TOKEN` in the source repository to a fine-grained token with access to `Crow-Backup/crow-backup-website` and **Actions: write**, or use a GitHub App installation token with that permission. The source repository's default `GITHUB_TOKEN` is scoped to that repository and does not grant access to the website repository. Reading documentation from a private source repository requires separate read access in the website build.
+
+The REST alternative is `POST /repos/Crow-Backup/crow-backup-website/actions/workflows/github-pages.yml/dispatches` with JSON body `{"ref":"master"}` and bearer authentication. See [GitHub's workflow dispatch API](https://docs.github.com/en/rest/actions/workflows#create-a-workflow-dispatch-event). Dispatch starts the workflow; check its build and deployment results before treating the website as updated.
+
 ## Connect crowbackup.ch
 
 Configure the domain in GitHub Pages settings before changing the website's DNS. See [GitHub's official custom-domain instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).

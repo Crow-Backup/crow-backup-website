@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-07T17:48:51.217Z",
+  "date": "2026-10-07T19:38:43.055Z",
   "standard": "WCAG 2.2 A/AA automated checks plus best practices",
   "pages": [
     {
@@ -906,7 +906,7 @@
         {
           "id": "color-contrast",
           "help": "Elements must meet minimum color contrast ratio thresholds",
-          "nodes": 2
+          "nodes": 1
         }
       ]
     },
@@ -1242,7 +1242,7 @@
         {
           "id": "color-contrast",
           "help": "Elements must meet minimum color contrast ratio thresholds",
-          "nodes": 2
+          "nodes": 1
         }
       ]
     },
