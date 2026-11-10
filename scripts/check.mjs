@@ -80,6 +80,12 @@ for(const [url,language,download] of [['/','de-CH','herunterladen/'],['/en/','en
   }
  }catch(error){failures.push(`${url}: invalid software structured data: ${error.message}`);}
 }
+for(const file of ['404.html','en/404.html']){
+ const $=load(await fs.readFile(path.join(buildDir,file),'utf8'));
+ for(const value of [$('script[src]').attr('src'),$('link[rel="stylesheet"]').attr('href'),$('.button[href]').attr('href')]){
+  if(!value?.startsWith('/'))failures.push(`${file}: 404 page must keep root-relative paths because it is served at any depth: ${value}`);
+ }
+}
 for(const url of ['/herunterladen/','/en/download/']){const $=await html(url);if($('[data-installer]').length!==4)failures.push(`${url}: installer links missing`);}
 for(const url of ['/team/','/en/en-team/']){const $=await html(url);if($('.profile').length!==4)failures.push(`${url}: team profiles missing`);}
 for(const url of ['/faq/','/en/en-faq/']){const $=await html(url);if($('details').length<10)failures.push(`${url}: FAQs missing`);}

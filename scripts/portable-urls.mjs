@@ -11,6 +11,8 @@ async function visit(directory){
   const file=path.join(directory,entry.name);
   if(entry.isDirectory()){await visit(file);continue;}
   if(!entry.name.endsWith('.html'))continue;
+  // GitHub Pages serves 404.html for any missing path, so its links must stay root-relative.
+  if(entry.name==='404.html')continue;
   const $=load(await fs.readFile(file,'utf8'));
   const from=path.relative(buildDir,directory).split(path.sep).join('/');
   for(const element of $('[href],[src],[poster],[action]').toArray()){

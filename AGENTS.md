@@ -47,7 +47,7 @@ Spacing follows 8 px increments. Container maximum: 1280 px. Desktop gutters: 48
 - `static/wp-content/uploads/`: migrated original images/video at preserved paths. WordPress featured images are separate from body content: all 14 posts have covers, and blog/archive cards use those original images. Keep the importer and checker aware of featured media.
 - `static/captions/`: German machine-generated video captions and English translations. These are drafts; review wording and timing against the source video before claiming media conformance.
 
-Use `relURL` for root-relative links/assets in templates and render hooks. Preserve fragment-only URLs as fragments. Test both the root domain and the GitHub project subpath. Do not prepend the base path twice to `.RelPermalink`.
+The publishing job runs `scripts/portable-urls.mjs`, which rewrites root-relative paths into document-relative ones so one build serves both the custom domain and the project URL; it skips `404.html` because GitHub Pages serves that file at any depth, and `check.mjs` enforces that. Use `relURL` for root-relative links/assets in templates and render hooks. Preserve fragment-only URLs as fragments. Test both the root domain and the GitHub project subpath. Do not prepend the base path twice to `.RelPermalink`.
 
 Hugo 0.167 uses `locale`, `label`, `build`, `hugo.Data` and `hugo.Sites`. Do not reintroduce the obsolete `languageCode`, `languageName`, `_build`, `site.Data` or `site.Sites` forms. Markdown renderer `unsafe` is enabled to render trusted nested shortcode HTML; do not copy executable WordPress scripts into content.
 
