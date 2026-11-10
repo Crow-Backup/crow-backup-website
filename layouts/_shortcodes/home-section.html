@@ -1,0 +1,4 @@
+{{ $kind := .Get "kind" }}
+<section class="home-section home-{{ $kind }}">
+{{ .Inner | markdownify }}
+</section>

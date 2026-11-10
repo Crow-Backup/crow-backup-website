@@ -15,6 +15,8 @@
 
 {{< anchor "Mehr" >}}
 
+{{< home-section kind="onboarding" >}}
+
 ## Euer erstes Backup, Schritt für Schritt
 
 {{< grid >}}
@@ -39,7 +41,11 @@ Wähle einen Ordner und deine\*n Freund\*in als Ziel und starte das Backup. Lass
 
 Wenn alles funktioniert, füge die weiteren Ordner hinzu, die du schützen möchtest. Ein grosses erstes Backup kann je nach Verbindung und Datenmenge länger dauern. Weitere Backups erstellt Crow Backup automatisch, wenn dein\*e Freund\*in erreichbar ist.
 
+{{< /home-section >}}
+
 {{< anchor "freundin-einladen" >}}
+
+{{< home-section kind="invitation" >}}
 
 ## Hast du jemanden im Kopf? Startet gemeinsam.
 
@@ -52,6 +58,10 @@ Frag jemanden aus deinem Freundeskreis oder deiner Familie, der freien Speicherp
 Du kannst Crow Backup schon jetzt installieren und deine\*n Freund\*in direkt in der App einladen. Für das erste Backup braucht ihr eine bestätigte Freundschaft und eine Verbindung zueinander.
 
 {{< button href="/herunterladen/" label="Crow Backup herunterladen" >}}
+
+{{< /home-section >}}
+
+{{< home-section kind="questions" >}}
 
 ## Bevor ihr startet
 
@@ -82,6 +92,10 @@ Ihr stellt den Speicherplatz zur Verfügung. Die Entwicklung und die laufenden K
 {{< faq "Wo ist Crow Backup verfügbar?" >}}
 Crow Backup kann sich weltweit über das Internet verbinden. Aus rechtlichen Gründen ist es derzeit für den Schweizer Markt bestimmt. Weitere Informationen findest du in den [FAQ](/faq/).
 {{< /faq >}}
+
+{{< /home-section >}}
+
+{{< home-section kind="benefits" >}}
 
 ## Warum Backups bei Freund\*innen?
 
@@ -131,13 +145,19 @@ Crow Backup kann sich weltweit über das Internet verbinden. Aus rechtlichen Gr�
 {{< /card >}}
 {{< /grid >}}
 
+{{< /home-section >}}
+
+{{< home-section kind="product" >}}
+
 ## So sieht Crow Backup aus
 
 Entdecke die Ansichten für Anmeldung, Backups und Freundschaften.
 
--   ![Crow Backup Screenshot: Einloggen](/wp-content/uploads/2024/03/Crow-Backup-Einloggen.png "Crow Backup Einloggen")
--   ![Crow Backup Screenshot: Backup Übersicht](/wp-content/uploads/2024/03/Crow-Backup-Backup-Uebersicht.png "Crow-Backup-Backup-Uebersicht")
--   ![Crow Backup Screenshot: Freundschafts-Uebersicht](/wp-content/uploads/2024/03/Crow-Backup-Freundschafts-Uebersicht.png "Crow-Backup-Freundschafts-Uebersicht")
+<div class="product-gallery">
+{{< product-shot src="/wp-content/uploads/2024/03/Crow-Backup-Einloggen.png" alt="Crow Backup Screenshot: Einloggen" caption="Anmeldung" >}}
+{{< product-shot src="/wp-content/uploads/2024/03/Crow-Backup-Backup-Uebersicht.png" alt="Crow Backup Screenshot: Backup Übersicht" caption="Backup-Übersicht" primary="true" >}}
+{{< product-shot src="/wp-content/uploads/2024/03/Crow-Backup-Freundschafts-Uebersicht.png" alt="Crow Backup Screenshot: Freundschafts-Uebersicht" caption="Freundschaften" >}}
+</div>
 
 ### Was ist Crow Backup?
 
@@ -155,11 +175,19 @@ Crow Backup, Cloud-Backups und lokale Backups im Vergleich
 Bewahre eine weitere unabhängige Kopie wichtiger Dateien auf. Bei Crow Backup hängt die Wiederherstellung davon ab, dass dein Backup noch vorhanden und dein\*e Freund\*in erreichbar ist.
 {{< /faq >}}
 
+{{< /home-section >}}
+
+{{< home-section kind="vision" >}}
+
 ## Warum wir Crow Backup entwickeln
 
 > Unsere Vision ist es, mit dem weltweit ungenutzten Speicherplatz auf Privatcomputern eine sichere Backuplösung anzubieten. Gratis. Für alle.
 
 Das ist unsere langfristige Vision. Crow Backup ist derzeit für den Schweizer Markt bestimmt. Mehr dazu in den [FAQ](/faq/).
+
+{{< /home-section >}}
+
+{{< home-section kind="links" >}}
 
 ## Mehr erfahren
 
@@ -167,9 +195,15 @@ Das ist unsere langfristige Vision. Crow Backup ist derzeit für den Schweizer M
 -   [Whitepaper](/whitepaper/)
 -   [Team](/team/)
 
+{{< /home-section >}}
+
+{{< home-section kind="closing" >}}
+
 ## Starte dein erstes Backup mit Freund\*innen
 
 Installiere Crow Backup, lade jemanden ein und probiert gemeinsam ein Backup mit einem kleinen Ordner aus.
 
 {{< button href="/herunterladen/" label="Crow Backup herunterladen" >}}
-{{< button href="#freundin-einladen" label="Freund*in einladen" >}}
+[Freund*in einladen](#freundin-einladen)
+
+{{< /home-section >}}

@@ -15,6 +15,8 @@
 
 {{< anchor "More" >}}
 
+{{< home-section kind="onboarding" >}}
+
 ## Your first backup, together
 
 {{< grid >}}
@@ -39,7 +41,11 @@ Choose a folder and your friend as the destination, then start the backup. Keep 
 
 Once you have tried it, add the folders you want to protect. A large first backup can take longer, depending on your connection and the amount of data. Crow Backup creates subsequent backups automatically when your friend is reachable.
 
+{{< /home-section >}}
+
 {{< anchor "invite-a-friend" >}}
+
+{{< home-section kind="invitation" >}}
 
 ## Have someone in mind? Start together.
 
@@ -52,6 +58,10 @@ Choose a friend or family member with spare disk space. Agree on how much space 
 You can install Crow Backup now and invite your friend from the app. Your first backup needs an accepted friendship and an available connection.
 
 {{< button href="/en/download/" label="Download Crow Backup" >}}
+
+{{< /home-section >}}
+
+{{< home-section kind="questions" >}}
 
 ## Before you start
 
@@ -82,6 +92,10 @@ You and your friends provide the storage. Development and running costs are supp
 {{< faq "Where is Crow Backup available?" >}}
 Crow Backup can connect over the internet worldwide. For legal reasons, it is currently intended for the Swiss market, as explained in our [FAQ](/en/en-faq/).
 {{< /faq >}}
+
+{{< /home-section >}}
+
+{{< home-section kind="benefits" >}}
 
 ## Why back up with a friend?
 
@@ -131,13 +145,19 @@ Crow Backup can connect over the internet worldwide. For legal reasons, it is cu
 {{< /card >}}
 {{< /grid >}}
 
+{{< /home-section >}}
+
+{{< home-section kind="product" >}}
+
 ## See Crow Backup in action
 
 Explore the login, backup and friendship screens.
 
--   ![Crow Backup Screenshot: Login](/wp-content/uploads/2024/03/Crow-Backup-Login.png "Crow Backup Login")
--   ![Crow Backup Screenshot: Backup Overview](/wp-content/uploads/2024/03/Crow-Backup-Backup-Overview.png "Crow-Backup-Backup-Overview")
--   ![Crow Backup Screenshot: Friendship-Overview](/wp-content/uploads/2024/03/Crow-Backup-Friendship-Overview.png "Crow Backup Friendship-Overview")
+<div class="product-gallery">
+{{< product-shot src="/wp-content/uploads/2024/03/Crow-Backup-Login.png" alt="Crow Backup Screenshot: Login" caption="Login" >}}
+{{< product-shot src="/wp-content/uploads/2024/03/Crow-Backup-Backup-Overview.png" alt="Crow Backup Screenshot: Backup Overview" caption="Backup overview" primary="true" >}}
+{{< product-shot src="/wp-content/uploads/2024/03/Crow-Backup-Friendship-Overview.png" alt="Crow Backup Screenshot: Friendship-Overview" caption="Friendships" >}}
+</div>
 
 ### What is Crow Backup? (Video in German)
 
@@ -155,11 +175,19 @@ How Crow Backup, cloud backup and local backup compare
 Keep another independent copy of important files. With Crow Backup, recovery depends on your backup still being available and your friend being reachable.
 {{< /faq >}}
 
+{{< /home-section >}}
+
+{{< home-section kind="vision" >}}
+
 ## Why we built Crow Backup
 
 > Our vision is to offer a secure backup solution using the world’s unused storage space on private computers. Free of charge. For everyone.
 
 That is our long-term vision. Crow Backup is currently intended for the Swiss market, as explained in our [FAQ](/en/en-faq/).
+
+{{< /home-section >}}
+
+{{< home-section kind="links" >}}
 
 ## Learn more
 
@@ -167,9 +195,15 @@ That is our long-term vision. Crow Backup is currently intended for the Swiss ma
 -   [Whitepaper](/en/en-whitepaper/)
 -   [Team](/en/en-team/)
 
+{{< /home-section >}}
+
+{{< home-section kind="closing" >}}
+
 ## Start your first backup with a friend
 
 Install Crow Backup, invite someone you know, and try backing up a small folder together.
 
 {{< button href="/en/download/" label="Download Crow Backup" >}}
-{{< button href="#invite-a-friend" label="Invite a friend" >}}
+[Invite a friend](#invite-a-friend)
+
+{{< /home-section >}}

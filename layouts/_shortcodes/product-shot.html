@@ -1,0 +1,4 @@
+<figure class="product-shot{{ if eq (.Get "primary") "true" }} product-shot-primary{{ end }}">
+ <a href="{{ .Get "src" | partial "site-url.html" }}" data-image-zoom aria-label="{{ if eq .Page.Language.Lang "de" }}Bild vergrössern{{ else }}Enlarge image{{ end }}: {{ .Get "alt" }}"><img src="{{ .Get "src" | partial "site-url.html" }}" alt="{{ .Get "alt" }}" loading="lazy" decoding="async"></a>
+ <figcaption>{{ .Get "caption" }}</figcaption>
+</figure>

@@ -79,3 +79,77 @@ Drei Krähen laufen frei direkt über dem Footer und überlappen den oberen Inha
 Sie halten gelegentlich an, picken zweimal oder rufen zweimal nacheinander «kraa». Der Ruf bleibt rein visuell, ohne Ton. Kommt der Mauszeiger näher oder wird eine Krähe angetippt, läuft sie deutlich schneller weg. Klicks gehen durch die dekorative Ebene hindurch zum Seiteninhalt. Die dunkleren Fussspuren verblassen nach acht Sekunden.
 
 Bei reduzierter Bewegung bleiben die drei Krähen stehen. In ausgeblendeten Browser-Tabs pausiert die Bewegung ebenfalls.
+
+## Seiten komponieren
+
+Ein gemeinsames Raster verbindet die Abschnitte. Lesetext steht in einer schmalen Spalte mit ungefähr 60–70 Zeichen pro Zeile; Produktbilder dürfen mehr Raum einnehmen. Unterschiedliche Aufgaben erhalten unterschiedliche Formen. Die folgenden Beispiele verwenden dieselben Layouts wie die Startseite.
+
+### Eine offene Schrittfolge
+
+Schritte stehen auf der Papierfläche. Gemeinsame Grundlinien, feine Trennlinien und die bestehenden SVG-Kacheln verbinden sie zu einer Folge. Eine zusätzliche weisse Karte ist hier nicht nötig.
+
+{{< home-section kind="onboarding" >}}
+{{< grid >}}
+{{< card icon="computer" >}}
+### 1. Installieren
+
+Beide Personen installieren Crow Backup und erstellen ein Konto.
+{{< /card >}}
+{{< card icon="connect" >}}
+### 2. Verbinden
+
+Eine Freundschaft bestätigen und Speicherplatz vereinbaren.
+{{< /card >}}
+{{< card icon="folder" >}}
+### 3. Ausprobieren
+
+Einen kleinen Ordner sichern und eine Datei wiederherstellen.
+{{< /card >}}
+{{< /grid >}}
+{{< /home-section >}}
+
+### Text und Bild
+
+Wiederkehrende Spalten verbinden Erklärung und Anschauung. Bilder stehen direkt auf der Seite. Die Anordnung bleibt über mehrere Abschnitte gleich, damit der Blick einen verlässlichen Weg findet.
+
+{{< home-section kind="benefits" >}}
+{{< grid >}}
+{{< card >}}
+### Vor der Übertragung verschlüsselt
+
+Die Erklärung steht links. Das zugehörige Originalbild erhält rechts Platz, ohne einen zweiten Rahmen um seine Fläche.
+{{< /card >}}
+{{< card >}}
+![Illustration zur Verschlüsselung](/wp-content/uploads/2024/03/Crow-Backup-Encrypted-snapshot.gif)
+{{< /card >}}
+{{< /grid >}}
+{{< /home-section >}}
+
+### Zusammenhängende Fragen
+
+Eine Liste mit feinen Linien macht die Fragen als zusammengehörig erkennbar. Die gesamte Frage bleibt per Tastatur und mit grosszügiger Klickfläche bedienbar.
+
+{{< home-section kind="questions" >}}
+{{< faq "Wann verwenden wir Trennlinien?" >}}
+Für zusammengehörige Fragen, Folgen und wiederkehrende Zeilen. Die Linie ordnet, ohne jeden Eintrag als eigene Karte hervorzuheben.
+{{< /faq >}}
+{{< faq "Wann verwenden wir eine Fläche?" >}}
+Sage hebt einen nützlichen Einschub hervor, etwa die Nachricht zum Weitergeben. Weiss bleibt für Formulare und eigenständige Karten verfügbar. Zitate können allein durch Schrift und Abstand wirken.
+{{< /faq >}}
+{{< /home-section >}}
+
+### Das Produkt lesbar zeigen
+
+Eine grosse Hauptansicht zeigt die eigentliche Arbeit mit Crow Backup. Kleinere Ansichten ergänzen sie. Bildunterschriften erklären die Rolle jeder Ansicht; die Bilder behalten ihre vollständigen Proportionen.
+
+<div class="product-gallery">
+{{< product-shot src="/wp-content/uploads/2024/03/Crow-Backup-Backup-Uebersicht.png" alt="Backup-Übersicht von Crow Backup" caption="Backup-Übersicht — die Hauptansicht" primary="true" >}}
+{{< product-shot src="/wp-content/uploads/2024/03/Crow-Backup-Einloggen.png" alt="Anmeldung bei Crow Backup" caption="Anmeldung" >}}
+{{< product-shot src="/wp-content/uploads/2024/03/Crow-Backup-Freundschafts-Uebersicht.png" alt="Freundschaften in Crow Backup" caption="Freundschaften" >}}
+</div>
+
+### Gewichtung und Markencharakter
+
+Grosse Abschnittstitel markieren die Hauptthemen. Ergänzende Inhalte erhalten kleinere Titel. Dunkle Tinte trägt Erklärungen; gedämpfte Schrift ist für Bildunterschriften und Nebeninformationen vorgesehen. Engere Abstände verbinden Inhalte, grössere Abstände trennen Themen.
+
+Krähen erscheinen gezielt, etwa bei Team, Unterstützung und am Footer. Sie werden nicht jedem Abschnitt als wiederkehrendes Schmuckelement zugeordnet. Das bestehende Grün, echte Produktansichten und die Originalillustrationen tragen die übrige Seite.

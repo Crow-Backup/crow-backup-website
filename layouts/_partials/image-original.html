@@ -1,0 +1,6 @@
+{{- $source := . -}}
+{{- $original := replaceRE `-[0-9]+x[0-9]+(\.[^.]+)$` "$1" $source -}}
+{{- if and (hasPrefix $source "/wp-content/uploads/") (fileExists (printf "static%s" $original)) -}}
+ {{- $source = $original -}}
+{{- end -}}
+{{- return ($source | partial "site-url.html") -}}

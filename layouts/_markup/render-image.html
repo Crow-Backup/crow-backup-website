@@ -1,1 +1,1 @@
-<img src="{{ .Destination | partial "site-url.html" | safeURL }}" alt="{{ .Text }}" {{ with .Title }}title="{{ . }}"{{ end }} loading="lazy" decoding="async">
+<img data-zoom-src="{{ .Destination | partial "image-original.html" | safeURL }}" src="{{ .Destination | partial "site-url.html" | safeURL }}" alt="{{ .Text }}" {{ with .Title }}title="{{ . }}"{{ end }} loading="lazy" decoding="async">

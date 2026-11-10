@@ -79,3 +79,25 @@ Cursor proximity or a pointer press sends a crow away at 4.2 times its walking s
 Reduced-motion users see three static birds; background tabs stop both JavaScript movement and CSS animation. There is no pause button or saved pause preference. Without JavaScript, the habitat remains hidden.
 
 The German team page uses the Team SVG beside its heading. The German development-support page uses `layouts/donate.html`: copy and donation buttons form the left column, with a large Donate crow (up to 400 px) on the right. Below 820 px these stack, with the crow below the copy (up to 280 px). Both reuse `headingIcon` front matter and `crow-page-icon.html`. The icons are decorative beside the visible page title, keep their hover/reduced-motion behavior, and receive page-specific mask IDs.
+
+## Editorial homepage compositions
+
+Below the unchanged hero and trust strip, the homepage uses `home-section` shortcodes with explicit composition kinds. Preserve the existing section order and all content. `product-shot` renders screenshots with visible captions and base-path-aware asset URLs. The visual guide includes working examples of these same components.
+
+- Onboarding: open columns with a shared top rule and the approved icon tiles; on mobile each icon sits beside its instruction.
+- Invitation: narrow introduction beside a Sage message inset and its action; stack in document order on mobile.
+- Questions: continuous native accordion list separated by rules, without individual card surfaces.
+- Benefits: consistent text/media columns on Paper, without nested frames. Keep the original illustrations and avoid decorative alternation.
+- Product: a large backup overview followed by smaller login/friendship views with captions. Supporting video and comparison share the media alignment.
+- Vision: an unboxed typographic quotation; smaller headings distinguish vision and additional links from main topics.
+- Closing: compact action group with one primary download button and an underlined invitation link.
+
+Use Ink for explanatory copy and Muted for secondary details. Reading columns target roughly 60–70 characters (680 px); media can reach 960 px. Keep the 1280 px container, existing responsive gutters and 8 px spacing rhythm. Use tighter spacing within topics and larger gaps between topics. Sage marks a useful inset; White remains available for forms and independent cards. Keep established corner radii where containers serve a purpose. Rules organise sequences and lists. Use crow artwork selectively rather than beside every heading.
+
+These treatments are scoped to `.home-section`; existing cards and FAQs on other pages retain their presentation. Hero styling, metadata and section order are unchanged.
+
+## Image zoom
+
+Homepage/style-guide product shots link directly to their source files, including without JavaScript. The shared script enhances these links and unlinked raster images with descriptive alt text inside `.prose` into an image viewer. Existing image links, decorative images and SVG artwork retain their original behavior. Markdown images expose an original-size source when a matching local WordPress upload exists without the thumbnail dimensions suffix.
+
+Visible German/English zoom labels identify the action. A native modal dialog fits the image to the available window; an original-size toggle allows scrolling at source resolution. Close and Escape restore focus to the opener, Tab stays within the viewer, and the scrollable image region is keyboard accessible. No animation is added. Verify with `node scripts/image-zoom-check.mjs` against the local preview.
