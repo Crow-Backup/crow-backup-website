@@ -2,9 +2,8 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {load} from 'cheerio';
 
-const manifest=JSON.parse(await fs.readFile('migration/manifest.json','utf8'));
-const audit=JSON.parse(await fs.readFile('migration/content-audit.json','utf8'));
-const failures=[];let links=0,paragraphs=0;
+const routes=JSON.parse(await fs.readFile('data/routes.json','utf8'));
+const failures=[];let links=0;
 const documents=new Map();
 const buildDir=process.argv[2]||'.tools/build';
 const root=load(await fs.readFile(path.join(buildDir,'index.html'),'utf8'));
@@ -17,10 +16,10 @@ async function html(url){
  const file=path.join(buildDir,decodeURIComponent(stripBase(url)),url.endsWith('/')?'index.html':'');
  const $=load(await fs.readFile(file,'utf8'));documents.set(url,$);return $;
 }
-for(const url of manifest.sitemapPaths){
+for(const url of routes.routes){
  try{const $=await html(url);if(!$('h1').length)failures.push(`${url}: missing heading`);}catch{failures.push(`${url}: missing migrated route`);}
 }
-for(const page of manifest.pages){
+for(const page of routes.pages){
  const $=await html(page.url);
  if($('link[rel="stylesheet"]').length!==1)failures.push(`${page.url}: expected one bundled stylesheet`);
  for(const element of $('link[rel="preload"][as="font"]').toArray()){
@@ -62,16 +61,8 @@ for(const page of manifest.pages){
  if($('main').text().includes('{{')||$.html().includes('raw HTML omitted'))failures.push(`${page.url}: unrendered content`);
  if(page.type==='archive')continue;
  if(page.type==='post'&&!$('.article-cover img').length)failures.push(`${page.url}: featured image missing`);
- const source=audit.find(x=>x.sourceId===page.sourceId);
- const normalize=text=>text.normalize('NFKC').replace(/[^\p{L}\p{N}]+/gu,'').toLowerCase();
- const rendered=normalize($('main').text());
- // Every original prose paragraph must survive in the rendered page.
- for(const paragraph of source.paragraphs){
-  const text=normalize(paragraph);if(text.length<20)continue;paragraphs++;
-  if(!rendered.includes(text))failures.push(`${page.url}: lost paragraph: ${paragraph.slice(0,95)}`);
- }
 }
-for(const asset of manifest.assets){try{await fs.access(path.join(buildDir,decodeURIComponent(asset)));}catch{failures.push(`Missing migrated media: ${asset}`);}}
+for(const asset of routes.assets){try{await fs.access(path.join(buildDir,decodeURIComponent(asset)));}catch{failures.push(`Missing media: ${asset}`);}}
 for(const [url,language,download] of [['/','de-CH','herunterladen/'],['/en/','en','en/download/']]){
  const $=await html(url);
  try{
@@ -94,4 +85,4 @@ for(const url of ['/team/','/en/en-team/']){const $=await html(url);if($('.profi
 for(const url of ['/faq/','/en/en-faq/']){const $=await html(url);if($('details').length<10)failures.push(`${url}: FAQs missing`);}
 for(const url of ['/blog/','/en/en-blog/']){const $=await html(url);if($('.post-cover img').length!==7)failures.push(`${url}: expected seven featured images`);}
 if(failures.length){console.error(failures.join('\n'));process.exitCode=1;}
-else console.log(`PASS: ${manifest.sitemapPaths.length} source URLs, ${paragraphs} original paragraphs, ${links} internal references, ${manifest.assets.length} migrated media, bilingual downloads, FAQs and team profiles.`);
+else console.log(`PASS: ${routes.routes.length} routes, ${links} internal references, ${routes.assets.length} media files, bilingual downloads, FAQs and team profiles.`);

@@ -1,7 +1,7 @@
 import {chromium} from '@playwright/test';
 import fs from 'node:fs/promises';
 await fs.mkdir('.tools/screenshots',{recursive:true});
-const browser=await chromium.launch({channel:'msedge',headless:true});
+const browser=await chromium.launch({channel:process.env.BROWSER_CHANNEL||'msedge',headless:true});
 const issues=[];
 for(const viewport of [{width:1440,height:1000},{width:390,height:844}]){
  const context=await browser.newContext({viewport});const page=await context.newPage();

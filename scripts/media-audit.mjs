@@ -1,11 +1,12 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {load} from 'cheerio';
-const manifest=JSON.parse(await fs.readFile('migration/manifest.json','utf8'));
+const manifest=JSON.parse(await fs.readFile('data/routes.json','utf8'));
 const normalize=value=>decodeURIComponent(new URL(value,'https://crowbackup.ch').pathname).replace(/-\d+x\d+(?=\.[^.]+$)/,'');
 const results=[];
 await fs.mkdir('.migration-source/live',{recursive:true});
 for(const entry of manifest.pages){
+ if(!entry.sourceId)continue; // Pages added after the migration have no WordPress source.
  const sourceFile=path.join('.migration-source/live',entry.url.replaceAll('/','_')+'.html');
  let source;try{source=await fs.readFile(sourceFile,'utf8');}catch{const response=await fetch('https://crowbackup.ch'+entry.url);if(!response.ok)throw Error(`${entry.url}: ${response.status}`);source=await response.text();await fs.writeFile(sourceFile,source);}
  const live=load(source);const built=load(await fs.readFile(path.join('.tools/build',entry.url,'index.html'),'utf8'));

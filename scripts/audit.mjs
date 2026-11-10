@@ -3,8 +3,8 @@ import path from 'node:path';
 import {load} from 'cheerio';
 import {chromium} from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
-const manifest=JSON.parse(await fs.readFile('migration/manifest.json','utf8'));
-const browser=await chromium.launch({channel:'msedge',headless:true});
+const manifest=JSON.parse(await fs.readFile('data/routes.json','utf8'));
+const browser=await chromium.launch({channel:process.env.BROWSER_CHANNEL||'msedge',headless:true});
 const accessibility=[];const seo=[];
 for(const viewport of [{width:1440,height:1000},{width:390,height:844}]){
  const context=await browser.newContext({viewport});const page=await context.newPage();

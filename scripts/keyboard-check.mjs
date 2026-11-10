@@ -1,8 +1,8 @@
 import {chromium} from '@playwright/test';
 import fs from 'node:fs/promises';
 import AxeBuilder from '@axe-core/playwright';
-const manifest=JSON.parse(await fs.readFile('migration/manifest.json','utf8'));
-const browser=await chromium.launch({channel:'msedge',headless:true});
+const manifest=JSON.parse(await fs.readFile('data/routes.json','utf8'));
+const browser=await chromium.launch({channel:process.env.BROWSER_CHANNEL||'msedge',headless:true});
 const context=await browser.newContext({viewport:{width:320,height:900},reducedMotion:'reduce'});
 const page=await context.newPage();
 await page.route('**/livereload.js*',route=>route.abort());
@@ -30,4 +30,4 @@ for(const url of ['/style-guide/','/404.html','/en/404.html']){
  for(const violation of result.violations)issues.push(`${url}: ${violation.id}`);
 }
 await browser.close();
-if(issues.length){console.error(issues.join('\n'));process.exitCode=1;}else console.log('PASS: all 55 routes reflow at 320px, keyboard skip link/menu/FAQ, focus restoration, reduced motion, style guide and 404 accessibility checks.');
+if(issues.length){console.error(issues.join('\n'));process.exitCode=1;}else console.log(`PASS: all ${manifest.pages.length} routes reflow at 320px, keyboard skip link/menu/FAQ, focus restoration, reduced motion, style guide and 404 accessibility checks.`);

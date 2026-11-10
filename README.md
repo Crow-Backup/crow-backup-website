@@ -71,8 +71,6 @@ The German and English homepages include JSON-LD `SoftwareApplication` data for 
 
 Each page has matching understated text links to its Markdown version and to “Improve this page”, which opens its German or English source file in GitHub's editor on `master`. Contributors without write access can propose changes through GitHub's fork and pull-request flow.
 
-## Migration
+## Route inventory
 
-[migration/manifest.json](migration/manifest.json) records the complete source URL inventory. [migration/content-audit.json](migration/content-audit.json) contains the original plain-text paragraphs used for verification. Original text, technical commands, legal content, donation links, app-store links and release notes are retained. Known broken legacy links and obsolete portrait hostnames are repaired.
-
-`npm run migrate` is a one-time import tool, **not a build step**. It downloads the live WordPress content and rewrites migrated Markdown. Do not rerun it after editorial changes unless you intend to replace that content. The ignored `.migration-source/` directory caches source responses; remove selected cache files if you deliberately want to fetch newer content. `node scripts/fonts.mjs` refreshes self-hosted font files and their licenses.
+[data/routes.json](data/routes.json) lists every route the checks must find (the 55 routes migrated from WordPress plus pages added since), each page's source file and language, and the migrated media files. Add new pages there so the content, accessibility and keyboard checks cover them. The one-time WordPress importer has been removed; content is edited directly in `content/`. `node scripts/fonts.mjs` refreshes self-hosted font files and their licenses.

@@ -10,7 +10,7 @@ Read this file and `README.md` before changing the project. This is a **custom H
 - **Ask before applying SEO changes**, including search titles, descriptions, robots/noindex policies, canonical/hreflang changes, structured data or search-facing URL changes. Prepare specific, reviewable proposals first. See `reports/seo-proposals.md` for recommendations awaiting approval.
 - HTTPS is approved as the preferred production scheme. Keep the publishing base URL on HTTPS; other SEO proposals still require approval.
 - Product structured data is approved: German/English homepages describe Crow Backup as a free `SoftwareApplication` for Windows, macOS and Linux. Keep its claims consistent with visible content and omit unverified ratings/reviews.
-- Hide the blog author `admin`; keep named contributors. The importer omits admin author fields and renames the legacy admin archive heading to Crow Backup while preserving its URL.
+- Hide the blog author `admin`; keep named contributors. The legacy admin archive heading reads Crow Backup while its URL is preserved.
 - Homepage onboarding steps use **large SVG line icons**, not emoji: computer, connection and folder. Use the established dark-green strokes, pale-green tiles and consistent sizes.
 - The homepage app preview is a **monitor**, with a bezel, chin and stand. Do not add a browser/title-bar frame around the app screenshot.
 - Hide breadcrumbs that contain only “Crow Backup /”. Do not reintroduce the generic root-only breadcrumb.
@@ -34,7 +34,7 @@ Spacing follows 8 px increments. Container maximum: 1280 px. Desktop gutters: 48
 - `content/*/_index.md`: homepage copy and hero parameters.
 - `content/*/posts/`: articles. `type: posts` drives blog listings. `translationKey` pairs translations.
 - `content/*/archives/`: source taxonomy and author URLs with explicit article references.
-- `data/navigation.json`: translated navigation routes. `data/downloads.json`: build-time installer links.
+- `data/navigation.json`: translated navigation routes. `data/downloads.json`: build-time installer links. `data/routes.json`: route, page and media inventory used by the check scripts; add new pages there.
 - `scripts/update-release.mjs`: refresh and validate downloads, release notes and both whitepapers before publishing; `scripts/update-downloads.mjs` provides installer validation. The pipeline commits only changed release data and builds that exact commit; PR validation never writes to the repository.
 - `layouts/baseof.html`: HTML head, global landmarks. `layouts/home.html`, `page.html`, `blog.html`, `archive.html`: page layouts.
 - `layouts/_partials/`: header, footer, post cards and step icons.
@@ -51,7 +51,7 @@ Hugo 0.167 uses `locale`, `label`, `build`, `hugo.Data` and `hugo.Sites`. Do not
 
 ## Build and verification
 
-Hugo **0.167.0** is pinned in `.github/workflows/github-pages.yml`. The site itself builds without Node. Node is used for migration and validation tools.
+Hugo **0.167.0** is pinned in `.github/workflows/github-pages.yml`. The site itself builds without Node. Node is used for the validation tools.
 
 ```powershell
 npm ci
@@ -66,12 +66,12 @@ node scripts/keyboard-check.mjs
 
 In this Windows workspace, `.tools/hugo.exe` is available as an ignored local helper. The browser checks use installed Microsoft Edge in headless mode. A preview server on port 1414 must be running. Use a separate production output directory for checks; live servers can rewrite `public/` with development canonical URLs or livereload scripts.
 
-- `scripts/check.mjs [outputDirectory]`: all 55 source routes, original paragraphs, internal references, anchors, assets, installer links, FAQs and team profiles. Default directory is `.tools/build`.
+- `scripts/check.mjs [outputDirectory]`: every route in `data/routes.json`, internal references, anchors, assets, installer links, FAQs and team profiles. Default directory is `.tools/build`.
 - `scripts/visual-check.mjs`: representative desktop/mobile screens, image loads, overflow, FAQ buttons and mobile menu. Screenshots: `.tools/screenshots/`.
-- `scripts/audit.mjs`: all 55 URLs at 1440 px and 390 px using axe, plus per-page production SEO inventory. Opens collapsed FAQs during the audit. Blocks livereload scripts to avoid navigation races. Results: `reports/accessibility.json` and `reports/seo.json`.
-- `scripts/media-audit.mjs`: compares upload images used on every live source page with images rendered on its migrated page. Includes featured images; normalizes WordPress thumbnail suffixes. Report: `reports/media.json`.
+- `scripts/audit.mjs`: every route at 1440 px and 390 px using axe, plus per-page production SEO inventory. Opens collapsed FAQs during the audit. Blocks livereload scripts to avoid navigation races. Results: `reports/accessibility.json` and `reports/seo.json`.
+- `scripts/media-audit.mjs`: compares upload images used on every live source page with images rendered on its migrated page. Skips pages without a WordPress source. Includes featured images; normalizes WordPress thumbnail suffixes. Report: `reports/media.json`.
 - Also check keyboard navigation, focus/skip link, enlarged text, responsive tables and media manually. Captions require human checks for wording/timing; animation controls must respect reduced motion.
-- `scripts/keyboard-check.mjs`: 320 px reflow on every original route, keyboard skip link/menu/FAQ, Escape focus restoration, reduced motion, plus axe checks on the added style guide and both 404 pages.
+- `scripts/keyboard-check.mjs`: 320 px reflow on every route, keyboard skip link/menu/FAQ, Escape focus restoration, reduced motion, plus axe checks on the added style guide and both 404 pages.
 
 For GitHub project-path verification:
 
@@ -81,13 +81,11 @@ node scripts/llms.mjs .tools/subpath-build
 node scripts/check.mjs .tools/subpath-build
 ```
 
-## Migration safeguards
+## Content safeguards
 
-`scripts/migrate.mjs` is a one-time importer. **Do not rerun it during ordinary edits**: it overwrites all migrated Markdown and may undo editorial changes. Only run it intentionally, after checking what will be replaced. It preserves the user-requested icon/admin rules, repairs obsolete asset hosts and legacy links, converts WordPress content to Markdown and shortcodes, and preserves heading IDs.
+The one-time WordPress importer and its paragraph audit have been removed; content is edited directly in `content/`. `data/routes.json` is the committed route/media inventory. Add new pages there and keep the original 55 routes intact. The whitepaper's source of truth is the Asciidoc in the CrowBackup repository (`docs/src/main/asciidoc/WhitePaper.adoc` and `WhitePaper_en.adoc`); website whitepaper edits should be mirrored there, or made there first.
 
-`.migration-source/` caches original API and sitemap responses and is ignored. `migration/manifest.json` is the committed source-route/media inventory. `migration/content-audit.json` stores source paragraphs so CI can verify content without access to WordPress. Do not modify audit snapshots just to make a content-loss check pass. Explain intended editorial changes and update checks narrowly when authorized.
-
-The root `current-home.html`, API dump JSON and downloaded tool files are ignored inspection artifacts. Do not commit them, `.idea/`, `node_modules/`, `public/`, `.tools/`, secrets or model caches.
+The root `current-home.html`, API dump JSON, `.migration-source/` and downloaded tool files are ignored inspection artifacts. Do not commit them, `.idea/`, `node_modules/`, `public/`, `.tools/`, secrets or model caches.
 
 ## Deployment and outstanding configuration
 
