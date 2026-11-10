@@ -13,6 +13,18 @@
   "description": "Update database migration for older files"
 }
 
+## Version 1.128 | Improved performance, reliability, and AppStore experience {#_version_1_128_improved_performance_reliability_and_appstore_experience}
+
+-   Progress charts now keep accurate history.
+
+-   Backups and cache restores run in a safe order.
+
+-   App Store listing and preview uploads have been enhanced.
+
+## Version 1.127 | Security improvements {#_version_1_127_security_improvements}
+
+-   Various small security improvements.
+
 ## Version 1.126 | Update database migration for older files {#_version_1_126_update_database_migration_for_older_files}
 
 -   Update database migration for older files

@@ -37,23 +37,26 @@ jobs:
         with:
           node-version: '24'
 
+      - name: Install release updater dependencies
+        run: npm ci
+
       - name: Validate release updater
-        run: node --test scripts/update-downloads.test.mjs
+        run: node --test scripts/update-downloads.test.mjs scripts/update-release.test.mjs
 
-      - name: Refresh download fallback
-        run: node scripts/update-downloads.mjs
+      - name: Refresh release documentation
+        run: node scripts/update-release.mjs
 
-      - name: Commit changed fallback
+      - name: Commit changed release documentation
         id: commit
         env:
           PUBLISH_BRANCH: ${{ github.ref_name }}
         run: |
           set -euo pipefail
-          if ! git diff --quiet -- data/downloads.json; then
+          if ! git diff --quiet -- data/downloads.json content/en/release-notes.md content/de/whitepaper.md content/en/en-whitepaper.md; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add -- data/downloads.json
-            git commit -m "Refresh download fallback from release service"
+            git add -- data/downloads.json content/en/release-notes.md content/de/whitepaper.md content/en/en-whitepaper.md
+            git commit -m "Refresh downloads and documentation from release service"
             git push origin "HEAD:${PUBLISH_BRANCH}"
           fi
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
@@ -81,7 +84,7 @@ jobs:
         run: npm ci
 
       - name: Validate release updater
-        run: node --test scripts/update-downloads.test.mjs
+        run: node --test scripts/update-downloads.test.mjs scripts/update-release.test.mjs
 
       - name: Install pinned Hugo
         shell: bash

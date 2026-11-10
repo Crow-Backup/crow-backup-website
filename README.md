@@ -25,7 +25,8 @@ Open `http://localhost:1414/`. Review the visual style guide at `/style-guide/` 
 - `static/css/site.css`: design tokens, layout and responsive styles.
 - `static/css/fonts.css`: self-hosted font definitions. Hugo combines these with `site.css` into one minified stylesheet with a content hash; the heading and body Latin WOFF2 fonts are preloaded.
 - `data/navigation.json`: language-specific navigation and existing URLs.
-- `data/downloads.json`: fallback installer links. Before each publishing build, GitHub Actions refreshes this file from the release service and commits it only when the data changes. The browser also refreshes download links when the download page opens.
+- `data/downloads.json`: fallback installer links. Before each publishing build, GitHub Actions runs `scripts/update-release.mjs` to refresh downloads, release notes and both whitepapers together. It commits changed files and builds that exact commit. The browser also refreshes download links when the download page opens.
+- Documentation sources: `https://downloads.crowbackup.ch/docs/ReleaseNotes.html`, `WhitePaper.html` (German), and `WhitePaper_en.html` (English). The updater adds missing release entries while preserving historical notes, replaces whitepaper bodies, and retains page metadata, URLs and source heading IDs. All fetched documents must validate before files are written; the newest notes must match the download version. A failed refresh stops publishing. PR checks use fixtures without fetching or committing remote content. Run `node scripts/update-release.mjs` locally to perform the same refresh. There is no scheduled polling; updates run on publishing pushes or a manual workflow run.
 - `static/wp-content/uploads/`: migrated media at their original paths.
 - Articles and blog/archive cards retain the original featured images. Featured images are imported from WordPress media records, separately from article body content.
 
