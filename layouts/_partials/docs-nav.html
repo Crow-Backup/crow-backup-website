@@ -1,0 +1,8 @@
+{{ $nav := index hugo.Data.navigation .Language.Lang }}
+{{ $current := .RelPermalink }}
+<nav class="docs-nav" aria-label="{{ $nav.docs.label }}">
+ <p class="eyebrow">{{ $nav.docs.label }}</p>
+ <ul>
+ {{ range $nav.docs.items }}<li><a href="{{ .url | partial "site-url.html" }}"{{ with .lang }} hreflang="{{ . }}"{{ end }}{{ if eq $current (.url | partial "site-url.html") }} aria-current="page"{{ end }}>{{ .label }}</a>{{ with .children }}<ul>{{ range . }}<li><a href="{{ .url | partial "site-url.html" }}"{{ if eq $current (.url | partial "site-url.html") }} aria-current="page"{{ end }}>{{ .label }}</a></li>{{ end }}</ul>{{ end }}</li>{{ end }}
+ </ul>
+</nav>

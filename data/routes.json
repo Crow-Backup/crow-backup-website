@@ -54,7 +54,11 @@
   "/en/author/ggebbwg1/",
   "/en/author/roman/",
   "/author/ggebbwg1/",
-  "/author/roman/"
+  "/author/roman/",
+  "/funktionsweise/",
+  "/funktionsweise/briefkasten-server/",
+  "/en/how-it-works/",
+  "/en/how-it-works/letterbox-server/"
  ],
  "pages": [
   {
@@ -421,6 +425,30 @@
    "file": "content/de/archives/_author_roman_.md",
    "type": "archive",
    "language": "de"
+  },
+  {
+   "url": "/funktionsweise/",
+   "file": "content/de/funktionsweise.md",
+   "type": "page",
+   "language": "de"
+  },
+  {
+   "url": "/funktionsweise/briefkasten-server/",
+   "file": "content/de/briefkasten-server.md",
+   "type": "page",
+   "language": "de"
+  },
+  {
+   "url": "/en/how-it-works/",
+   "file": "content/en/how-it-works.md",
+   "type": "page",
+   "language": "en"
+  },
+  {
+   "url": "/en/how-it-works/letterbox-server/",
+   "file": "content/en/letterbox-server.md",
+   "type": "page",
+   "language": "en"
   }
  ],
  "assets": [

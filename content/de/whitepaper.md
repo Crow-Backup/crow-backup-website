@@ -5,6 +5,7 @@
   "url": "/whitepaper/",
   "translationKey": "2",
   "source": "https://crowbackup.ch/whitepaper/",
+  "docs": true,
   "sourceId": 2,
   "description": "Crow Backup ist eine Software, mit welcher auf eine einfache und sichere Weise Backups auf den Computer von Freund*innen erstellt werden kann."
 }

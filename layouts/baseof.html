@@ -1,8 +1,9 @@
 <!doctype html>
-<html lang="{{ .Site.Language.Locale }}">
+<html lang="{{ .Site.Language.Locale }}" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.documentElement.classList.remove('no-js')</script>
   <title>{{ if .IsHome }}Crow Backup — {{ .Title }}{{ else }}{{ .Title }} | Crow Backup{{ end }}</title>
   <meta name="description" content="{{ .Description | default .Site.Params.description }}">
   <meta name="theme-color" content="#92bd11">

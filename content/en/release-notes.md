@@ -5,6 +5,7 @@
   "url": "/en/release-notes/",
   "translationKey": "579",
   "source": "https://crowbackup.ch/en/release-notes/",
+  "docs": true,
   "sourceId": 579,
   "cover": "/wp-content/uploads/2024/03/Was-ist-Crow-Backup-snapshot.png",
   "coverAlt": "Was ist Crow Backup? (Erklärvideo)",

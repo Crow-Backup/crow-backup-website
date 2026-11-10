@@ -11,6 +11,11 @@
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
           "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
         }
       ]
     },
@@ -23,6 +28,11 @@
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
           "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
         }
       ]
     },
@@ -34,6 +44,11 @@
         {
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
           "nodes": 1
         }
       ]
@@ -51,7 +66,7 @@
         {
           "id": "color-contrast",
           "help": "Elements must meet minimum color contrast ratio thresholds",
-          "nodes": 2
+          "nodes": 3
         }
       ]
     },
@@ -68,7 +83,7 @@
         {
           "id": "color-contrast",
           "help": "Elements must meet minimum color contrast ratio thresholds",
-          "nodes": 2
+          "nodes": 3
         }
       ]
     },
@@ -80,6 +95,11 @@
         {
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
           "nodes": 1
         }
       ]
@@ -93,6 +113,11 @@
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
           "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
         }
       ]
     },
@@ -104,6 +129,11 @@
         {
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
           "nodes": 1
         }
       ]
@@ -117,6 +147,11 @@
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
           "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
         }
       ]
     },
@@ -128,6 +163,11 @@
         {
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
           "nodes": 1
         }
       ]
@@ -141,6 +181,11 @@
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
           "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
         }
       ]
     },
@@ -153,6 +198,11 @@
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
           "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
         }
       ]
     },
@@ -164,6 +214,11 @@
         {
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
           "nodes": 1
         }
       ]
@@ -181,7 +236,7 @@
         {
           "id": "color-contrast",
           "help": "Elements must meet minimum color contrast ratio thresholds",
-          "nodes": 12
+          "nodes": 13
         }
       ]
     },
@@ -198,7 +253,7 @@
         {
           "id": "color-contrast",
           "help": "Elements must meet minimum color contrast ratio thresholds",
-          "nodes": 12
+          "nodes": 13
         }
       ]
     },
@@ -210,6 +265,11 @@
         {
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
           "nodes": 1
         }
       ]
@@ -223,6 +283,11 @@
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
           "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
         }
       ]
     },
@@ -234,6 +299,11 @@
         {
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
           "nodes": 1
         }
       ]
@@ -247,6 +317,11 @@
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
           "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
         }
       ]
     },
@@ -258,6 +333,11 @@
         {
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
           "nodes": 1
         }
       ]
@@ -271,6 +351,11 @@
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
           "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
         }
       ]
     },
@@ -282,6 +367,11 @@
         {
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
           "nodes": 1
         }
       ]
@@ -295,6 +385,11 @@
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
           "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
         }
       ]
     },
@@ -306,6 +401,11 @@
         {
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
           "nodes": 1
         }
       ]
@@ -319,6 +419,11 @@
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
           "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
         }
       ]
     },
@@ -330,6 +435,11 @@
         {
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
           "nodes": 1
         }
       ]
@@ -343,6 +453,11 @@
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
           "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
         }
       ]
     },
@@ -354,6 +469,11 @@
         {
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
           "nodes": 1
         }
       ]
@@ -367,6 +487,11 @@
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
           "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
         }
       ]
     },
@@ -378,6 +503,11 @@
         {
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
           "nodes": 1
         }
       ]
@@ -391,6 +521,11 @@
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
           "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
         }
       ]
     },
@@ -402,6 +537,11 @@
         {
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
           "nodes": 1
         }
       ]
@@ -415,6 +555,11 @@
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
           "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
         }
       ]
     },
@@ -426,6 +571,11 @@
         {
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
           "nodes": 1
         }
       ]
@@ -439,6 +589,11 @@
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
           "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
         }
       ]
     },
@@ -450,6 +605,11 @@
         {
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
           "nodes": 1
         }
       ]
@@ -463,6 +623,11 @@
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
           "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
         }
       ]
     },
@@ -474,6 +639,11 @@
         {
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
           "nodes": 1
         }
       ]
@@ -487,6 +657,11 @@
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
           "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
         }
       ]
     },
@@ -498,6 +673,11 @@
         {
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
           "nodes": 1
         }
       ]
@@ -511,6 +691,11 @@
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
           "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
         }
       ]
     },
@@ -522,6 +707,11 @@
         {
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
           "nodes": 1
         }
       ]
@@ -535,6 +725,11 @@
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
           "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
         }
       ]
     },
@@ -546,6 +741,11 @@
         {
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
           "nodes": 1
         }
       ]
@@ -559,6 +759,11 @@
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
           "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
         }
       ]
     },
@@ -570,6 +775,11 @@
         {
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
           "nodes": 1
         }
       ]
@@ -583,6 +793,11 @@
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
           "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
         }
       ]
     },
@@ -594,6 +809,11 @@
         {
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
           "nodes": 1
         }
       ]
@@ -607,6 +827,11 @@
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
           "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
         }
       ]
     },
@@ -618,6 +843,11 @@
         {
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
           "nodes": 1
         }
       ]
@@ -631,6 +861,11 @@
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
           "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
         }
       ]
     },
@@ -642,6 +877,11 @@
         {
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
           "nodes": 1
         }
       ]
@@ -655,6 +895,11 @@
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
           "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
         }
       ]
     },
@@ -667,6 +912,11 @@
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
           "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
         }
       ]
     },
@@ -678,6 +928,79 @@
         {
           "id": "aria-prohibited-attr",
           "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "url": "/funktionsweise/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 9
+        }
+      ]
+    },
+    {
+      "url": "/funktionsweise/briefkasten-server/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "url": "/en/how-it-works/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 9
+        }
+      ]
+    },
+    {
+      "url": "/en/how-it-works/letterbox-server/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
           "nodes": 1
         }
       ]
@@ -1339,6 +1662,54 @@
           "id": "color-contrast",
           "help": "Elements must meet minimum color contrast ratio thresholds",
           "nodes": 1
+        }
+      ]
+    },
+    {
+      "url": "/funktionsweise/",
+      "width": 390,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 9
+        }
+      ]
+    },
+    {
+      "url": "/funktionsweise/briefkasten-server/",
+      "width": 390,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 15
+        }
+      ]
+    },
+    {
+      "url": "/en/how-it-works/",
+      "width": 390,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 9
+        }
+      ]
+    },
+    {
+      "url": "/en/how-it-works/letterbox-server/",
+      "width": 390,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 15
         }
       ]
     }

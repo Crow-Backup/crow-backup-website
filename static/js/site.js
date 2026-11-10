@@ -44,6 +44,41 @@ if (document.querySelector('[data-installer]')) {
         }).catch(() => {/* Keep the usable build-time download links. */
     }).finally(() => clearTimeout(timeout));
 }
+// Documentation dropdown: disclosure button, Escape restores focus, outside click or focus leaving closes it.
+const group = document.querySelector('.nav-group');
+const groupToggle = group?.querySelector('.nav-group-toggle');
+function closeGroup() {
+    groupToggle?.setAttribute('aria-expanded', 'false');
+    group?.classList.remove('is-open');
+}
+groupToggle?.addEventListener('click', () => {
+    const open = groupToggle.getAttribute('aria-expanded') !== 'true';
+    groupToggle.setAttribute('aria-expanded', String(open));
+    group.classList.toggle('is-open', open);
+});
+document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && groupToggle?.getAttribute('aria-expanded') === 'true') {
+        closeGroup();
+        groupToggle.focus();
+    }
+});
+document.addEventListener('click', event => {
+    if (group && !group.contains(event.target)) closeGroup();
+});
+group?.addEventListener('focusout', event => {
+    if (!group.contains(event.relatedTarget)) closeGroup();
+});
+// Connection diagram: buttons highlight one path and swap the caption; without JavaScript every path stays visible.
+document.querySelectorAll('.connection-diagram').forEach(diagram => {
+    const buttons = diagram.querySelectorAll('.diagram-controls button');
+    diagram.classList.add('is-interactive');
+    buttons.forEach(button => button.addEventListener('click', () => {
+        const scenario = button.dataset.scenario;
+        diagram.dataset.scenario = scenario;
+        buttons.forEach(other => other.setAttribute('aria-pressed', String(other === button)));
+        diagram.querySelectorAll('.cd-caption').forEach(caption => caption.hidden = caption.dataset.caption !== scenario);
+    }));
+});
 
 // Full-size image links remain usable when the dialog API is unavailable.
 const imageZoomLabels = document.documentElement.lang.startsWith('de')

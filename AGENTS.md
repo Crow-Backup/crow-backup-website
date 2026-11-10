@@ -5,12 +5,14 @@ Read this file and `README.md` before changing the project. This is a **custom H
 ## Purpose and user preferences
 
 - Replace crowbackup.ch's design while preserving its existing page structure and complete German/English content.
-- All 55 original sitemap URLs are migrated: 21 pages, 14 posts, 20 category/tag/author archives. Preserve existing URLs unless explicitly asked to change them.
+- All 55 original sitemap URLs are migrated: 21 pages, 14 posts, 20 category/tag/author archives. Preserve existing URLs unless explicitly asked to change them. Pages added since (Funktionsweise/How it works and Briefkasten-Server/Letterbox server) use clean nested URLs and are listed in `data/routes.json`.
 - Accessibility improvements are authorized. Audit every page after shared-template changes. Do not claim complete WCAG conformance from automated checks alone.
 - **Ask before applying SEO changes**, including search titles, descriptions, robots/noindex policies, canonical/hreflang changes, structured data or search-facing URL changes. Prepare specific, reviewable proposals first. See `reports/seo-proposals.md` for recommendations awaiting approval.
 - HTTPS is approved as the preferred production scheme. Keep the publishing base URL on HTTPS; other SEO proposals still require approval.
 - Product structured data is approved: German/English homepages describe Crow Backup as a free `SoftwareApplication` for Windows, macOS and Linux. Keep its claims consistent with visible content and omit unverified ratings/reviews.
 - Hide the blog author `admin`; keep named contributors. The legacy admin archive heading reads Crow Backup while its URL is preserved.
+- Top navigation: a “Dokumentation/Documentation” disclosure dropdown (Funktionsweise, FAQ, Whitepaper, Release Notes) followed by Blog, Team and Support. Documentation pages set `docs: true` and share a left sidebar (`layouts/_partials/docs-nav.html`) driven by `data/navigation.json`; the letterbox page is reachable only through that sidebar and in-page links, not the dropdown. Release Notes exist only in English and are linked from both languages.
+- The German app wording is “Briefkasten-Server”, with “Server-URL” and “Zugriffsschlüssel”; keep website copy consistent with the app. Letterbox pages must not expose real contact addresses or security-review details.
 - Homepage onboarding steps use **large SVG line icons**, not emoji: computer, connection and folder. Use the established dark-green strokes, pale-green tiles and consistent sizes.
 - The homepage app preview is a **monitor**, with a bezel, chin and stand. Do not add a browser/title-bar frame around the app screenshot.
 - Hide breadcrumbs that contain only “Crow Backup /”. Do not reintroduce the generic root-only breadcrumb.
@@ -34,12 +36,12 @@ Spacing follows 8 px increments. Container maximum: 1280 px. Desktop gutters: 48
 - `content/*/_index.md`: homepage copy and hero parameters.
 - `content/*/posts/`: articles. `type: posts` drives blog listings. `translationKey` pairs translations.
 - `content/*/archives/`: source taxonomy and author URLs with explicit article references.
-- `data/navigation.json`: translated navigation routes. `data/downloads.json`: build-time installer links. `data/routes.json`: route, page and media inventory used by the check scripts; add new pages there.
+- `data/navigation.json`: translated navigation routes, the documentation dropdown/sidebar tree and remaining top-level links. `data/downloads.json`: build-time installer links. `data/routes.json`: route, page and media inventory used by the check scripts; add new pages there.
 - `scripts/update-release.mjs`: refresh and validate downloads, release notes and both whitepapers before publishing; `scripts/update-downloads.mjs` provides installer validation. The pipeline commits only changed release data and builds that exact commit; PR validation never writes to the repository.
 - `layouts/baseof.html`: HTML head, global landmarks. `layouts/home.html`, `page.html`, `blog.html`, `archive.html`: page layouts.
 - `layouts/_partials/`: header, footer, post cards and step icons.
 - `layouts/_shortcodes/`: cards, grids, FAQs, profiles, buttons, downloads, contact form, media and guide specimens.
-- `layouts/_markup/`: accessible Markdown render hooks, including keyboard-scrollable tables.
+- `layouts/_markup/`: accessible Markdown render hooks, including keyboard-scrollable tables and focusable code blocks (fenced code renders without Chroma markup).
 - `static/css/`, `static/js/`, `static/fonts/`: self-contained assets. Keep fonts local.
 - `layouts/_partials/styles.html`: combine font definitions and site styles into one minified, fingerprinted stylesheet. Preload only the critical Latin Manrope 700 and IBM Plex Sans 400 WOFF2 files, with font MIME type and anonymous CORS metadata.
 - `static/wp-content/uploads/`: migrated original images/video at preserved paths. WordPress featured images are separate from body content: all 14 posts have covers, and blog/archive cards use those original images. Keep the importer and checker aware of featured media.
@@ -66,12 +68,12 @@ node scripts/keyboard-check.mjs
 
 In this Windows workspace, `.tools/hugo.exe` is available as an ignored local helper. The browser checks use installed Microsoft Edge in headless mode. A preview server on port 1414 must be running. Use a separate production output directory for checks; live servers can rewrite `public/` with development canonical URLs or livereload scripts.
 
-- `scripts/check.mjs [outputDirectory]`: every route in `data/routes.json`, internal references, anchors, assets, installer links, FAQs and team profiles. Default directory is `.tools/build`.
+- `scripts/check.mjs [outputDirectory]`: every route in `data/routes.json`, internal references, anchors, assets, installer links, FAQs, team profiles, the documentation dropdown/sidebar and the letterbox example. Default directory is `.tools/build`.
 - `scripts/visual-check.mjs`: representative desktop/mobile screens, image loads, overflow, FAQ buttons and mobile menu. Screenshots: `.tools/screenshots/`.
 - `scripts/audit.mjs`: every route at 1440 px and 390 px using axe, plus per-page production SEO inventory. Opens collapsed FAQs during the audit. Blocks livereload scripts to avoid navigation races. Results: `reports/accessibility.json` and `reports/seo.json`.
 - `scripts/media-audit.mjs`: compares upload images used on every live source page with images rendered on its migrated page. Skips pages without a WordPress source. Includes featured images; normalizes WordPress thumbnail suffixes. Report: `reports/media.json`.
 - Also check keyboard navigation, focus/skip link, enlarged text, responsive tables and media manually. Captions require human checks for wording/timing; animation controls must respect reduced motion.
-- `scripts/keyboard-check.mjs`: 320 px reflow on every route, keyboard skip link/menu/FAQ, Escape focus restoration, reduced motion, plus axe checks on the added style guide and both 404 pages.
+- `scripts/keyboard-check.mjs`: 320 px reflow on every route, keyboard skip link/menu/documentation dropdown/FAQ, Escape focus restoration, reduced motion, plus axe checks on the added style guide and both 404 pages.
 
 For GitHub project-path verification:
 

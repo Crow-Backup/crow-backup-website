@@ -5,6 +5,7 @@
   "url": "/faq/",
   "translationKey": "38",
   "source": "https://crowbackup.ch/faq/",
+  "docs": true,
   "sourceId": 38,
   "description": "Sofern dein*e Freund*in online ist, kannst du jederzeit ein neues Backup starten. Dazu klickst du im Programm unter dem entsprechenden Backup auf «Backup starten». Ausserdem wird n"
 }
@@ -100,7 +101,7 @@ Crow Backup bleibt vorerst Closed Source.
 {{< /faq >}}
 
 {{< faq "Wäre es möglich, einen eigenen Server zu haben, der temporär die Backup sammelt, anstelle der vordefinierten Crow Backup Server?" >}}
-Im Moment ist es nur möglich, unsere vordefinierten Crow-Backup-Server zu verwenden. Dies wird sich in Zukunft ändern, da wir an einer Funktion arbeiten, die dies möglich macht.
+Ja. Du kannst einen eigenen Briefkasten-Server betreiben und ihn in den Einstellungen der App eintragen. Er gilt dann für alle deine Freundschaften. Wie das geht, steht auf der Seite [Briefkasten-Server](/funktionsweise/briefkasten-server/).
 {{< /faq >}}
 
 {{< faq "Gibt es eine Crow Backup App für mein Synology NAS?" >}}
@@ -114,7 +115,7 @@ Wenn Sie Ihre Daten bis dahin redundant speichern möchten, haben Sie einfach di
 {{< /faq >}}
 
 {{< faq "Kann ich meinen eigenen Verschlüsselungsschlüssel verwalten?" >}}
-Nein, das ist derzeit nicht möglich.x
+Nein, das ist derzeit nicht möglich.
 {{< /faq >}}
 
 {{< faq "Ist es möglich, die E-Mail Adresse zu ändern und dennoch weiterhin Zugriff auf die Daten zu haben?" >}}

@@ -83,6 +83,23 @@ for(const [url,language,download] of [['/','de-CH','herunterladen/'],['/en/','en
 for(const url of ['/herunterladen/','/en/download/']){const $=await html(url);if($('[data-installer]').length!==4)failures.push(`${url}: installer links missing`);}
 for(const url of ['/team/','/en/en-team/']){const $=await html(url);if($('.profile').length!==4)failures.push(`${url}: team profiles missing`);}
 for(const url of ['/faq/','/en/en-faq/']){const $=await html(url);if($('details').length<10)failures.push(`${url}: FAQs missing`);}
+for(const url of ['/','/en/','/faq/','/funktionsweise/briefkasten-server/','/en/how-it-works/letterbox-server/']){
+ const $=await html(url);
+ if($('.nav-group-toggle[aria-expanded]').length!==1||$('#docs-menu a').length!==4)failures.push(`${url}: documentation dropdown missing`);
+}
+for(const url of ['/funktionsweise/','/funktionsweise/briefkasten-server/','/faq/','/whitepaper/','/en/how-it-works/','/en/how-it-works/letterbox-server/','/en/en-faq/','/en/en-whitepaper/','/en/release-notes/']){
+ const $=await html(url);
+ if($('.docs-nav a[aria-current="page"]').length!==1)failures.push(`${url}: documentation sidebar does not mark the current page`);
+}
+for(const url of ['/funktionsweise/','/en/how-it-works/']){
+ const $=await html(url);
+ if($('.connection-diagram .diagram-controls button[aria-pressed]').length!==4||$('.connection-diagram svg[role="img"] title').length!==1||$('.cd-caption').length!==4)failures.push(`${url}: connection diagram missing`);
+}
+for(const url of ['/funktionsweise/briefkasten-server/','/en/how-it-works/letterbox-server/']){
+ const $=await html(url);
+ if(!$('pre[tabindex="0"] code.language-yaml').text().includes('storage-auth-key=')||$('.table-scroll table tbody tr').length!==7)failures.push(`${url}: letterbox example or parameter table missing`);
+ if($('main').text().includes('@crowbackup.ch'))failures.push(`${url}: real contact address in example`);
+}
 for(const url of ['/blog/','/en/en-blog/']){const $=await html(url);if($('.post-cover img').length!==7)failures.push(`${url}: expected seven featured images`);}
 if(failures.length){console.error(failures.join('\n'));process.exitCode=1;}
-else console.log(`PASS: ${routes.routes.length} routes, ${links} internal references, ${routes.assets.length} media files, bilingual downloads, FAQs and team profiles.`);
+else console.log(`PASS: ${routes.routes.length} routes, ${links} internal references, ${routes.assets.length} media files, documentation navigation, bilingual downloads, FAQs and team profiles.`);

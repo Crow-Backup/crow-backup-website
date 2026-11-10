@@ -1,14 +1,24 @@
 {{ $nav := index hugo.Data.navigation .Language.Lang }}
+{{ $current := .RelPermalink }}
+{{ $docsActive := false }}
+{{ range $nav.docs.items }}{{ if eq $current (.url | partial "site-url.html") }}{{ $docsActive = true }}{{ end }}{{ range .children }}{{ if eq $current (.url | partial "site-url.html") }}{{ $docsActive = true }}{{ end }}{{ end }}{{ end }}
 <header class="site-header">
  <div class="container header-inner">
   <a class="brand" href="{{ $nav.home | partial "site-url.html" }}" aria-label="Crow Backup — {{ i18n "backHome" }}">{{ partial "logo.html" "header" }}<span>crow<span class="brand-light">backup</span><span class="brand-dot">.</span></span></a>
   <button class="menu-toggle" aria-controls="navigation" aria-expanded="false">{{ i18n "menu" }} <span aria-hidden="true">☰</span></button>
   <nav id="navigation" class="navigation" aria-label="{{ i18n "menu" }}">
-   {{ range $nav.links }}<a href="{{ .url | partial "site-url.html" }}" {{ if eq $.RelPermalink (.url | partial "site-url.html") }}aria-current="page"{{ end }}>{{ .label }}</a>{{ end }}
+   <div class="nav-group{{ if $docsActive }} is-active{{ end }}">
+    <button type="button" class="nav-group-toggle" aria-expanded="false" aria-controls="docs-menu"{{ if $docsActive }} aria-current="true"{{ end }}>{{ $nav.docs.label }} <span class="nav-group-chevron" aria-hidden="true">▾</span></button>
+    <span class="nav-group-label">{{ $nav.docs.label }}</span>
+    <ul id="docs-menu" class="nav-group-menu">
+     {{ range $nav.docs.items }}<li><a href="{{ .url | partial "site-url.html" }}"{{ with .lang }} hreflang="{{ . }}"{{ end }}{{ if eq $current (.url | partial "site-url.html") }} aria-current="page"{{ end }}>{{ .label }}</a></li>{{ end }}
+    </ul>
+   </div>
+   {{ range $nav.links }}<a href="{{ .url | partial "site-url.html" }}" {{ if eq $current (.url | partial "site-url.html") }}aria-current="page"{{ end }}>{{ .label }}</a>{{ end }}
    <div class="languages" aria-label="Language">
-    {{ $current := . }}{{ range hugo.Sites }}{{ $destination := .Home.RelPermalink }}
-    {{ $language := .Language.Lang }}{{ range $current.AllTranslations }}{{ if eq .Language.Lang $language }}{{ $destination = .RelPermalink }}{{ end }}{{ end }}
-    <a href="{{ $destination }}" lang="{{ $language }}" aria-label="{{ if eq $language "de" }}Deutsch{{ else }}English{{ end }}" {{ if eq $current.Language.Lang $language }}aria-current="true"{{ end }}>{{ upper $language }}</a>{{ end }}
+    {{ $page := . }}{{ range hugo.Sites }}{{ $destination := .Home.RelPermalink }}
+    {{ $language := .Language.Lang }}{{ range $page.AllTranslations }}{{ if eq .Language.Lang $language }}{{ $destination = .RelPermalink }}{{ end }}{{ end }}
+    <a href="{{ $destination }}" lang="{{ $language }}" aria-label="{{ if eq $language "de" }}Deutsch{{ else }}English{{ end }}" {{ if eq $page.Language.Lang $language }}aria-current="true"{{ end }}>{{ upper $language }}</a>{{ end }}
    </div>
    <a class="button button-small" href="{{ $nav.download | partial "site-url.html" }}">{{ i18n "download" }} <span aria-hidden="true">↗</span></a>
   </nav>

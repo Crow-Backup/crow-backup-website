@@ -39,7 +39,7 @@ Wähle einen Ordner und deine\*n Freund\*in als Ziel und starte das Backup. Lass
 {{< /card >}}
 {{< /grid >}}
 
-Wenn alles funktioniert, füge die weiteren Ordner hinzu, die du schützen möchtest. Ein grosses erstes Backup kann je nach Verbindung und Datenmenge länger dauern. Weitere Backups erstellt Crow Backup automatisch, wenn dein\*e Freund\*in erreichbar ist.
+Wenn alles funktioniert, füge die weiteren Ordner hinzu, die du schützen möchtest. Ein grosses erstes Backup kann je nach Verbindung und Datenmenge länger dauern. Weitere Backups erstellt Crow Backup automatisch, wenn dein\*e Freund\*in erreichbar ist. Wie das im Detail abläuft, steht unter [Funktionsweise](/funktionsweise/).
 
 {{< /home-section >}}
 

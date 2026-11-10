@@ -1,0 +1,73 @@
+{{- $de := eq .Page.Language.Lang "de" -}}
+{{- $t := dict
+ "title" (cond $de "Verbindungswege zwischen dir und deiner Freund*in" "Connection paths between you and your friend")
+ "desc" (cond $de "Zwei Computer, verbunden entweder direkt im selben Netzwerk, direkt über das Internet mit Portweiterleitung oder über einen Briefkasten-Server, auf dem Daten abgelegt und abgeholt werden." "Two computers connected either directly in the same network, directly over the internet with port forwarding, or through a letterbox server where data is deposited and picked up.")
+ "controls" (cond $de "Verbindungsart wählen" "Choose a connection type")
+ "you" (cond $de "Du" "You")
+ "friend" (cond $de "Freund*in" "Friend")
+ "encrypted" (cond $de "verschlüsselt" "encrypted")
+ "server" (cond $de "Briefkasten-Server" "Letterbox server")
+ "lan" (cond $de "Gleiches Netzwerk" "Same network")
+ "lanLabel" (cond $de "direkt, im selben Netzwerk" "direct, same network")
+ "internet" (cond $de "Übers Internet" "Over the internet")
+ "internetLabel" (cond $de "direkt, mit Portweiterleitung TCP 58300" "direct, with port forwarding TCP 58300")
+ "letterbox" (cond $de "Briefkasten" "Letterbox")
+ "deposit" (cond $de "ablegen" "deposit")
+ "collect" (cond $de "abholen" "collect")
+ "offline" (cond $de "Nicht erreichbar" "Not reachable")
+ "offlineLabel" (cond $de "offline" "offline")
+ "lanCaption" (cond $de "Ihr seid im selben Netzwerk. Die Computer finden sich automatisch und übertragen direkt. Das ist die schnellste Verbindung." "You are in the same network. The computers find each other automatically and transfer directly. This is the fastest connection.")
+ "internetCaption" (cond $de "Eine Seite hat auf dem Router eine Portweiterleitung für TCP-Port 58300 eingerichtet. Die Computer verbinden sich direkt über das Internet, egal wo ihr seid." "One side has set up port forwarding for TCP port 58300 on the router. The computers connect directly over the internet, wherever you are.")
+ "letterboxCaption" (cond $de "Beide Computer stehen hinter einem Router ohne Portweiterleitung. Deine App legt die verschlüsselten Daten auf einem Briefkasten-Server ab, die App deiner Freund*in holt sie dort ab. Das funktioniert in jedem Netzwerk." "Both computers sit behind a router without port forwarding. Your app deposits the encrypted data on a letterbox server, your friend's app collects it there. This works in any network.")
+ "offlineCaption" (cond $de "Deine Freund*in ist gerade offline. Das Backup wartet, bis ihr wieder gleichzeitig online seid, und läuft dann automatisch weiter." "Your friend is offline right now. The backup waits until you are both online again and then continues automatically.")
+-}}
+<div class="connection-diagram" data-scenario="lan">
+ <div class="diagram-controls" role="group" aria-label="{{ $t.controls }}">
+  <button type="button" data-scenario="lan" aria-pressed="true">{{ $t.lan }}</button>
+  <button type="button" data-scenario="internet" aria-pressed="false">{{ $t.internet }}</button>
+  <button type="button" data-scenario="letterbox" aria-pressed="false">{{ $t.letterbox }}</button>
+  <button type="button" data-scenario="offline" aria-pressed="false">{{ $t.offline }}</button>
+ </div>
+ <svg viewBox="0 0 720 300" role="img" aria-labelledby="cd-title cd-desc" focusable="false">
+  <title id="cd-title">{{ $t.title }}</title>
+  <desc id="cd-desc">{{ $t.desc }}</desc>
+  <defs>
+   <marker id="cd-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path class="cd-arrow" d="M0,0 L10,5 L0,10 z"/></marker>
+   <symbol id="cd-pc" viewBox="0 0 120 100"><rect class="cd-tile" x="2" y="2" width="116" height="72" rx="10"/><line class="cd-path" x1="60" y1="76" x2="60" y2="90"/><line class="cd-path" x1="34" y1="92" x2="86" y2="92" stroke-linecap="round"/></symbol>
+  </defs>
+  <g class="cd-route" data-route="letterbox">
+   <path class="cd-path cd-flow" d="M158,138 L300,74" marker-end="url(#cd-arrow)"/>
+   <path class="cd-path cd-flow" d="M420,74 L562,138" marker-end="url(#cd-arrow)"/>
+   <text x="212" y="88" text-anchor="middle">{{ $t.deposit }}</text>
+   <text x="508" y="88" text-anchor="middle">{{ $t.collect }}</text>
+   <rect class="cd-tile" x="310" y="24" width="100" height="64" rx="12"/>
+   <line class="cd-path" x1="334" y1="48" x2="386" y2="48" stroke-linecap="round"/>
+   <rect x="346" y="58" width="28" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+   <text x="360" y="110" text-anchor="middle">{{ $t.server }}</text>
+  </g>
+  <g class="cd-route" data-route="lan">
+   <line class="cd-path cd-flow" x1="162" y1="165" x2="558" y2="165" marker-end="url(#cd-arrow)" marker-start="url(#cd-arrow)"/>
+   <text x="360" y="155" text-anchor="middle">{{ $t.lanLabel }}</text>
+  </g>
+  <g class="cd-route" data-route="internet">
+   <path class="cd-path cd-flow" d="M162,190 C262,262 458,262 558,190" marker-end="url(#cd-arrow)" marker-start="url(#cd-arrow)"/>
+   <text x="360" y="268" text-anchor="middle">{{ $t.internetLabel }}</text>
+  </g>
+  <g class="cd-you">
+   <use href="#cd-pc" x="40" y="120" width="120" height="100"/>
+   <text x="100" y="246" text-anchor="middle" font-weight="700">{{ $t.you }}</text>
+   <g class="cd-lock"><rect x="86" y="150" width="28" height="22" rx="4" fill="currentColor"/><path d="M92,150 v-6 a8,8 0 0 1 16,0 v6" fill="none" stroke="currentColor" stroke-width="3"/><text x="100" y="188" text-anchor="middle" font-size="11">{{ $t.encrypted }}</text></g>
+  </g>
+  <g class="cd-friend">
+   <use href="#cd-pc" x="560" y="120" width="120" height="100"/>
+   <text x="620" y="246" text-anchor="middle" font-weight="700">{{ $t.friend }}</text>
+   <text class="cd-offline" x="620" y="160" text-anchor="middle" font-size="12">{{ $t.offlineLabel }}</text>
+  </g>
+ </svg>
+ <div class="cd-captions" aria-live="polite">
+  <p class="cd-caption" data-caption="lan">{{ $t.lanCaption }}</p>
+  <p class="cd-caption" data-caption="internet" hidden>{{ $t.internetCaption }}</p>
+  <p class="cd-caption" data-caption="letterbox" hidden>{{ $t.letterboxCaption }}</p>
+  <p class="cd-caption" data-caption="offline" hidden>{{ $t.offlineCaption }}</p>
+ </div>
+</div>

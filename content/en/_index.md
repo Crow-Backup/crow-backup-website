@@ -39,7 +39,7 @@ Choose a folder and your friend as the destination, then start the backup. Keep 
 {{< /card >}}
 {{< /grid >}}
 
-Once you have tried it, add the folders you want to protect. A large first backup can take longer, depending on your connection and the amount of data. Crow Backup creates subsequent backups automatically when your friend is reachable.
+Once you have tried it, add the folders you want to protect. A large first backup can take longer, depending on your connection and the amount of data. Crow Backup creates subsequent backups automatically when your friend is reachable. The [How it works](/en/how-it-works/) page explains the details.
 
 {{< /home-section >}}
 

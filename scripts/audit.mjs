@@ -21,7 +21,7 @@ for(const viewport of [{width:1440,height:1000},{width:390,height:844}]){
 await browser.close();
 for(const entry of manifest.pages){
  const $=load(await fs.readFile(path.join('.tools/build',entry.url,'index.html'),'utf8'));
- const title=$('title').text();const description=$('meta[name="description"]').attr('content')||'';
+ const title=$('head title').text();const description=$('meta[name="description"]').attr('content')||'';
  const canonical=$('link[rel="canonical"]').attr('href');
  const issues=[];
  if(!description)issues.push('Missing meta description');

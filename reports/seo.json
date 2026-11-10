@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-07T19:38:43.056Z",
+  "date": "2026-11-10T19:18:34.656Z",
   "pages": [
     {
       "url": "/en/release-notes/",
@@ -1126,6 +1126,90 @@
       "issues": [
         "Thin/duplicate archive: review indexing policy"
       ]
+    },
+    {
+      "url": "/funktionsweise/",
+      "type": "page",
+      "title": "Funktionsweise | Crow Backup",
+      "titleLength": 28,
+      "description": "So funktioniert Crow Backup: verschlüsselte Backups auf den Computern von Freund*innen, direkte Verbindung oder Briefkasten-Server, Speicherplatz pro Freund*in, Versionen.",
+      "descriptionLength": 171,
+      "canonical": "https://crowbackup.ch/funktionsweise/",
+      "h1": "Funktionsweise",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/funktionsweise/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/how-it-works/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/funktionsweise/briefkasten-server/",
+      "type": "page",
+      "title": "Briefkasten-Server | Crow Backup",
+      "titleLength": 32,
+      "description": "Warum Crow Backup einen Briefkasten-Server braucht, wie er funktioniert, wie du ihn in der App einstellst und wie du mit Podman oder Docker einen eigenen betreibst.",
+      "descriptionLength": 164,
+      "canonical": "https://crowbackup.ch/funktionsweise/briefkasten-server/",
+      "h1": "Briefkasten-Server",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/funktionsweise/briefkasten-server/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/how-it-works/letterbox-server/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/en/how-it-works/",
+      "type": "page",
+      "title": "How it works | Crow Backup",
+      "titleLength": 26,
+      "description": "How Crow Backup works: encrypted backups on your friends' computers, direct connections or a letterbox server, storage limits per friend, restoring with versions.",
+      "descriptionLength": 162,
+      "canonical": "https://crowbackup.ch/en/how-it-works/",
+      "h1": "How it works",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/funktionsweise/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/how-it-works/"
+        }
+      ],
+      "issues": []
+    },
+    {
+      "url": "/en/how-it-works/letterbox-server/",
+      "type": "page",
+      "title": "Letterbox server | Crow Backup",
+      "titleLength": 30,
+      "description": "Why Crow Backup needs a letterbox server, how it works, how to configure it in the app and how to run your own with Podman or Docker.",
+      "descriptionLength": 133,
+      "canonical": "https://crowbackup.ch/en/how-it-works/letterbox-server/",
+      "h1": "Letterbox server",
+      "hreflang": [
+        {
+          "language": "de-CH",
+          "url": "https://crowbackup.ch/funktionsweise/briefkasten-server/"
+        },
+        {
+          "language": "en",
+          "url": "https://crowbackup.ch/en/how-it-works/letterbox-server/"
+        }
+      ],
+      "issues": []
     }
   ]
 }

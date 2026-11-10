@@ -5,6 +5,7 @@
   "url": "/en/en-faq/",
   "translationKey": "38",
   "source": "https://crowbackup.ch/en/en-faq/",
+  "docs": true,
   "sourceId": 170,
   "description": "If your friend is online, you can start a new backup at any time. To do this, click on \"Start backup\" under the corresponding backup in the programme. A new backup will also be cre"
 }
@@ -84,4 +85,8 @@ In principle, we want to store as little user data as possible. Nevertheless, we
 
 -   Data to improve Crow Backup: Analytics data from our website, user feedback submitted
 -   Data for operating Crow Backup: Login & security data, current IP addresses so that your friends can find you. Temporarily your encrypted backups in case your friends are not directly reachable.
+{{< /faq >}}
+
+{{< faq "Can I run my own server that temporarily collects backups instead of the predefined Crow Backup servers?" >}}
+Yes. You can run your own letterbox server and enter it in the app settings. It then applies to all your friendships. The [letterbox server](/en/how-it-works/letterbox-server/) page explains how.
 {{< /faq >}}
