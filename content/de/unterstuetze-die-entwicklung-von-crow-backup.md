@@ -3,6 +3,8 @@
   "date": "2024-03-15T20:54:26",
   "lastmod": "2024-07-12T21:56:32",
   "url": "/unterstuetze-die-entwicklung-von-crow-backup/",
+  "layout": "donate",
+  "headingIcon": "donate",
   "translationKey": "41",
   "source": "https://crowbackup.ch/unterstuetze-die-entwicklung-von-crow-backup/",
   "sourceId": 41,

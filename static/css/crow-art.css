@@ -1,0 +1,39 @@
+/* Isolated to the style-guide study; SVG assets carry their own hover styles. */
+.crow-studio{margin-block:64px;max-width:100%}
+.crow-art-palette{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-block:24px}
+.crow-art-palette>div{padding:24px;border-radius:16px;color:var(--ink)}
+.crow-art-palette code{display:block;background:transparent;color:inherit;padding:0}
+.crow-portraits,.crow-icon-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-block:32px}
+.crow-art-card{display:flex;flex-direction:column;align-items:center;padding:16px;border:1px solid var(--line);border-radius:16px;background:var(--white);text-align:center;color:var(--ink);font-size:14px;min-width:0}
+.crow-art-card svg{width:100%;max-width:220px;height:auto;display:block}
+.crow-art-card span{overflow-wrap:anywhere}
+.crow-art-card:focus-visible{outline:3px solid var(--green-dark);outline-offset:4px}
+.crow-art-card:is(:hover,:focus-visible) .crow-head{transform:rotate(-5deg)}
+.crow-art-card:is(:hover,:focus-visible) .crow-gesture{transform:translateY(-1px)}
+.crow-logo-reference{display:flex;align-items:center;gap:24px;margin-block:24px}
+.crow-logo-reference img{flex:0 0 96px}
+.crow-icon-sizes{display:flex;align-items:center;justify-content:center;gap:20px;min-height:72px;width:100%}
+.crow-icon-sizes svg{width:32px;height:32px;flex:0 0 32px}
+.crow-icon-sizes img{margin:0;flex-shrink:0;border:0;border-radius:0;padding:0;box-shadow:none;background:transparent}
+.crow-icon-grid .crow-art-card{gap:12px}
+.crow-icon-grid .crow-art-card>span:last-child::after{content:'32 / 48 / 64 px';display:block;font-size:12px;color:var(--muted);margin-top:4px}
+.crow-character-studies{display:grid;grid-template-columns:1fr;gap:24px;margin-block:32px;max-width:400px}
+.crow-character-studies svg{width:128px;height:128px}
+.crow-motion-study{display:grid;grid-template-columns:2fr 1fr;gap:24px;margin-block:32px}
+.crow-walk-preview{padding:24px;background:var(--soft);border:1px solid var(--line);border-radius:16px}
+.crow-walk-preview label{margin-left:8px;cursor:pointer}
+.crow-walk-preview input{width:20px;height:20px;accent-color:var(--green-dark)}
+.crow-walk-art svg{display:block;width:100%;height:auto;max-height:320px}
+.crow-footprint-preview{justify-content:center;gap:24px}
+.crow-footprint-preview svg{width:112px;height:140px}
+#crow-walk-play:not(:checked)~.crow-walk-art .walk-motion{animation-play-state:paused}
+@media(max-width:600px){
+ .crow-portraits{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+ .crow-icon-grid,.crow-art-palette,.crow-motion-study{grid-template-columns:1fr}
+ .crow-icon-grid{gap:16px}
+ .crow-art-card{padding:8px}
+ .crow-logo-reference{align-items:flex-start}
+}
+@media(prefers-reduced-motion:reduce){
+ .crow-studio :is(.crow-head,.crow-wing,.crow-gesture){transition:none!important;transform:none!important}
+}

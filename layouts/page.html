@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ $nav := index hugo.Data.navigation .Language.Lang }}
-<header class="page-heading container"><p class="eyebrow">{{ if eq .Type "posts" }}Crow Backup Blog{{ else }}{{ i18n "free" }}{{ end }}</p><h1>{{ .Title }}</h1>{{ if eq .Type "posts" }}<p class="article-meta">{{ .Date | time.Format "02.01.2006" }}{{ with .Params.author }}{{ if ne (lower .) "admin" }} <span>·</span> {{ . }}{{ end }}{{ end }}</p>{{ end }}</header>
+<header class="page-heading container"><p class="eyebrow">{{ if eq .Type "posts" }}Crow Backup Blog{{ else }}{{ i18n "free" }}{{ end }}</p><div class="page-heading-row">{{ with .Params.headingIcon }}{{ partial "crow-page-icon.html" (dict "name" . "id" (printf "heading-%s" $.File.UniqueID)) }}{{ end }}<h1>{{ .Title }}</h1></div>{{ if eq .Type "posts" }}<p class="article-meta">{{ .Date | time.Format "02.01.2006" }}{{ with .Params.author }}{{ if ne (lower .) "admin" }} <span>·</span> {{ . }}{{ end }}{{ end }}</p>{{ end }}</header>
 <div class="container article-layout {{ if or (in .RelPermalink "whitepaper") (in .RelPermalink "privacy") (in .RelPermalink "datenschutz") (in .RelPermalink "release-notes") }}with-toc{{ end }}">
  {{ if or (in .RelPermalink "whitepaper") (in .RelPermalink "privacy") (in .RelPermalink "datenschutz") (in .RelPermalink "release-notes") }}<aside class="toc"><p class="eyebrow">{{ i18n "contents" }}</p>{{ .TableOfContents }}</aside>{{ end }}
  <article class="prose page-content">

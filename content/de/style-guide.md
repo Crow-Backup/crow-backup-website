@@ -12,6 +12,10 @@ Crow Backup macht Datensicherung zu etwas Persönlichem: Menschen, die einander 
 
 {{< palette >}}
 
+## Krähenatelier — neue SVG-Entwürfe
+
+{{< crow-art >}}
+
 ## Typografie
 
 {{< type-sample >}}
@@ -67,3 +71,11 @@ Texte bleiben direkt, persönlich und konkret. Sicherheit erklären wir mit nach
 ## Zugänglichkeit
 
 Text nutzt dunkle Tinte oder Dunkelgrün auf hellen Flächen. Das helle Markengrün dient als Fläche und Akzent. Tastaturfokus ist sichtbar, Navigation und Akkordeons sind beschriftet, Animationen respektieren reduzierte Bewegung. Mobile Navigation und Downloadlinks bleiben übersichtlich; Downloads funktionieren auch ohne JavaScript.
+
+## Krähen vor dem Footer
+
+Drei Krähen laufen frei direkt über dem Footer und überlappen den oberen Inhalt ein wenig. Sie gehören zur Seite und scrollen mit ihr. Ihre Wege verlaufen zufällig in alle Richtungen; die Tiere halten Abstand voneinander. Die Krähen sind 12 % grösser als im ersten Entwurf.
+
+Sie halten gelegentlich an, picken zweimal oder rufen zweimal nacheinander «kraa». Der Ruf bleibt rein visuell, ohne Ton. Kommt der Mauszeiger näher oder wird eine Krähe angetippt, läuft sie deutlich schneller weg. Klicks gehen durch die dekorative Ebene hindurch zum Seiteninhalt. Die dunkleren Fussspuren verblassen nach acht Sekunden.
+
+Bei reduzierter Bewegung bleiben die drei Krähen stehen. In ausgeblendeten Browser-Tabs pausiert die Bewegung ebenfalls.

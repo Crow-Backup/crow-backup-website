@@ -1,0 +1,9 @@
+{{ define "main" }}
+<div class="container donation-layout">
+  <article class="donation-copy">
+    <header><p class="eyebrow">{{ i18n "free" }}</p><h1>{{ .Title }}</h1></header>
+    <div class="prose">{{ .Content }}</div>
+  </article>
+  <div class="donation-art">{{ partial "crow-page-icon.html" (dict "name" .Params.headingIcon "id" (printf "donation-%s" .File.UniqueID)) }}</div>
+</div>
+{{ end }}

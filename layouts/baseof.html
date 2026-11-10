@@ -22,6 +22,8 @@
   <a class="skip-link" href="#main">{{ if eq .Language.Lang "de" }}Zum Inhalt{{ else }}Skip to content{{ end }}</a>
   {{ partial "header.html" . }}
   <main id="main" tabindex="-1">{{ block "main" . }}{{ end }}{{ partial "page-tools.html" . }}</main>
+  {{ partial "crow-flock.html" . }}
   {{ partial "footer.html" . }}
+  <script src="{{ "/js/crow-flock.js" | partial "site-url.html" }}" defer></script>
 </body>
 </html>

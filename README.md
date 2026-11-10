@@ -51,7 +51,7 @@ Screenshots are saved under `.tools/screenshots/`.
 
 Run `node scripts/audit.mjs` for accessibility checks on every page at desktop/mobile widths and an SEO inventory. Run `node scripts/media-audit.mjs` to compare all live source-page images, including featured images, against the rendered migration. Reports are saved in `reports/`. Video captions have been generated and a text alternative added; the caption wording and timing still need human review.
 
-`node scripts/keyboard-check.mjs` verifies all original routes at 320 px, keyboard navigation and reduced-motion behavior, plus the style guide and 404 pages. Future LLM runs should read [AGENTS.md](AGENTS.md) first.
+`node scripts/keyboard-check.mjs` verifies all original routes at 320 px, keyboard navigation and reduced-motion behavior, plus the style guide and 404 pages. `node scripts/crow-flock-check.mjs` checks the three crows above the footer, click-through, faster escape, pecking/calling, fading footprints and responsive behavior. Future LLM runs should read [AGENTS.md](AGENTS.md) first.
 
 ## GitHub Pages
 

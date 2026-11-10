@@ -1,0 +1,9 @@
+{{- $name := .name -}}
+{{- if not (in (slice "donate" "team") $name) -}}{{- errorf "Unsupported page crow icon: %s" $name -}}{{- end -}}
+{{- $svg := readFile (printf "static/images/crow-art/icon-%s.svg" $name) -}}
+{{- /* The adjacent heading labels this decoration; keep SVG titles out of page copy. */ -}}
+{{- $svg = replaceRE `<title[^>]*>[^<]*</title>|<desc[^>]*>[^<]*</desc>` "" $svg -}}
+{{- $svg = replaceRE ` role="img"| aria-labelledby="[^"]*"` "" $svg -}}
+{{- $svg = replaceRE `id="([^"]+)"` (printf `id="%s-$1"` .id) $svg -}}
+{{- $svg = replaceRE `url\(#([^)]+)\)` (printf `url(#%s-$1)` .id) $svg -}}
+<span class="crow-page-icon" aria-hidden="true">{{ $svg | safeHTML }}</span>

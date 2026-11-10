@@ -3,6 +3,7 @@
   "date": "2024-03-15T20:26:18",
   "lastmod": "2024-04-09T18:21:20",
   "url": "/team/",
+  "headingIcon": "team",
   "translationKey": "9",
   "source": "https://crowbackup.ch/team/",
   "sourceId": 9,
