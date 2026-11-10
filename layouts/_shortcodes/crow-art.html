@@ -10,7 +10,7 @@
   </div>
   <div class="crow-portraits">
     {{ range slice "crow-green" "crow-clay" "crow-blue" "crow-lilac" "crow-courier" "crow-reading" }}
-    <a class="crow-art-card" href="{{ printf "/images/crow-art/%s.svg" . | relURL }}" download aria-label="SVG herunterladen: {{ . }}">{{ readFile (printf "%s%s.svg" $root .) | replaceRE `id="title"` (printf `id="%s-title"` .) | replaceRE `id="desc"` (printf `id="%s-desc"` .) | replaceRE `aria-labelledby="title desc"` (printf `aria-labelledby="%s-title %s-desc"` . .) | safeHTML }}<span>{{ . }} ↗</span></a>
+    <a class="crow-art-card" href="{{ printf "/images/crow-art/%s.svg" . | partial "site-url.html" }}" download aria-label="SVG herunterladen: {{ . }}">{{ readFile (printf "%s%s.svg" $root .) | replaceRE `id="title"` (printf `id="%s-title"` .) | replaceRE `id="desc"` (printf `id="%s-desc"` .) | replaceRE `aria-labelledby="title desc"` (printf `aria-labelledby="%s-title %s-desc"` . .) | safeHTML }}<span>{{ . }} ↗</span></a>
     {{ end }}
   </div>
   <h3>Die Krähe geht los</h3>
@@ -19,24 +19,24 @@
     <div class="crow-walk-preview">
       <input type="checkbox" id="crow-walk-play" checked><label for="crow-walk-play">Gehen abspielen / pausieren</label>
       <div class="crow-walk-art">{{ readFile (printf "%scrow-walking.svg" $root) | replaceRE `id="title"` `id="walking-title"` | replaceRE `id="desc"` `id="walking-desc"` | replaceRE `aria-labelledby="title desc"` `aria-labelledby="walking-title walking-desc"` | safeHTML }}</div>
-      <a href="{{ "/images/crow-art/crow-walking.svg" | relURL }}" download>Gehende Krähe · SVG herunterladen</a>
+      <a href="{{ "/images/crow-art/crow-walking.svg" | partial "site-url.html" }}" download>Gehende Krähe · SVG herunterladen</a>
     </div>
-    <a class="crow-art-card crow-footprint-preview" href="{{ "/images/crow-art/crow-footprint.svg" | relURL }}" download>{{ readFile (printf "%scrow-footprint.svg" $root) | replaceRE `id="title"` `id="footprint-title"` | replaceRE `id="desc"` `id="footprint-desc"` | replaceRE `aria-labelledby="title desc"` `aria-labelledby="footprint-title footprint-desc"` | safeHTML }}<span>Krähenspur · SVG herunterladen</span></a>
+    <a class="crow-art-card crow-footprint-preview" href="{{ "/images/crow-art/crow-footprint.svg" | partial "site-url.html" }}" download>{{ readFile (printf "%scrow-footprint.svg" $root) | replaceRE `id="title"` `id="footprint-title"` | replaceRE `id="desc"` `id="footprint-desc"` | replaceRE `aria-labelledby="title desc"` `aria-labelledby="footprint-title footprint-desc"` | safeHTML }}<span>Krähenspur · SVG herunterladen</span></a>
   </div>
   <p>Beide SVGs haben einen transparenten Hintergrund. Bei reduzierter Bewegung bleibt die Krähe stehen.</p>
   <h3>Vom Logo zur ganzen Krähe</h3>
-  <div class="crow-logo-reference"><img src="{{ "/images/crow-logo.svg" | relURL }}" width="96" height="96" alt="Bestehendes Crow Backup Logo"><p>Kopf, Schnabel, Auge und Federkerben stammen aus dem Original. Auch die ursprüngliche äussere Begrenzung der Federn wird berücksichtigt, damit keine schmale schwarze Restkante entsteht. Körper und Schwanz entsprechen jetzt auch in den grossen Kreisillustrationen der Icon-Familie.</p></div>
+  <div class="crow-logo-reference"><img src="{{ "/images/crow-logo.svg" | partial "site-url.html" }}" width="96" height="96" alt="Bestehendes Crow Backup Logo"><p>Kopf, Schnabel, Auge und Federkerben stammen aus dem Original. Auch die ursprüngliche äussere Begrenzung der Federn wird berücksichtigt, damit keine schmale schwarze Restkante entsteht. Körper und Schwanz entsprechen jetzt auch in den grossen Kreisillustrationen der Icon-Familie.</p></div>
   <h3>Die Krähe übernimmt die Aufgabe</h3>
   <p>Die Handlung steckt in Körperhaltung, Blick und Flügeln: Die Krähe beugt sich über die Buchseiten, schreibt, trägt einen Brief oder hilft einer zweiten Krähe. Transparente SVGs mit 64er-Zeichenfläche, unten in 32, 48 und 64 px. Für die kleinen Varianten bleiben sichtbare Textbeschriftungen wichtig.</p>
   <div class="crow-character-studies">
     {{ range slice "reading" }}{{ $name := printf "icon-%s" . }}
-    <a class="crow-art-card" href="{{ printf "/images/crow-art/%s.svg" $name | relURL }}" download>{{ readFile (printf "%s%s.svg" $root $name) | replaceRE `id="title"` (printf `id="study-%s-title"` .) | replaceRE `id="desc"` (printf `id="study-%s-desc"` .) | replaceRE `aria-labelledby="title desc"` (printf `aria-labelledby="study-%s-title study-%s-desc"` . .) | replaceRE `([a-z-]+)-mask` `study-$1-mask` | safeHTML }}<span>Lesen</span></a>
+    <a class="crow-art-card" href="{{ printf "/images/crow-art/%s.svg" $name | partial "site-url.html" }}" download>{{ readFile (printf "%s%s.svg" $root $name) | replaceRE `id="title"` (printf `id="study-%s-title"` .) | replaceRE `id="desc"` (printf `id="study-%s-desc"` .) | replaceRE `aria-labelledby="title desc"` (printf `aria-labelledby="study-%s-title study-%s-desc"` . .) | replaceRE `([a-z-]+)-mask` `study-$1-mask` | safeHTML }}<span>Lesen</span></a>
     {{ end }}
   </div>
   <div class="crow-icon-grid">
     {{ range readDir $root }}{{ if hasPrefix .Name "icon-" }}
     {{ $id := strings.TrimSuffix ".svg" .Name }}{{ $file := .Name }}
-    <a class="crow-art-card" href="{{ printf "/images/crow-art/%s" .Name | relURL }}" download><span class="crow-icon-sizes">{{ readFile (printf "%s%s" $root .Name) | replaceRE `id="title"` (printf `id="%s-title"` $id) | replaceRE `id="desc"` (printf `id="%s-desc"` $id) | replaceRE `aria-labelledby="title desc"` (printf `aria-labelledby="%s-title %s-desc"` $id $id) | safeHTML }}{{ range slice 48 64 }}<img src="{{ printf "/images/crow-art/%s" $file | relURL }}" width="{{ . }}" height="{{ . }}" alt="">{{ end }}</span><span>{{ strings.TrimPrefix "icon-" $id | humanize }}</span></a>
+    <a class="crow-art-card" href="{{ printf "/images/crow-art/%s" .Name | partial "site-url.html" }}" download><span class="crow-icon-sizes">{{ readFile (printf "%s%s" $root .Name) | replaceRE `id="title"` (printf `id="%s-title"` $id) | replaceRE `id="desc"` (printf `id="%s-desc"` $id) | replaceRE `aria-labelledby="title desc"` (printf `aria-labelledby="%s-title %s-desc"` $id $id) | safeHTML }}{{ range slice 48 64 }}<img src="{{ printf "/images/crow-art/%s" $file | partial "site-url.html" }}" width="{{ . }}" height="{{ . }}" alt="">{{ end }}</span><span>{{ strings.TrimPrefix "icon-" $id | humanize }}</span></a>
     {{ end }}{{ end }}
   </div>
   <h3>Backup-Ablaufgrafik — zurückgestellt</h3>
