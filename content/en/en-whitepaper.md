@@ -69,7 +69,7 @@ Computers automatically discover each other in local networks using UDP broadcas
 
 ### Data Transfer {#_data_transfer}
 
-If friends are directly reachable, data is transferred on TCP port 58300. If this is not possible, data can be temporarily stored on a Crow Backup Server in Switzerland and downloaded by friends from there. But this is slower due to limited resources. Therefore, it is recommended to set up port forwarding for TCP port 58300 on the local router.
+If friends are directly reachable, data is transferred on TCP port 58300. If this is not possible, data can be temporarily stored on a Crow Backup Server in Switzerland and downloaded by friends from there. Besides the official Crow Backup servers, [letterbox servers](/en/how-it-works/letterbox-server/) run by users themselves can be used for this, privately for their friends or publicly for everyone. The official servers are slower due to limited resources. Therefore, it is recommended to set up port forwarding for TCP port 58300 on the local router.
 
 ## Data Storage {#_data_storage}
 

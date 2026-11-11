@@ -14,6 +14,16 @@
   "description": "Update database migration for older files"
 }
 
+## Version 1.129 | New UI, backup tweaks, improved stability {#_version_1_129_new_ui_backup_tweaks_improved_stability}
+
+-   Letterbox servers can now be configured in the settings.
+
+-   Refined the dashboard layout for easier data viewing.
+
+-   Restores autostart on every daemon launch.
+
+-   Excludes specified files and folders from backups.
+
 ## Version 1.128 | Improved performance, reliability, and AppStore experience {#_version_1_128_improved_performance_reliability_and_appstore_experience}
 
 -   Progress charts now keep accurate history.

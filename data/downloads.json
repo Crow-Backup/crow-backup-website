@@ -1,21 +1,21 @@
 {
-  "version": "1.128",
+  "version": "1.129",
   "installer": {
-    "linux": "https://downloads.crowbackup.ch/v1/crow-backup_1.128_amd64.deb",
-    "mac": "https://downloads.crowbackup.ch/v1/Crow Backup-1.128.dmg",
-    "macAarch64": "https://downloads.crowbackup.ch/v1/Crow Backup-1.128-aarch64.dmg",
-    "windows": "https://downloads.crowbackup.ch/v1/Crow Backup-1.128.exe"
+    "linux": "https://downloads.crowbackup.ch/v1/crow-backup_1.129_amd64.deb",
+    "mac": "https://downloads.crowbackup.ch/v1/Crow Backup-1.129.dmg",
+    "macAarch64": "https://downloads.crowbackup.ch/v1/Crow Backup-1.129-aarch64.dmg",
+    "windows": "https://downloads.crowbackup.ch/v1/Crow Backup-1.129.exe"
   },
   "updater": {
-    "linux": "https://downloads.crowbackup.ch/v1/CrowBackup-1.128-linux-installer-data.tar.xz",
-    "mac": "https://downloads.crowbackup.ch/v1/CrowBackup-1.128-mac-installer-data.tar.xz",
-    "macAarch64": "https://downloads.crowbackup.ch/v1/CrowBackup-1.128-mac-aarch64-installer-data.tar.xz",
-    "windows": "https://downloads.crowbackup.ch/v1/CrowBackup-1.128-windows-installer-data.tar.xz"
+    "linux": "https://downloads.crowbackup.ch/v1/CrowBackup-1.129-linux-installer-data.tar.xz",
+    "mac": "https://downloads.crowbackup.ch/v1/CrowBackup-1.129-mac-installer-data.tar.xz",
+    "macAarch64": "https://downloads.crowbackup.ch/v1/CrowBackup-1.129-mac-aarch64-installer-data.tar.xz",
+    "windows": "https://downloads.crowbackup.ch/v1/CrowBackup-1.129-windows-installer-data.tar.xz"
   },
   "updaterSignatures": {
-    "linux": "https://downloads.crowbackup.ch/v1/CrowBackup-1.128-linux-installer-data.sig",
-    "mac": "https://downloads.crowbackup.ch/v1/CrowBackup-1.128-mac-installer-data.sig",
-    "macAarch64": "https://downloads.crowbackup.ch/v1/CrowBackup-1.128-mac-aarch64-installer-data.sig",
-    "windows": "https://downloads.crowbackup.ch/v1/CrowBackup-1.128-windows-installer-data.sig"
+    "linux": "https://downloads.crowbackup.ch/v1/CrowBackup-1.129-linux-installer-data.sig",
+    "mac": "https://downloads.crowbackup.ch/v1/CrowBackup-1.129-mac-installer-data.sig",
+    "macAarch64": "https://downloads.crowbackup.ch/v1/CrowBackup-1.129-mac-aarch64-installer-data.sig",
+    "windows": "https://downloads.crowbackup.ch/v1/CrowBackup-1.129-windows-installer-data.sig"
   }
 }

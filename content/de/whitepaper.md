@@ -69,7 +69,7 @@ Im lokalen Netzwerk finden sich die Computer automatisch gegenseitig mit einem U
 
 ### Übertragung der Daten {#_übertragung_der_daten}
 
-Sofern die Freund\*innen direkt erreichbar sind, werden die Daten auf TCP Port 58300 übertragen. Falls das nicht möglich ist, können die Daten auch analog einem Briefkasten auf einem Crow Backup Server in der Schweiz zwischengespeichert und von da durch Freund\*innen wieder heruntergeladen werden. Dies ist jedoch aufgrund begrenzter Ressourcen eine langsamere Variante. Es ist deshalb empfohlen, auf dem lokalen Router eine Portweiterleitung für TCP Port 58300 einzurichten.
+Sofern die Freund\*innen direkt erreichbar sind, werden die Daten auf TCP Port 58300 übertragen. Falls das nicht möglich ist, können die Daten auch analog einem Briefkasten auf einem Crow Backup Server in der Schweiz zwischengespeichert und von da durch Freund\*innen wieder heruntergeladen werden. Neben den offiziellen Crow Backup Servern können dafür auch [Briefkasten-Server](/funktionsweise/briefkasten-server/) verwendet werden, die Nutzende selbst betreiben, privat für ihre Freund\*innen oder öffentlich für alle. Die offiziellen Server sind jedoch aufgrund begrenzter Ressourcen eine langsamere Variante. Es ist deshalb empfohlen, auf dem lokalen Router eine Portweiterleitung für TCP Port 58300 einzurichten.
 
 ## Datenhaltung {#_datenhaltung}
 
