@@ -68,7 +68,7 @@ services:
       -Dch.crowbackup.server.letterbox.storage-auth-key=YOUR-SECRET-KEY
       -Dch.crowbackup.server.letterbox.admin-contact=admin@example.com
       -Dch.crowbackup.server.letterbox.country=CH
-      -Ddatabase.path=/storage
+      -Ddatabase.path=/storage/letterbox_server_db
     mem_limit: 500m
     mem_reservation: 100m
     cpus: 2.0
