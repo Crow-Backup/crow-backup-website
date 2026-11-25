@@ -14,6 +14,16 @@
   "description": "Update database migration for older files"
 }
 
+## Version 1.130 | Security, messaging, and update enhancements for users {#_version_1_130_security_messaging_and_update_enhancements_for_users}
+
+-   Several smaller security improvements.
+
+-   Linux autostart work now better.
+
+-   Dashboard shows only reachable friends as online.
+
+-   Polling automatically retries after unexpected status.
+
 ## Version 1.129 | New UI, backup tweaks, improved stability {#_version_1_129_new_ui_backup_tweaks_improved_stability}
 
 -   Letterbox servers can now be configured in the settings.

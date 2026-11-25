@@ -51,7 +51,7 @@ Die Datei-Inhaltsblöcke werden nicht von diesem MAC abgedeckt. Stattdessen wird
 
 ### Nachrichten Signatur {#_nachrichten_signatur}
 
-Um sichergehen zu können, dass Nachrichten wirklich von der Freund\*in kommen (z.B. bei Nachrichten zum Löschen von Backups sehr relevant), werden die Nachrichten signiert. Die Signatur geschieht mit `SHA3-512withDSA` mit 3072 Bits. Der Private Key wird zusammen mit der Ciphering Data verschlüsselt gespeichert. Der Public Key wird zur Überprüfung der Signatur an alle Freund\*innen übertragen, sowie auch zum Server.
+Um sichergehen zu können, dass Nachrichten wirklich von der Freund\*in kommen (z.B. bei Nachrichten zum Löschen von Backups sehr relevant), werden die Nachrichten signiert. Die Signatur geschieht standardmässig mit `SHA3-512withDSA` mit 3072 Bits. Zusätzlich ist mit `ML-DSA-65` (FIPS 204) ein quantensicheres Signaturverfahren implementiert. Jede Signatur und jeder Public Key trägt die Kennung des verwendeten Verfahrens, sodass mehrere Verfahren nebeneinander bestehen können. Eine Signatur mit einem dem Client unbekannten Verfahren gilt als ungültig; der Public Key wird dennoch gespeichert, damit die Überprüfung nach einem Update möglich ist. Sobald alle Clients `ML-DSA-65` überprüfen können, wird es zum Standard für neue Schlüsselpaare. Der Private Key wird zusammen mit der Ciphering Data verschlüsselt gespeichert. Der Public Key wird zur Überprüfung der Signatur an alle Freund\*innen übertragen, sowie auch zum Server.
 
 ## Client-Server-Anmeldung {#_client_server_anmeldung}
 
@@ -94,6 +94,8 @@ Zudem fallen auch auf den Crow Backup Servern Daten an. Falls keine direkte Verb
 -   Java: Eine der heute meistverwendeten Programmiersprachen.
     
 -   MAC: "Message Authentication Code", eine kurze Prüfsumme, welche Daten authentifiziert, sodass Manipulationen erkannt werden; HMAC ist ein Hash-basierter MAC.
+    
+-   ML-DSA: "Module-Lattice-Based Digital Signature Algorithm", das von NIST in FIPS 204 standardisierte Signaturverfahren, welches auch Angriffen mit Quantencomputern standhält.
     
 -   PBKDF2: "Password-Based Key Derivation Function 2", eine der heute meistverwendeten Verfahren, um aus einem Passwort einen Schlüssel für symmetrische Verschlüsselung abzuleiten.
     

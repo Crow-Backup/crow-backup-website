@@ -51,7 +51,7 @@ File content blocks are not covered by this MAC. Instead, each block is content-
 
 ### Message Signature {#_message_signature}
 
-Messages are signed to ensure they genuinely come from friends (especially important for backup deletion messages). Signatures use `SHA3-512withDSA` with 3072 bits. The Private Key is stored encrypted along with the Ciphering Data. The Public Key is transmitted to all friends and the server so they can validate the messages.
+Messages are signed to ensure they genuinely come from friends (especially important for backup deletion messages). By default, signatures use `SHA3-512withDSA` with 3072 bits. In addition, the quantum-safe signature scheme `ML-DSA-65` (FIPS 204) is implemented. Every signature and every Public Key carries the identifier of the scheme used, so several schemes can coexist. A signature using a scheme unknown to the client is treated as invalid; the Public Key is stored nevertheless so that verification becomes possible after an update. Once all clients can verify `ML-DSA-65`, it becomes the default for new key pairs. The Private Key is stored encrypted along with the Ciphering Data. The Public Key is transmitted to all friends and the server so they can validate the messages.
 
 ## Client-Server Login {#_client_server_login}
 
@@ -94,6 +94,8 @@ Data also accumulates on Crow Backup servers. If direct connection between users
 -   Java: One of today’s most widely used programming languages.
     
 -   MAC: "Message Authentication Code", a short tag that authenticates data so that tampering is detected; HMAC is a hash-based MAC.
+    
+-   ML-DSA: "Module-Lattice-Based Digital Signature Algorithm", the signature scheme standardised by NIST in FIPS 204, which also withstands attacks by quantum computers.
     
 -   PBKDF2: "Password-Based Key Derivation Function 2", one of today’s most widely used methods for deriving symmetric encryption keys from passwords.
     
