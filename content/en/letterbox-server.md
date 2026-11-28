@@ -87,6 +87,8 @@ podman compose up -d
 
 With Docker the command is `docker compose up -d`. The server is then reachable at `http://<address-of-your-machine>:8987`.
 
+To check that it is running, open `http://<address-of-your-machine>:8987/server/status` in a browser. The server should answer with `up and running`.
+
 ### Parameters
 
 | Parameter | Required | Required for public servers | Meaning |
